@@ -4,8 +4,7 @@
 
 **Block analyzed:** 7,738,261
 **Date:** March 13, 2026
-**Author:** Head of Documentation, Bittensor
-**Status:** Draft — Phase 1 and Phase 3 data complete; manual address curation pending
+
 
 ---
 
@@ -19,9 +18,9 @@ We then queried on-chain identity records (`IdentitiesV2`, `query_identity`) for
 
 ## 1. Background
 
-The Finney chain has been running since the Nakamoto period. Over that time the protocol has accumulated a large number of accounts — some actively participating in staking, validation, and subnet operation, others receiving TAO early and never interacting since. This analysis attempts to quantify that second category: wallets holding material TAO with no observable on-chain activity.
+Since launch, the Finney chain has accumulated a large number of accounts — some actively participating in staking, validation, and subnet operation, others receiving TAO early and never interacting since. This analysis attempts to quantify that second category: wallets holding material TAO with no observable on-chain activity.
 
-The motivation is descriptive, not accusatory. Understanding how much TAO is held in inactive, unidentified wallets is relevant to governance design, emission modeling, and any future discussions about supply distribution.
+Understanding how much TAO is held in inactive, unidentified wallets is relevant to governance design, emission modeling, and any future discussions about supply distribution.
 
 ---
 
