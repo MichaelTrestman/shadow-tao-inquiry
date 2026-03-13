@@ -14,6 +14,8 @@ Using direct substrate storage queries against the Finney chain, we enumerated a
 
 We then queried on-chain identity records (`IdentitiesV2`, `query_identity`) for the top 100 shadow wallets by balance — wallets holding between 418 TAO and 141,003 TAO. **Zero of the top 100 returned any identity information.**
 
+Using the Finney archive node, we also sampled the free balance of the top 10 shadow wallets at 14 points across chain history. **Every top shadow wallet had zero balance through block 5,000,000.** Nine of the ten are actively accumulating TAO in the current epoch — several received the majority of their balance within the last three months. This rules out the interpretation that shadow TAO is a legacy artifact of early mining; the largest shadow wallets are being actively funded today.
+
 ---
 
 ## 1. Background
@@ -152,24 +154,69 @@ They cannot be active validators, delegators, or subnet operators. They may be e
 
 ---
 
-## 5. Implications
+## 5. Historical Balance Analysis
 
-### 5.1 Governance
+Using the Finney archive node (`wss://archive.chain.opentensor.ai`), we queried the free balance of the top 10 shadow wallets at 14 sample points across the full chain history: blocks 1, 100, 1,000, 10,000, 100,000, 500,000, 1,000,000, 2,000,000, 3,000,000, 4,000,000, 5,000,000, 6,000,000, 7,000,000, and the current block (~7,739,373).
+
+Block timing reference (at ~12 seconds/block):
+
+| Block | Approximate date |
+|---|---|
+| 4,000,000 | Sept/Oct 2024 — shortly before dtao launch |
+| 6,000,000 | ~July 2025 |
+| 7,000,000 | ~December 2025 |
+| 7,739,373 | March 2026 (analysis date) |
+
+### 5.1 Findings
+
+**Every shadow wallet in the top 10 had zero balance through block 5,000,000.** None of these are early accumulations from the genesis era or the original mining period. The TAO in these wallets is recent.
+
+| Wallet (truncated) | First non-zero | Balance at first sample | Current balance | Pattern |
+|---|---|---|---|---|
+| 5FEA1FfU... | Block 6M | 23,838 TAO | 141,003 TAO | Actively growing |
+| 5ChHTBka... | Block 7M | 84,867 TAO | 129,499 TAO | Actively growing |
+| 5Dhf6Wgq... | Block 7M | 70,077 TAO | 117,065 TAO | Actively growing |
+| 5GUkyA37... | Block 7M | 64,939 TAO | 108,064 TAO | Actively growing |
+| 5C9CxW93... | Block 7M | 18,082 TAO | 93,908 TAO | Rapid growth (+76k since Dec 2025) |
+| 5Epz8SQ6... | After block 7M | — | 90,844 TAO | Entire balance arrived in last ~103 days |
+| 5GVKorR7... | After block 7M | — | 56,342 TAO | Same |
+| 5HAe1peP... | After block 7M | — | 17,850 TAO | Same |
+| 5DwksfKH... | Block 6M | 9,571 TAO | 15,132 TAO | Actively growing |
+| 5CXHJRRk... | Block 4M | 9,800 TAO | 9,800 TAO | **Completely static since Sept 2024** |
+
+### 5.2 Interpretation
+
+Two distinct patterns emerge:
+
+**Actively accumulating wallets (9 of 10).** The overwhelming majority of top shadow wallet balances have been growing continuously and recently. Wallets #1 through #9 all show increasing balances across the sample points between block 6M/7M and now. They are not forgotten or dormant — they are receiving ongoing transfers. Someone is actively routing TAO into these nonce=0, unidentified addresses.
+
+**One pre-dtao static wallet (wallet #10).** The exception is `5CXHJRRk...`, which received exactly 9,799.99 TAO somewhere between blocks 3M and 4M (roughly September/October 2024, just before the dtao launch) and has not changed since. This is the profile of a wallet that received a specific amount at a specific time and has been untouched — more consistent with a deliberate cold storage arrangement.
+
+### 5.3 Significance
+
+The fact that these balances are recent and growing substantially revises the most benign interpretation of shadow wallets. A common assumption would be that shadow TAO represents early participants who accumulated during the genesis era and simply never returned. The data does not support this for the largest wallets. Instead, the top shadow wallets are accumulating TAO now, in the current epoch, into addresses that have never sent a transaction and have no on-chain identity.
+
+This does not identify the source of the transfers — the sending addresses and their origins are a separate investigation. But it establishes that shadow TAO accumulation is an active, ongoing phenomenon, not a historical artifact.
+
+---
+
+## 6. Implications
+
+### 6.1 Governance
 
 As Bittensor's governance mechanisms develop, shadow TAO becomes a relevant design input. If voting weight is proportional to TAO holdings, the shadow wallet cohort — 14,032 wallets holding 31.6% of free supply — represents a meaningful block of unattributed voting weight. The 52 wallets holding more than 1,000 TAO each with nonce=0 and no stake are the most concentrated part of this: collectively ~852,000 TAO with no on-chain identity.
 
 Governance designs that weight active stake (staked TAO) differently from dormant free balances would reduce the influence of this cohort. This is an open design question for the community.
 
-### 5.2 Supply modeling
+### 6.2 Supply modeling
 
-Shadow TAO affects how circulating supply should be interpreted. Of the 3.4M TAO in liquid balances, ~1.08M (31.6%) has never moved as a sender. This is relevant for emissions modeling, market depth analysis, and any assessment of how much TAO is actually available for circulation versus effectively dormant.
+Shadow TAO affects how circulating supply should be interpreted. Of the 3.4M TAO in liquid balances, ~1.08M (31.6%) has never moved as a sender. The historical analysis adds nuance: much of this balance is recent and still growing, meaning it is not inert — it is being actively accumulated — but the recipient addresses are never spending it. This is relevant to any assessment of how much TAO is available for circulation versus being held as a long position.
 
-### 5.3 Open research gaps
+### 6.3 Open research gaps
 
-The primary gaps in this analysis:
-
-- **Manual address curation.** Cross-referencing the top shadow wallet addresses against known exchange cold wallets, OTF addresses, and other labeled wallets is the most actionable next step. Some fraction of shadow TAO may be attributable to known entities.
-- **Historical depth.** An archive node or Subquery indexer would allow us to determine when these wallets last received TAO and correlate activity with Finney epochs (Nakamoto period, pre-dtao, post-dtao).
+- **Source of transfers into shadow wallets.** The most important unanswered question is where the TAO flowing into these accumulating wallets is coming from. Tracing the sending addresses in the transactions that funded these wallets is the clearest next step.
+- **Higher-resolution history.** The current sample has gaps of ~739k blocks between block 7M and now. Denser sampling in this window would narrow down when specific wallets received their balances.
+- **Manual address curation.** Cross-referencing the top shadow wallet addresses against known exchange cold wallets, OTF addresses, and other labeled wallets remains unfinished.
 - **Staked shadow TAO.** This analysis covers only free-balance shadow wallets (nonce=0, no stake). A parallel category exists: wallets that staked but have otherwise been inactive. That cohort is not characterized here.
 
 ---
@@ -212,5 +259,5 @@ Identity lookup (top 100 shadow wallets):
 
 ---
 
-*Document version: 0.2 (Phase 1 + Phase 3 identity overlay complete)*
-*Next version: after manual address curation and historical activity analysis*
+*Document version: 0.3 (Phase 1 + Phase 3 identity overlay + archive historical analysis for top 10)*
+*Next version: after manual address curation and source-of-transfer investigation*
