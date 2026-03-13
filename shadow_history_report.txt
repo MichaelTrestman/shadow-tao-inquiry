@@ -1,0 +1,28 @@
+==========================================================================================
+SHADOW WALLET HISTORICAL BALANCE ANALYSIS — TOP 10
+Current block: 7,739,373
+==========================================================================================
+
+     Block    5FEA1FfUPwT3    5ChHTBkaE1Vg    5Dhf6WgqrfhV    5GUkyA37dHnc    5C9CxW9355u1    5Epz8SQ69FuZ    5GVKorR78gqQ    5HAe1pePzBuP    5DwksfKHHG5r    5CXHJRRk5WAQ
+------------------------------------------------------------------------------------------
+         1               0               0               0               0               0               0               0               0               0               0
+       100               0               0               0               0               0               0               0               0               0               0
+     1,000               0               0               0               0               0               0               0               0               0               0
+    10,000               0               0               0               0               0               0               0               0               0               0
+   100,000               0               0               0               0               0               0               0               0               0               0
+   500,000               0               0               0               0               0               0               0               0               0               0
+ 1,000,000               0               0               0               0               0               0               0               0               0               0
+ 2,000,000               0               0               0               0               0               0               0               0               0               0
+ 3,000,000               0               0               0               0               0               0               0               0               0               0
+ 4,000,000               0               0               0               0               0               0               0               0               0         9,800.0
+ 5,000,000               0               0               0               0               0               0               0               0               0         9,800.0
+ 6,000,000        23,837.8               0               0               0               0               0               0               0         9,570.6         9,800.0
+ 7,000,000        86,216.5        84,866.8        70,077.0        64,938.7        18,082.1               0               0               0        14,555.4         9,800.0
+ 7,739,373       141,002.5       129,499.3       117,065.0       108,063.8        96,009.4        90,843.5        56,342.0        17,850.0        15,131.8         9,800.0
+==========================================================================================
+
+Interpretation guide:
+  - A balance appearing at an early block means the wallet had TAO that early.
+  - A balance that appears suddenly at a specific block indicates when TAO arrived.
+  - A static balance across all sampled blocks = no movement since receipt.
+  - ERR = block state not available (pruned node)
