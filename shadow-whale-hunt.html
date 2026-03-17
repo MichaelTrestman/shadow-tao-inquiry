@@ -1,0 +1,965 @@
+<h1 id="shadow-whale-hunt-mapping-bittensors-unknown-holders">Shadow
+Whale Hunt: Mapping Bittensor’s Unknown Holders</h1>
+<p><em>An investigative blog and scripting tutorial. All scripts
+referenced are available in the <code>finney-investigation/</code>
+directory of this repository.</em></p>
+<p><strong>Data collected:</strong> block 7,738,261 (March 13, 2026)
+<strong>Archive history:</strong> 14 sample points from block 1 through
+block 7,739,373 <strong>Status:</strong> Active investigation —
+first-deposit senders identified; ongoing transfer attribution and
+sender profiling pending</p>
+<hr />
+<h2
+id="intro-as-a-tutorial-exercise-in-getting-to-know-bittensors-blockchain-architecture-this-page-uses-the-bittensor-python-sdk-and-blockchain-queries-to-investigats-the-ecology-of-bittensors-population-of-whales-that-is-the-ecosystems-largest-token-holders.">Intro
+As a tutorial exercise in getting to know Bittensor’s blockchain
+architecture, this page uses the Bittensor Python SDK and blockchain
+queries to investigat’s the ‘ecology’ of Bittensor’s population of
+‘whales’, that is, the ecosystem’s largest token holders.</h2>
+<p>We go into it with questions such as, how much of the total TAO and
+total overal <a
+href="../resources/glossary#stake-weight">stake-weight</a> is held by
+validators, subnet owners, miners, etc.</p>
+<p>one quesiton i was particularly interested in at the start was, how
+much of the tao ecosystem is held by what we might call ‘shadow whales’,
+large holders who have no known identity whatsoever. I here mean
+‘identity’ in any of the following senses: 1) an on-chain identity, as
+in a website and company name held in the ‘identity field’ on the
+bittensor blockchain. unfortunately, it’s usually only validators and sn
+owners that do this at all, and many of them don’t even do it. 2) a
+public off-chain identity, which could mean tweeting or sharing on your
+website what your key is. Startups that run multiple subnets may do
+this, for example https://latent.to/</p>
+<h3
+id="why-shadow-whales-are-a-potential-indicator-of-ecosystem-health-the-51-problem">Why
+shadow whales are a potential indicator of ‘ecosystem health’: The 51%
+Problem</h3>
+<p>Every proof-of-stake network lives or dies by one question: can we
+trust that the largest holders are acting in good faith?</p>
+<p>In Bittensor, the question is sharper than usual. TAO governs
+emission weights through the root network. Large holders who stake to
+validators shape which validators earn weight, which shapes what the
+network optimizes for. As on-chain governance matures — proposals,
+signaling mechanisms, vote-weighted parameters — the ownership
+distribution becomes the political map of the protocol itself.</p>
+<p>The nightmare scenario isn’t a dramatic exploit. It’s quieter: a
+single entity accumulates a large, undetected TAO position across
+multiple wallets that look independent on-chain, waits for a
+consequential governance moment, and deploys. No warning, no public
+identity, no accountability. You cannot verify it won’t happen because
+you cannot verify who holds what.</p>
+<p>This is the shadow whale problem: <strong>you cannot rule out a
+coordinated governance attack from dormant wallets because you don’t
+know who controls them.</strong></p>
+<p>The goal of this investigation is to make that uncertainty legible.
+Not to accuse anyone — the data we’re working with cannot establish
+intent — but to map the frontier between what can and cannot be known on
+the Finney chain, and to build the tooling to maintain that map over
+time.</p>
+<hr />
+<h2 id="the-toolkit">The Toolkit</h2>
+<p>Everything in this investigation runs against the Bittensor Python
+SDK (<code>bittensor</code>) and the Finney public and archive nodes via
+the substrate RPC. No private APIs, no indexer subscriptions, no
+scrapers. Just the chain.</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> bittensor <span class="im">as</span> bt</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Public node — current state</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>sub <span class="op">=</span> bt.Subtensor(network<span class="op">=</span><span class="st">&quot;finney&quot;</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Archive node — full block history</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>sub_archive <span class="op">=</span> bt.Subtensor(network<span class="op">=</span><span class="st">&quot;archive&quot;</span>)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># or: bt.Subtensor(network=&quot;wss://archive.chain.opentensor.ai&quot;)</span></span></code></pre></div>
+<p>The substrate interface under the hood is
+<code>async_substrate_interface</code>, which wraps standard Substrate
+JSON-RPC methods. Storage maps are queried with
+<code>sub.substrate.query_map(module, storage_function)</code> and
+single values with
+<code>sub.substrate.query(module, storage_function, params)</code>.
+Historical queries use <code>block_hash</code> parameters: every RPC
+method accepts a block hash, and the archive node keeps the full state
+at every block.</p>
+<p>All raw data is stored as JSONL or plain text files for
+reproducibility. The full pipeline:</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Script</th>
+<th>What it does</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>enumerate_wallets.py</code></td>
+<td>Streams all accounts + staking coldkeys from chain</td>
+<td><code>finney_accounts.jsonl</code>,
+<code>finney_staking_cks.txt</code>, <code>finney_meta.json</code></td>
+</tr>
+<tr>
+<td><code>analyze_wallets.py</code></td>
+<td>Classifies shadow wallets</td>
+<td><code>finney_shadow_wallets.jsonl</code>,
+<code>finney_summary.txt</code></td>
+</tr>
+<tr>
+<td><code>identity_lookup.py</code></td>
+<td>On-chain identity for top 100 shadow wallets</td>
+<td><code>finney_shadow_identified.jsonl</code>,
+<code>finney_shadow_top_report.txt</code></td>
+</tr>
+<tr>
+<td><code>top100_holders.py</code></td>
+<td>Role + identity analysis for top 100 by free balance</td>
+<td><code>top100_holders.jsonl</code>,
+<code>top100_holders_report.txt</code></td>
+</tr>
+<tr>
+<td><code>shadow_history.py</code></td>
+<td>Archive node balance sampling across 14 blocks</td>
+<td><code>shadow_history.json</code>,
+<code>shadow_history_report.txt</code></td>
+</tr>
+<tr>
+<td><code>find_first_transfer.py</code></td>
+<td>Binary search for first-funded block + sender attribution</td>
+<td><code>first_transfers.json</code>,
+<code>first_transfers_report.txt</code></td>
+</tr>
+<tr>
+<td><code>check_childkeys.py</code></td>
+<td>Childkey relationship check for shadow wallets</td>
+<td><code>childkey_check.json</code></td>
+</tr>
+<tr>
+<td><code>known_holders.py</code></td>
+<td>Enumerate all identity-registered + validator + SN-owner coldkeys
+with balances</td>
+<td><code>known_holders.json</code>,
+<code>known_holders_report.txt</code></td>
+</tr>
+<tr>
+<td><code>nonce_check.json</code></td>
+<td>Ad-hoc nonce query for positions #4 and #7 (not a script — raw
+JSON)</td>
+<td><code>nonce_check.json</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="phase-1-enumerating-the-chain">Phase 1: Enumerating the
+Chain</h2>
+<p>The first step is getting a complete picture of who holds what.
+Substrate chains store all account balances in
+<code>System.Account</code> — a storage map keyed by
+<code>AccountId</code> (32 bytes, encoded as SS58). You can stream the
+entire map in one call:</p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># enumerate_wallets.py — core loop</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> key, data <span class="kw">in</span> sub.substrate.query_map(<span class="st">&quot;System&quot;</span>, <span class="st">&quot;Account&quot;</span>):</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    free_tao <span class="op">=</span> data.value[<span class="st">&quot;data&quot;</span>][<span class="st">&quot;free&quot;</span>] <span class="op">/</span> <span class="dv">1_000_000_000</span>  <span class="co"># rao to TAO</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    nonce    <span class="op">=</span> data.value[<span class="st">&quot;nonce&quot;</span>]</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># key is an AccountId — encode to SS58 for human-readable form</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    ss58 <span class="op">=</span> ss58_encode(<span class="bu">bytes</span>(key[<span class="dv">0</span>]).<span class="bu">hex</span>(), ss58_format<span class="op">=</span><span class="dv">42</span>)</span></code></pre></div>
+<p><strong>What nonce tells us.</strong> In Substrate, every account has
+a nonce — a counter that increments each time that account signs and
+submits an extrinsic (transaction). Nonce = 0 means the account has
+never originated a transaction. It may have <em>received</em> TAO, but
+it has never sent anything, staked anything, or interacted with any
+pallet as a sender.</p>
+<p>Alongside the accounts, we pull the staking ledger:</p>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Who has any stake at all</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> key, _ <span class="kw">in</span> sub.substrate.query_map(<span class="st">&quot;SubtensorModule&quot;</span>, <span class="st">&quot;StakingColdkeys&quot;</span>):</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    staking_coldkeys.add(ss58_encode(<span class="bu">bytes</span>(key[<span class="dv">0</span>]).<span class="bu">hex</span>(), <span class="dv">42</span>))</span></code></pre></div>
+<p>And the chain totals for supply accounting:</p>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>liquid_supply <span class="op">=</span> sub.substrate.query(<span class="st">&quot;Balances&quot;</span>, <span class="st">&quot;TotalIssuance&quot;</span>).value <span class="op">/</span> <span class="fl">1e9</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>total_stake   <span class="op">=</span> sub.substrate.query(<span class="st">&quot;SubtensorModule&quot;</span>, <span class="st">&quot;TotalStake&quot;</span>).value <span class="op">/</span> <span class="fl">1e9</span></span></code></pre></div>
+<p><strong>Supply split at block 7,738,261</strong>
+(<code>finney_summary.txt</code>):</p>
+<pre><code>Block:                      7,738,261
+Total issuance:             3,401,428.01 TAO
+Total free balances (sum):  3,400,473.40 TAO
+Total staked (chain total): 7,337,639.83 TAO
+Accounted for:              10,738,113.23 TAO
+
+Total accounts:                  446,835
+  With stake:                     47,255
+  No stake:                      399,580
+  Ever sent a tx (nonce&gt;0):      406,424
+  Never sent a tx:                40,411</code></pre>
+<p>Staked TAO is <em>not</em> included in <code>TotalIssuance</code>.
+When TAO is staked on Bittensor, it moves out of the Balances pallet
+entirely — <code>Currency::withdraw</code> removes it from the free
+balance, and it is tracked separately in <code>SubtensorModule</code>.
+This is confirmed by the near-exact match between
+<code>TotalIssuance</code> and the sum of all individual free balances
+(~955 TAO difference, attributable to reserved/frozen balances).</p>
+<p>This partitioning has a direct implication for our investigation:
+<strong>if a wallet has a non-zero free balance and nonce = 0, its TAO
+cannot have come from staking rewards.</strong> Staking rewards go into
+the <code>SubtensorModule</code> stake ledger, not into free balance. To
+convert staked TAO to free balance requires an unstaking transaction —
+which would increment the nonce. A nonce-0 wallet with free balance
+received that balance via a direct <code>Balances.Transfer</code> from
+another account. Full stop.</p>
+<hr />
+<h2 id="phase-2-defining-shadow-wallets">Phase 2: Defining Shadow
+Wallets</h2>
+<p>With the full account set loaded, we classify:</p>
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># analyze_wallets.py — classification</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> ss58, free_tao, nonce <span class="kw">in</span> accounts:</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    has_stake <span class="op">=</span> ss58 <span class="kw">in</span> staking_coldkeys</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> nonce <span class="op">==</span> <span class="dv">0</span> <span class="kw">and</span> <span class="kw">not</span> has_stake <span class="kw">and</span> free_tao <span class="op">&gt;</span> <span class="fl">1.0</span>:</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>        shadow_wallets.append(...)</span></code></pre></div>
+<p>A <strong>shadow wallet</strong> meets all three conditions:</p>
+<ol type="1">
+<li><strong>Nonce = 0</strong> — has never sent a transaction</li>
+<li><strong>No stake</strong> — not in <code>StakingColdkeys</code></li>
+<li><strong>Free balance &gt; 1 TAO</strong> — above the dust
+threshold</li>
+</ol>
+<p>This definition has a real limitation: nonce = 0 is consistent with
+intentional cold storage. Someone can generate a key offline, send TAO
+to it, and hold it indefinitely without ever signing. For individual
+wallets, that’s a completely reasonable explanation. The investigation
+becomes interesting when you look at the distribution collectively and
+trace the funding history.</p>
+<p><strong>Shadow wallet totals at block 7,738,261</strong>
+(<code>finney_summary.txt</code>):</p>
+<pre><code>Shadow wallets (&gt;1 TAO, nonce=0, no stake):
+  Count:                          14,032
+  TAO held:                 1,075,902.89 TAO
+  % of free supply:                31.6%
+
+Large shadow (&gt;1000 TAO, nonce=0, no stake):
+  Count:                              50
+  TAO held:                   850,237.96 TAO</code></pre>
+<p>Over 30% of all freely circulating TAO has never moved as a
+sender.</p>
+<hr />
+<h2 id="sunny-whales-vs.-shadow-whales">Sunny Whales vs. Shadow
+Whales</h2>
+<p>Not all large holders are opaque. Bittensor has real <strong>sunny
+whales</strong> — large holders who are publicly attributable.
+Understanding them establishes the baseline that makes shadow wallets
+anomalous.</p>
+<h3 id="sources-of-attribution">Sources of attribution</h3>
+<p><strong>On-chain identity</strong> is the most direct: any coldkey
+can register a name, URL, GitHub, Discord, and Twitter via
+<code>SubtensorModule.IdentitiesV2</code>. Querying it is
+straightforward:</p>
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># identity_lookup.py</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> sub.substrate.query(<span class="st">&quot;SubtensorModule&quot;</span>, <span class="st">&quot;IdentitiesV2&quot;</span>, [ss58])</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> result <span class="kw">and</span> result.value:</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    name <span class="op">=</span> result.value.get(<span class="st">&quot;name&quot;</span>, <span class="st">&quot;&quot;</span>)</span></code></pre></div>
+<p>Registering an identity requires signing a transaction. By
+definition, no shadow wallet can have on-chain identity — it would
+immediately disqualify them (nonce would be &gt; 0).</p>
+<p><strong>Validator and delegate identity.</strong> Every validator
+registers a hotkey and associates it with a coldkey. Named validators
+can register delegate identities — human-readable names attached to
+their hotkey. Query all delegates:</p>
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>delegates <span class="op">=</span> sub.get_delegates()</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Each DelegateInfo has: hotkey_ss58, owner_ss58 (coldkey), validator_permits, etc.</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>delegate_identities <span class="op">=</span> sub.get_delegate_identities()  <span class="co"># queries IdentitiesV2 for all delegates</span></span></code></pre></div>
+<!-- todo: right... so who actually are they, do this, don't just talk about it! validators can't be shadow whales because we know whadow whales don't hold stake (right? i think this is in the check that fetches shadow whale ids to start with, please confirm)-->
+<p><strong>Subnet ownership.</strong> Every subnet has an owner coldkey,
+queryable from <code>get_all_subnets_info()</code>. Subnet owners
+frequently self-identify through websites, GitHub repositories, and
+community channels, even if they haven’t registered on-chain
+identity.</p>
+<!-- TODO: who are the owners of the biggest subnets? are these massive whale keys or do they transfer out lots of liquidity to other wallets? let's do a script to ascertain this for the top 10 subnets -->
+<p><strong>Off-chain attribution.</strong> Some wallets are attributable
+through public disclosure: a founder sharing their address in Discord,
+an exchange publishing cold wallet addresses for audit purposes, or
+community-maintained labels on explorers like <a
+href="https://taostats.io">taostats.io</a>.</p>
+<h3 id="known-sunny-whales">Known sunny whales</h3>
+<p><strong>Binance</strong>
+(<code>5Hd2ze5ug8n1bo3UCAcQsf66VNjKqGos8u6apNfzcU86pg4N</code>) is the
+largest single TAO holder by free balance with <strong>868,020
+TAO</strong>. It is an exchange custody cold wallet. Binance has
+on-chain identity registered (visible on taostats), making it the
+clearest sunny whale: large, known, and traceable. Exchange cold wallets
+are identifiable as sunny for behavioral reasons too — they grow
+<em>and</em> shrink as customers deposit and withdraw, and they’re
+publicly documented. This is categorically different from the
+monotonically growing shadow wallets examined below.</p>
+<p><strong>Jacob Robert Steeves (Const)</strong>, Bittensor co-founder,
+has publicly shared his coldkey
+<code>5GH2aUTMRUh1RprCgH4x3tRyCaKeUi5BfmYCfs1NARA8R54n</code> in
+community channels. In the free-balance ranking, this wallet appears at
+<strong>position #66 with 3,270 TAO free balance</strong> — a number
+that would be misleading without context. This is his <em>free balance
+only</em> in his publicly known wallet. Const reportedly ranks near #2
+on taostats by total holdings; the discrepancy is because the vast
+majority of his TAO is staked. His position at #66 in the free-balance
+ranking is a feature of how the data is organized, not a finding about
+his total wealth. The small free balance is itself informative: Const is
+actively participating in the network (his stake is deployed), not
+sitting on a liquid cold hoard.</p>
+<p><strong>Kraken</strong> validates on the Finney network, which means
+their hotkey is registered on-chain. The path from hotkey →
+<code>DelegateInfo</code> → <code>owner_ss58</code> (coldkey) → balance
+is queryable. Registered validators with public brand identities
+represent the highest-confidence sunny whales: their stake, activity,
+and identity all corroborate each other.</p>
+<p><strong>The Opentensor Foundation</strong> holds treasury and
+ecosystem TAO, with addresses referenced in governance and community
+contexts.</p>
+<h3 id="the-contrast">The contrast</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Sunny whale</th>
+<th>Shadow whale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nonce</td>
+<td>&gt; 0</td>
+<td>= 0</td>
+</tr>
+<tr>
+<td>Stake</td>
+<td>Present (usually)</td>
+<td>Absent</td>
+</tr>
+<tr>
+<td>On-chain identity</td>
+<td>Registered</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Hotkey / subnet ownership</td>
+<td>Common</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Balance pattern</td>
+<td>Dynamic — grows and shrinks</td>
+<td>Monotonic — only grows</td>
+</tr>
+<tr>
+<td>Governance legibility</td>
+<td>Reasonably high</td>
+<td>Zero</td>
+</tr>
+</tbody>
+</table>
+<p>The balance pattern row deserves emphasis. Exchange cold wallets,
+validator coldkeys, and active ecosystem participants all show
+bidirectional balance changes — funds come in and go out. Every shadow
+whale in the top 10 shows a monotonically increasing balance from its
+first appearance to the analysis date. This rules out exchange custody
+for the largest wallets and is inconsistent with active operational
+use.</p>
+<hr />
+<h2 id="phase-3-the-top-100-free-balance-holders">Phase 3: The Top 100
+Free-Balance Holders</h2>
+<p><code>top100_holders.py</code> was designed to rank all wallets by
+total TAO (free + staked), but the staked balance query —
+<code>SubtensorModule.TotalColdkeyStake</code> — returned zero for every
+wallet. With dTAO, stake lives in per-subnet alpha pools rather than a
+single global ledger, so <code>TotalColdkeyStake</code> appears to be
+incomplete or deprecated in the current model. All 100 wallets show
+<code>staked = 0</code>. The report is therefore a ranking by
+<strong>free balance only</strong>, not total holdings. This matters:
+the free-balance top 100 and the total-holdings top 100 are different
+populations. Here is what the data shows for the top holders ranked by
+<strong>free balance</strong>:</p>
+<p>The first 15 rows of <code>top100_holders_report.txt</code> (full
+file in the repo):</p>
+<pre><code>#    SS58 Address                                           Free     Staked      Total  Roles / Identity
+------------------------------------------------------------------------------------------
+1    5Hd2ze5ug8n1bo3UCAcQsf66VNjKqGos8u6apNfzcU86pg4N    868,020          0    868,020  [pure_holder]
+2    5FEA1FfUPwT3K4zTsYbQx5X1G9R2ZjYLyFv12xBQxW9QgoCL    141,003          0    141,003  [pure_holder]
+3    5ChHTBkaE1VgK5NX59uHuZoK8VQShojKBB1sGfXaZQpxVDCi    129,499          0    129,499  [pure_holder]
+4    5FqBL928choLPmeFz5UVAvonBD5k7K2mZSXVC9RkFzLxoy2s    122,232          0    122,232  [pure_holder]
+5    5Dhf6WgqrfhVyFCGqK4G5utro2jepscwryMhLHtpMfopxweC    117,065          0    117,065  [pure_holder]
+6    5GUkyA37dHnc1rEijDtvBe5yYNCpaNjaHGqB7DY9Kb2KgSj3    108,064          0    108,064  [pure_holder]
+7    5H9brHhMA1km3Dp3YCx75oaimgxEYScxCfxbzQRZ3gHk9x3L     98,102          0     98,102  [pure_holder]
+8    5C9CxW9355u1sqy6Np85FfGssJAdyA8cAsjjV9YP8aaLvjEY     93,908          0     93,908  [pure_holder]
+9    5Epz8SQ69FuZRLyjCAicn8i71SdyEYaWR5rZ5a1i1bgoxGaQ     90,843          0     90,843  [pure_holder]
+10   5ELWnR5A7DUmmqHsYPA3iZMFu1BX3gceruEqFPtsmTkCqR7J     81,996          0     81,996  [pure_holder]
+...
+35   5GhjixW4b6S8MxC4hb2W8xud3U4gw4rUGrqEjTgfSsa2pvPN     12,003          0     12,003  [pure_holder]
+36   5EE7eFjdM5tPjizRywj25rK82GH4eDQCxh3PT4BZgkaWBuvn     12,003          0     12,003  [pure_holder]
+37   5GEQHK4XnfJAzqVJQ1twRiNdfTEBTPmCMcmmLpRY3qrJkMzJ     12,003          0     12,003  [pure_holder]
+38   5GgeiyNgHu7dL961ZDFVpStm53VeqQVoSCZmM4Xt4T1p27ta     12,003          0     12,003  [pure_holder]
+39   5HAZamWxtVYNkukfc8cEWDrk64JLRncuG1rC7t4Pcm3BVVAt     12,003          0     12,003  [pure_holder]
+...
+66   5GH2aUTMRUh1RprCgH4x3tRyCaKeUi5BfmYCfs1NARA8R54n      3,270          0      3,270  [pure_holder]
+...
+83   5GmHcpW2tQ4HfRqCfFCEkjfCnnAFQB29AeKhBYMhqWk5e2Xw      2,171          0      2,171  [validator+subnet_owner] SN[...]
+...
+91   5FqACMtcegZxxopgu1g7TgyrnyD8skurr9QDPLPhxNQzsThe       1,885          0      1,885  [validator+miner+subnet_owner] SN[51]</code></pre>
+<p>Role summary from the same file:</p>
+<pre><code>ROLE SUMMARY (top 100 wallets):
+  pure_holder         98 wallets     2,805,077 TAO  (26.1% of supply)
+  validator            2 wallets         4,038 TAO  (0.0% of supply)
+  subnet_owner         2 wallets         4,038 TAO  (0.0% of supply)
+  miner                1 wallets         1,885 TAO  (0.0% of supply)
+
+Identity coverage (top 100): 0/100 have on-chain identity</code></pre>
+<p><strong>On-chain identity: expected result.</strong> Very few of the
+top 100 free-balance holders have on-chain coldkey identity registered.
+This is not a surprising finding: the identity pallet is primarily used
+by validators and subnet owners as a signaling mechanism for their
+hotkey-linked coldkeys. There is no norm or expectation that regular
+holders register identity, and the script queries coldkey identity
+specifically — hotkey delegate identity is a separate registration. The
+absence of registered identity in this list means nothing by itself.</p>
+<p>Two wallets are attributable from off-chain sources (Binance and
+Const). The remaining 98 are unknown, but that is the normal state for
+large holders on a permissionless chain.</p>
+<p><strong>The real top-line finding: role distribution.</strong> 98 out
+of 100 of the largest free-balance holders are <code>pure_holder</code>
+— no stake, no validator role, no subnet ownership. Only 2 are active
+network participants (positions #83 and #91 with a combined 4,038 TAO in
+free balance). The free-balance top of the chain is passive holders, not
+operators, by an overwhelming margin.</p>
+<p><strong>Positions #4 and #7 are not shadow wallets.</strong> Position
+#4 (<code>5FqBL928...</code>, 122k TAO) and position #7
+(<code>5H9brHhM...</code>, 98k TAO) were not in our original top-10
+shadow wallet analysis. A direct nonce query
+(<code>nonce_check.json</code>, block 7,760,196) confirms why:</p>
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode json"><code class="sourceCode json"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;query_block&quot;</span><span class="fu">:</span> <span class="dv">7760196</span><span class="fu">,</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;wallets&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">{</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&quot;ss58&quot;</span><span class="fu">:</span> <span class="st">&quot;5FqBL928choLPmeFz5UVAvonBD5k7K2mZSXVC9RkFzLxoy2s&quot;</span><span class="fu">,</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&quot;free_balance_rank&quot;</span><span class="fu">:</span> <span class="dv">4</span><span class="fu">,</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&quot;nonce&quot;</span><span class="fu">:</span> <span class="dv">181845</span><span class="fu">,</span></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&quot;free_tao&quot;</span><span class="fu">:</span> <span class="fl">122886.979737487</span></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">}</span><span class="ot">,</span></span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">{</span></span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&quot;ss58&quot;</span><span class="fu">:</span> <span class="st">&quot;5H9brHhMA1km3Dp3YCx75oaimgxEYScxCfxbzQRZ3gHk9x3L&quot;</span><span class="fu">,</span></span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&quot;free_balance_rank&quot;</span><span class="fu">:</span> <span class="dv">7</span><span class="fu">,</span></span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&quot;nonce&quot;</span><span class="fu">:</span> <span class="dv">111</span><span class="fu">,</span></span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&quot;free_tao&quot;</span><span class="fu">:</span> <span class="fl">95895.052102143</span></span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">}</span></span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>  <span class="ot">]</span></span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div>
+<p>Nonce 181,845 on <code>5FqBL928...</code> is extraordinarily high —
+this is a very active wallet, possibly a hot wallet or automated
+exchange address. Nonce 111 on <code>5H9brHhM...</code> is also clearly
+active. Neither qualifies as a shadow wallet. Both are large
+free-balance holders who transact on-chain but hold no stake and have no
+registered network role — a different category from shadow wallets, and
+not a governance concern of the same kind.</p>
+<p><strong>The 12,003 TAO cluster.</strong> Positions 36–39 in the top
+100 show four wallets each holding exactly <strong>12,003
+TAO</strong>:</p>
+<ul>
+<li><code>5EE7eFjdM5...</code></li>
+<li><code>5GEQHK4Xn...</code></li>
+<li><code>5GgeiyNgH...</code></li>
+<li><code>5HAZamWxt...</code></li>
+</ul>
+<p>Four wallets with an identical, non-round balance is not coincidence.
+This is almost certainly one entity distributing TAO across multiple
+addresses in equal tranches. A single $12,003 TAO event divided four
+ways would explain it. Combined: 48,012 TAO under coordinated
+single-entity control, invisible on-chain because the addresses have
+never interacted with each other.</p>
+<p><strong>Role distribution among top 100:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Count</th>
+<th>TAO held</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pure_holder</td>
+<td>98</td>
+<td>2,805,077</td>
+</tr>
+<tr>
+<td>validator + subnet_owner</td>
+<td>2</td>
+<td>4,038</td>
+</tr>
+</tbody>
+</table>
+<p>The two validators appear at positions #83 and #91 — near the bottom
+of the top 100 by free balance. This makes structural sense: active
+validators hold most of their wealth as <em>staked</em> TAO, not free
+balance. The free-balance top 100 is dominated by passive holders, not
+network operators.</p>
+<hr />
+<h2 id="the-liquidity-asymmetry-argument">The Liquidity Asymmetry
+Argument</h2>
+<p>The free-balance framing surfaces a structural dynamic that matters
+more than the headline number alone.</p>
+<p>Shadow whales dominating the <strong>liquid supply</strong> is a
+different kind of threat than dominating total holdings. The distinction
+hinges on speed of deployment.</p>
+<p><strong>Sunny whales are locked in.</strong> Const, OTF, and active
+validators hold most of their TAO as <strong>staked balance</strong> —
+it is deployed in the network earning emissions and directing validator
+weights. To convert staked TAO to deployable capital, they must submit
+unstaking transactions. Those transactions are on-chain, time-delayed
+(there is an unstaking period), and visible in the mempool before they
+settle. A sudden large unstaking event would be detectable — and would
+itself signal that something consequential is being prepared.</p>
+<p><strong>Shadow whales are already liquid.</strong> Their holdings are
+entirely <strong>free balance</strong>. No prior on-chain action is
+required to deploy them. In a governance dispute — a token vote, a
+parameter change, a hostile validator election — shadow whales could act
+in the same block the vote opens. No warning, no preparatory on-chain
+footprint.</p>
+<p>This reframes the 51% problem from the introduction. The nightmare
+scenario isn’t just about who holds the most TAO in aggregate. It is
+about who can act <strong>fastest</strong> with <strong>least
+warning</strong>. If shadow wallets together control a large fraction of
+immediately deployable TAO, they hold a structural first-mover advantage
+in any sudden governance contest, regardless of whether they are
+numerically outnumbered by staked holders in total supply.</p>
+<p>The 31.6% shadow wallet figure — over 1,075,000 TAO in liquid,
+nonce-0 addresses — should be read in this light. It is not just a
+curiosity about cold storage habits. It is a measure of how much voting
+power could materialize with zero prior on-chain signal.</p>
+<hr />
+<h2 id="phase-4-historical-investigation">Phase 4: Historical
+Investigation</h2>
+<p><code>shadow_history.py</code> connects to the Finney <strong>archive
+node</strong> and queries each shadow whale’s balance at 14 sample
+points across the full chain history:</p>
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>sub <span class="op">=</span> bt.Subtensor(network<span class="op">=</span><span class="st">&quot;archive&quot;</span>)</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>sample_blocks <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">100</span>, <span class="dv">1_000</span>, <span class="dv">10_000</span>, <span class="dv">100_000</span>, <span class="dv">500_000</span>,</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>                 <span class="dv">1_000_000</span>, <span class="dv">2_000_000</span>, <span class="dv">3_000_000</span>, <span class="dv">4_000_000</span>,</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>                 <span class="dv">5_000_000</span>, <span class="dv">6_000_000</span>, <span class="dv">7_000_000</span>, current_block]</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> blk <span class="kw">in</span> sample_blocks:</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>    block_hash <span class="op">=</span> sub.substrate.get_block_hash(block_id<span class="op">=</span>blk)</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>    result <span class="op">=</span> sub.substrate.query(<span class="st">&quot;System&quot;</span>, <span class="st">&quot;Account&quot;</span>, [ss58], block_hash<span class="op">=</span>block_hash)</span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>    free_tao <span class="op">=</span> result.value[<span class="st">&quot;data&quot;</span>][<span class="st">&quot;free&quot;</span>] <span class="op">/</span> <span class="fl">1e9</span></span></code></pre></div>
+<p>Block timing reference (at ~12 seconds/block):</p>
+<table>
+<thead>
+<tr>
+<th>Block</th>
+<th>Approx. date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4,000,000</td>
+<td>September 2024 — just before dTAO launch</td>
+</tr>
+<tr>
+<td>6,000,000</td>
+<td>~July 2025</td>
+</tr>
+<tr>
+<td>7,000,000</td>
+<td>~December 2025</td>
+</tr>
+<tr>
+<td>7,739,373</td>
+<td>March 2026 (analysis date)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key finding: every top shadow whale had zero balance through
+block 5,000,000.</strong></p>
+<p>None of these wallets are legacy artifacts from Bittensor’s genesis
+era or the original mining period. The shadow whale phenomenon is
+post-dTAO. Something about the network’s transformation in late 2024 —
+or the attention and liquidity it brought — appears to have triggered
+large-scale accumulation into nonce-0 addresses.</p>
+<p>Full output from <code>shadow_history_report.txt</code> (block
+7,739,373):</p>
+<pre><code>     Block    5FEA1FfUPwT3    5ChHTBkaE1Vg    5Dhf6WgqrfhV    5GUkyA37dHnc    5C9CxW9355u1    5Epz8SQ69FuZ    5GVKorR78gqQ    5HAe1pePzBuP    5DwksfKHHG5r    5CXHJRRk5WAQ
+         1               0               0               0               0               0               0               0               0               0               0
+       100               0               0               0               0               0               0               0               0               0               0
+     1,000               0               0               0               0               0               0               0               0               0               0
+    10,000               0               0               0               0               0               0               0               0               0               0
+   100,000               0               0               0               0               0               0               0               0               0               0
+   500,000               0               0               0               0               0               0               0               0               0               0
+ 1,000,000               0               0               0               0               0               0               0               0               0               0
+ 2,000,000               0               0               0               0               0               0               0               0               0               0
+ 3,000,000               0               0               0               0               0               0               0               0               0               0
+ 4,000,000               0               0               0               0               0               0               0               0               0         9,800.0
+ 5,000,000               0               0               0               0               0               0               0               0               0         9,800.0
+ 6,000,000        23,837.8               0               0               0               0               0               0               0         9,570.6         9,800.0
+ 7,000,000        86,216.5        84,866.8        70,077.0        64,938.7        18,082.1               0               0               0        14,555.4         9,800.0
+ 7,739,373       141,002.5       129,499.3       117,065.0       108,063.8        96,009.4        90,843.5        56,342.0        17,850.0        15,131.8         9,800.0</code></pre>
+<p>Nine of the ten wallets show zero balance at block 4,000,000
+(September 2024, just before dTAO launch) and zero at block 5,000,000.
+The exception is <code>5CXHJRRk...</code>, which had exactly 9,800 TAO
+at block 4,000,000 and has not changed since — the profile of a pre-dTAO
+cold storage position. The other nine are post-dTAO accumulations.</p>
+<hr />
+<h2 id="phase-5-the-funding-investigation">Phase 5: The Funding
+Investigation</h2>
+<p>Knowing <em>when</em> each wallet was first funded is useful. Knowing
+<em>who</em> funded it is the prize.</p>
+<p><code>find_first_transfer.py</code> uses binary search against the
+archive node to narrow down the exact first-funded block for each
+wallet, then reads the block’s events to find the sending address:</p>
+<div class="sourceCode" id="cb15"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> find_first_nonzero_block(ss58, lo, hi):</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;Binary search: return smallest block where free_balance &gt; 0.&quot;&quot;&quot;</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> lo <span class="op">&lt;</span> hi <span class="op">-</span> <span class="dv">1</span>:</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>        mid <span class="op">=</span> (lo <span class="op">+</span> hi) <span class="op">//</span> <span class="dv">2</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>        bh  <span class="op">=</span> sub.substrate.get_block_hash(block_id<span class="op">=</span>mid)</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>        bal <span class="op">=</span> get_free_balance(ss58, bh)</span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> bal <span class="op">&gt;</span> <span class="dv">0</span>:</span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>            hi <span class="op">=</span> mid</span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>            lo <span class="op">=</span> mid</span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> hi</span></code></pre></div>
+<p>This is efficient — it takes ~17 RPC calls to narrow a
+1,000,000-block range to a single block.</p>
+<p><strong>First-funded blocks confirmed for all 10 wallets:</strong>
+the binary search worked. Exact block numbers are in
+<code>first_transfers.json</code>.</p>
+<p><strong>The event lookup required three debugging
+iterations.</strong> This is documented here because it demonstrates a
+real pitfall when reading Substrate events via the bittensor SDK — the
+kind of thing that isn’t obvious from the docs.</p>
+<p><strong>Bug v1:</strong> The original script accessed events as
+<code>ev.value["event"]["module_id"]</code>. This was wrong —
+<code>get_events()</code> in this version of bittensor returns plain
+dicts with top-level fields: <code>ev["module_id"]</code>,
+<code>ev["event_id"]</code>, <code>ev["attributes"]</code>.</p>
+<p><strong>Bug v2:</strong> After fixing the access pattern, the script
+tried to decode <code>attributes["to"]</code> with
+<code>decode_account_id()</code>, assuming the field would be raw bytes.
+Also wrong — the RPC layer already decodes <code>AccountId</code> fields
+to SS58 strings. <code>attributes["from"]</code> and
+<code>attributes["to"]</code> are ready to use directly.</p>
+<p><strong>v3 (current <code>find_first_transfer.py</code>):</strong>
+Uses <code>ev["module_id"]</code> and <code>attrs["to"]</code> directly.
+The complete bug history is in the script’s docstring.</p>
+<div class="sourceCode" id="cb16"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># v1 — wrong nesting</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>module <span class="op">=</span> ev.value[<span class="st">&quot;event&quot;</span>][<span class="st">&quot;module_id&quot;</span>]   <span class="co"># AttributeError</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="co"># v2 — unnecessary decode</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>to_addr <span class="op">=</span> decode_account_id(attrs[<span class="st">&quot;to&quot;</span>])  <span class="co"># TypeError: string without encoding</span></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a><span class="co"># v3 — correct</span></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>module  <span class="op">=</span> ev[<span class="st">&quot;module_id&quot;</span>]</span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>to_addr <span class="op">=</span> attrs[<span class="st">&quot;to&quot;</span>]                      <span class="co"># already an SS58 string</span></span></code></pre></div>
+<p><strong>Complete results</strong>
+(<code>first_transfers_report.txt</code>,
+<code>first_transfers.json</code>):</p>
+<pre><code>Wallet: 5FEA1FfUPwT3K4zTsYbQx5X1G9R2ZjYLyFv12xBQxW9QgoCL
+  First funded at block: 5,946,516    Initial deposit: 1,615.857 TAO
+  Sender:  5EiXej3AwjKqb9mjQAf29JG5HJf9Dwtt8CjvDqA8biprWTiN  (2 txs: 923.44 + 692.42)
+
+Wallet: 5ChHTBkaE1VgK5NX59uHuZoK8VQShojKBB1sGfXaZQpxVDCi
+  First funded at block: 6,084,503    Initial deposit: 196.358 TAO
+  Sender:  5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E
+
+Wallet: 5Dhf6WgqrfhVyFCGqK4G5utro2jepscwryMhLHtpMfopxweC
+  First funded at block: 6,581,276    Initial deposit: 256.505 TAO
+  Sender:  5EiXej3AwjKqb9mjQAf29JG5HJf9Dwtt8CjvDqA8biprWTiN   ← same as wallet 1
+
+Wallet: 5GUkyA37dHnc1rEijDtvBe5yYNCpaNjaHGqB7DY9Kb2KgSj3
+  First funded at block: 6,659,270    Initial deposit: 247.821 TAO
+  Sender:  5FV99mBYw3tYrMTXXe52PDa69an1AE19aTrpnB4kzxW73yUj
+
+Wallet: 5C9CxW9355u1sqy6Np85FfGssJAdyA8cAsjjV9YP8aaLvjEY
+  First funded at block: 6,784,524    Initial deposit: 632.937 TAO
+  Sender:  5EiXej3AwjKqb9mjQAf29JG5HJf9Dwtt8CjvDqA8biprWTiN   ← same as wallets 1, 3
+
+Wallet: 5Epz8SQ69FuZRLyjCAicn8i71SdyEYaWR5rZ5a1i1bgoxGaQ
+  First funded at block: 7,061,941    Initial deposit: 1,026.481 TAO
+  Sender:  5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E   ← same as wallet 2
+
+Wallet: 5GVKorR78gqQCV6mrWMWX95hHG93ZaRAUShZVBNT768dvqv8
+  First funded at block: 7,066,018    Initial deposit: 8,968.653 TAO
+  Sender:  5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E   ← same as wallets 2, 6
+  (9 transfers of exactly 996.517 TAO each — same block)
+
+Wallet: 5HAe1pePzBuPqsF6BpTGN8vCngvKKJaRZ2HkHwFmJgWgAzcf
+  First funded at block: 7,563,740    Initial deposit: 850.000 TAO
+  Sender:  5GBnPzvPghS8AuCoo6bfnK7JUFHuyUhWSFD4woBNsKnPiEUi
+
+Wallet: 5DwksfKHHG5rURh9jpGaq87m5k3Jn8BJbY9geeX7zTGQD8Pr
+  First funded at block: 5,217,006    Initial deposit: 0.220 TAO
+  Sender:  5DaH7esryhVaKThgrT2d4BhNdkqoomK2m5Gpkr52nUmYm72n
+
+Wallet: 5CXHJRRk5WAQ8hTkzRDEK89pbsZD2e4Lu7KBTFrHcUQ6GZvz
+  First funded at block: 3,766,862    Initial deposit: 0.025 TAO
+  Sender:  5FqBL928choLPmeFz5UVAvonBD5k7K2mZSXVC9RkFzLxoy2s   ← free-balance rank #4, nonce 181,845</code></pre>
+<p><strong>Sender clustering:</strong> two addresses account for 6 of
+the 10 first deposits:</p>
+<table>
+<thead>
+<tr>
+<th>Sender</th>
+<th>Funded wallets (first deposit)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>5EiXej3...</code></td>
+<td>#1, #3, #5</td>
+</tr>
+<tr>
+<td><code>5DunDrF...</code></td>
+<td>#2, #6, #7</td>
+</tr>
+<tr>
+<td><code>5FqBL928...</code> (rank #4)</td>
+<td>#10</td>
+</tr>
+<tr>
+<td><code>5FV99mB...</code></td>
+<td>#4</td>
+</tr>
+<tr>
+<td><code>5GBnPzv...</code></td>
+<td>#8</td>
+</tr>
+<tr>
+<td><code>5DaH7es...</code></td>
+<td>#9</td>
+</tr>
+</tbody>
+</table>
+<p>This establishes that at minimum two distinct entities (those
+controlling <code>5EiXej3</code> and <code>5DunDrF</code>) each seeded
+multiple shadow wallets. Whether a single controller operates both
+sender addresses is not yet determinable from first-deposit data alone.
+The next step is tracing the full inbound transfer history of each
+shadow wallet and the outbound history of the two dominant sender
+addresses.</p>
+<hr />
+<h2 id="phase-6-known-holders-validators-and-subnet-owners">Phase 6:
+Known Holders — Validators and Subnet Owners</h2>
+<p><code>known_holders.py</code> enumerates every address that is either
+(a) registered in <code>IdentitiesV2</code>, (b) a delegate validator
+coldkey, or (c) a subnet owner coldkey — then fetches free balance and
+<code>TotalColdkeyStake</code> for each. This builds the population of
+“known” TAO holders against which shadow wallets can be compared.</p>
+<p>Results from <code>known_holders_report.txt</code> (block
+7,760,166):</p>
+<pre><code>Addresses with on-chain identity or network role: 2,369
+
+VALIDATORS vs SUBNET OWNERS COMPARISON
+Group                 Count   Total Free TAO  Total Stake TAO     Avg Free
+  Validators           1966           14,426                0            7
+  SN Owners             129            7,309                0           57
+  Both (overlap)        124            7,087                0           57
+
+Note: stake figures from TotalColdkeyStake — may undercount dTAO alpha pool stake.</code></pre>
+<p><strong>Key structural finding:</strong> The entire population of
+1,966 validator coldkeys holds a combined <strong>14,426 TAO in free
+balance</strong> — an average of 7 TAO each. The 129 subnet owner
+coldkeys hold 7,309 TAO total. Combined, the entire attributable network
+operator class holds less than 22,000 TAO in freely deployable
+balance.</p>
+<p>For comparison: shadow wallets hold <strong>1,075,903 TAO</strong> in
+free balance. That is <strong>75× the entire validator/subnet-owner
+ecosystem combined</strong>, in liquid, unattributed capital.</p>
+<p><strong>The overlap is near-total:</strong> 124 of 129 subnet owners
+are also validators. Subnet ownership and validation are effectively the
+same population.</p>
+<p><strong>Stake shows zero across the board</strong> — confirming that
+<code>TotalColdkeyStake</code> does not capture dTAO alpha-pool stake.
+The real staked TAO for validators (which accounts for the bulk of the
+7.3M staked on chain) is held in per-subnet pools, not in this legacy
+ledger. This means the “Stake TAO” column in
+<code>known_holders_report.txt</code> is not usable for total-holdings
+comparison and should be ignored.</p>
+<p><strong>Top named validators by free balance</strong> (from
+<code>known_holders_report.txt</code>):</p>
+<pre><code>Name                               Free TAO    Coldkey
+  Owner51                             1,941    5FqACMtcegZxxopgu1g7TgyrnyD8skurr9QDPLPhxNQzsThe
+  Sportstensor                        1,403    5FCSevLkofmKZRixMawp6jyyjBty1AeSCLa7N5Fv892DYkXX
+  FlameWire | SN97                      600    5EXSiTySWQiuzowhogXzfCr4Xn45CW3oMELWGTxFEfQCTy86
+  Tao Bridge                            540    5HiveMEoWPmQmBAb8v63bKPcFhgTGCmST1TVZNvPHSTKFLCv
+  Crucible Labs                         486    5Eq8b9p6zJMjEXyH9sX4DRMYspnUyorEKq3Zmha1WN6AC4sf
+  CliqueAI                              273    5DqEjRLyNN8k3WbEXhA36tyGG4YpWyPEcVSTa47XxspNHhc3
+  Kraken                                 10    5FHxxe8ZKYaNmGcSLdG5ekxXeZDhQnk9cbpHdsJW8RunGpSs
+  Openτensor Foundaτion                  23    5HBtpwxuGNL1gwzwomwR7sjwUt8WXYSuWcLYN6f9KpTZkP4k
+  const (SN120 owner)                    91    5Fc3ZZQAYB3SPXKcFnd1WJeyQvArSZZeB6LU1rb7zvQ6XvDh</code></pre>
+<p>Notable: <strong>Kraken</strong>
+(<code>5FHxxe8ZKYaNmGcSLdG5ekxXeZDhQnk9cbpHdsJW8RunGpSs</code>) holds
+only 10 TAO in free balance, confirming that their TAO is overwhelmingly
+in stake. <strong>OTF</strong> (<code>Openτensor Foundaτion</code>)
+holds 23 TAO free. These are institutions with significant total
+holdings whose liquid positions are nearly zero — exactly the pattern
+the liquidity asymmetry argument predicts.</p>
+<hr />
+<h2 id="patterns-and-what-they-suggest">Patterns and What They
+Suggest</h2>
+<p>With sender attribution now in hand, the pattern picture is much
+clearer.</p>
+<p><strong>Two funders, six wallets.</strong> <code>5EiXej3...</code>
+made the first deposits into wallets 1, 3, and 5.
+<code>5DunDrF...</code> made the first deposits into wallets 2, 6, and
+7. These are the two dominant players in the shadow whale ecosystem’s
+creation — at least at the founding-deposit level. The four remaining
+wallets each have a distinct first-deposit sender.</p>
+<p><strong>Wallet 7’s first deposit was 9 mechanical tranches.</strong>
+<code>5DunDrF...</code> sent exactly 9 transfers of 996.517 TAO each —
+8,968.65 TAO total — into wallet 7 in the same block (7,066,018). Nine
+transfers of identical amounts in a single block is automated behavior,
+not a human clicking “send.” This is a script methodically batching a
+large position into a cold address.</p>
+<p><strong>Wallets 6 and 7 were funded fourteen hours apart.</strong>
+<code>5Epz8SQ6...</code> (wallet 6, first deposit at block 7,061,941)
+and <code>5GVKorR7...</code> (wallet 7, first deposit at block
+7,066,018) are 4,077 blocks apart — roughly 14 hours — and share the
+same initial funder. This is confirmed, not inferred.</p>
+<p><strong>The rank-#4 wallet seeded wallet #10.</strong>
+<code>5FqBL928...</code> — the extremely active free-balance holder at
+position #4 in our ranking, with nonce 181,845 — sent 0.025 TAO to
+<code>5CXHJRRk...</code> at block 3,766,862. The 0.025 TAO amount is
+consistent with a wallet “dusting” — sending a tiny amount to activate
+or label a cold address. Wallet #10 subsequently received 9,800 TAO and
+has been static since block 4M. The connection between the most active
+address in the top 10 and one of the shadow wallets is notable.</p>
+<p><strong>Wallets 2, 3, and 4 grew at similar rates.</strong> Between
+block 7M and the analysis date (~103 days): - <code>5ChHTBka...</code>:
++44,632 TAO - <code>5Dhf6Wgq...</code>: +46,988 TAO -
+<code>5GUkyA37...</code>: +43,125 TAO</p>
+<p>Similar growth rates over the same period suggest similar inbound
+transfer schedules — possibly from shared source addresses, or addresses
+owned by the same entity.</p>
+<p><strong>The 12,003 TAO cluster.</strong> Four wallets at identical
+balances. One entity, four addresses. This is the clearest evidence of
+deliberate multi-wallet strategy in the dataset.</p>
+<p><strong>Wallet #10 is different.</strong> <code>5CXHJRRk...</code>
+received 9,800 TAO before dTAO (block ~3.8M) and has not been touched
+since. Eighteen months of total inactivity on a round-number position is
+consistent with genuine cold storage: a one-time transfer, a secured
+key, indefinite hold. This is the profile of a cold storage wallet that
+belongs in the discussion but isn’t part of the active-accumulation
+phenomenon.</p>
+<p><strong>The cold storage interpretation.</strong> Nonce = 0 is
+architecturally consistent with intentional cold storage — a key
+generated offline, funded once, and held. This is legitimate practice.
+For static wallets like #10, it is probably the right explanation. For
+the nine actively growing wallets, it strains: cold storage addresses
+are funded once and left alone. Sending ongoing transfers to the same
+nonce-0 address over months is unusual — it reduces anonymity (the
+address is known) without providing the operational utility of an active
+wallet. The more natural explanation for ongoing accumulation into
+nonce-0 addresses is that these are receive-only addresses held by an
+entity that has no need to sign outgoing transactions from them: a
+custodian, a long-term accumulator, or someone building a position they
+don’t intend to deploy soon.</p>
+<hr />
+<h2 id="childkey-investigation">Childkey Investigation</h2>
+<p>Bittensor supports childkey delegation — a hotkey can designate child
+hotkeys that inherit some of its network permissions.
+<code>check_childkeys.py</code> checked whether any shadow whale
+addresses appear as parent or child in the childkey registry:</p>
+<div class="sourceCode" id="cb20"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># check_childkeys.py</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> parent_hk, children <span class="kw">in</span> sub.substrate.query_map(<span class="st">&quot;SubtensorModule&quot;</span>, <span class="st">&quot;ChildKeys&quot;</span>):</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> child_hk, proportion <span class="kw">in</span> children:</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>        <span class="co"># check if any shadow address appears as parent or child</span></span></code></pre></div>
+<p><strong>Result: zero matches.</strong> None of the top shadow wallet
+addresses appear in any childkey relationship. This result is largely
+expected — childkey maps store hotkey-to-hotkey relationships, and
+shadow wallets are coldkeys; the two registries don’t intersect by
+design. The check would only surface an anomaly if someone had reused
+the same address as both a hotkey and a coldkey, which would itself be a
+notable finding. No such overlap exists here.</p>
+<hr />
+<h2 id="open-research-questions">Open Research Questions</h2>
+<p><strong>1. <del>Who made the first deposits?</del> Resolved.</strong>
+<code>find_first_transfer.py</code> identified the first-deposit sender
+for all 10 wallets. Two addresses (<code>5EiXej3...</code> and
+<code>5DunDrF...</code>) account for 6 of 10 first deposits. Full
+attribution is in <code>first_transfers.json</code>.</p>
+<p><strong>2. What are the two dominant sender addresses?</strong>
+<code>5EiXej3AwjKqb9mjQAf29JG5HJf9Dwtt8CjvDqA8biprWTiN</code> and
+<code>5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E</code> are the
+highest-priority investigation targets. Are they validators? Exchange
+withdrawal addresses? Do they have on-chain identity? What is their full
+outbound transfer history — did they fund other wallets beyond the ones
+we’re tracking?</p>
+<p><strong>3. Does a single entity control both <code>5EiXej3</code> and
+<code>5DunDrF</code>?</strong> Together they seeded 6 of the top 10
+shadow wallets. If the same controller operates both, then a single
+entity is responsible for the majority of the top shadow whale
+positions. Tracing these addresses backward — who funded them, when, and
+whether they share a common upstream source — is the critical next
+question.</p>
+<p><strong>4. Where does the ongoing TAO come from?</strong> Each of the
+nine growing wallets has received multiple transfers beyond the first
+deposit. The total balances are 10–100× the initial deposits. Tracing
+the full inbound transfer history requires dense block scanning or an
+indexed event store (the taoapp ClickHouse database is a candidate for
+this).</p>
+<p><strong>5. What is <code>5FqBL928...</code>?</strong> This wallet
+(rank #4 by free balance, nonce 181,845) seeded the pre-dTAO shadow
+wallet <code>5CXHJRRk...</code> with 0.025 TAO at block 3.8M. With nonce
+~182k it is one of the most active addresses on the chain. Its identity
+is unknown — it does not appear in
+<code>known_holders_report.txt</code>. What is it?</p>
+<p><strong>6. <del>Are 5FqBL928… and 5H9brHhM… shadow wallets?</del>
+Resolved: No.</strong> Nonce 181,845 and 111 respectively. Neither
+qualifies. See <code>nonce_check.json</code>.</p>
+<p><strong>7. Correlation with protocol events.</strong> Does the
+appearance of new shadow wallets (July 2025, October 2025, December
+2025, February 2026) correlate with specific network events — subnet
+launches, price movements, governance milestones?</p>
+<hr />
+<h2 id="on-methodology-and-fairness">On Methodology and Fairness</h2>
+<p>Holding TAO in a nonce-0 cold wallet is completely legal and
+architecturally sound. The analysis makes no claims about intent. Cold
+storage, long-term investment, OTC settlement, estate planning — all of
+these are consistent with what the on-chain data shows.</p>
+<p>The point of this investigation is not accusation but
+<strong>epistemic mapping</strong>: establishing what can and cannot be
+known about who holds Bittensor, and building tools that make that
+knowledge updatable over time. A community that can ask and partially
+answer “who are the largest holders and what are their interests?” is in
+a much stronger governance position than one that cannot.</p>
+<p>The shadow whale problem is ultimately a transparency design
+question. The current chain gives large holders total anonymity by
+default. That’s a feature for individual privacy, but a bug for
+collective governance. The healthiest path forward probably isn’t forced
+disclosure — it’s better tooling for voluntary attribution and
+governance mechanisms that weight active, legible participation over
+passive, anonymous accumulation.</p>
+<hr />
+<h2 id="contribute">Contribute</h2>
+<p>All scripts, raw data files, and this document are available in the
+<code>finney-investigation/</code> directory. If you can identify any of
+the wallets listed here — through exchange attribution, known validator
+addresses, or community knowledge — open an issue or PR. The sender
+attribution investigation is the highest-value open thread.</p>
+<hr />
+<p><em>Investigation by the Bittensor documentation team.</em>
+<em>Document version: 0.4 — all claims now backed by quoted output
+files; Phase 6 (known holders) added; sender attribution complete for
+all 10 wallets; two dominant funders identified; nonce check for
+positions #4 and #7 resolved; <code>known_holders.py</code> and
+<code>nonce_check.json</code> added to pipeline</em> <em>Next version:
+after tracing the two dominant sender addresses and their full outbound
+transfer history</em></p>

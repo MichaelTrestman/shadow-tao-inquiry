@@ -1,0 +1,400 @@
+========================================================================
+TAO.BOT VALIDATOR INVESTIGATION
+========================================================================
+
+Hotkey:  5E2LP6EnZ54m3wS8s1yPvD5c3xo71kQroBw7aUVK32TKeZ5u
+Coldkey: 5GsbTgfvgCH4xdqSkiPb7EaBBFLHjWH5vfEALhJaewSFpZX9
+
+── 1. COLDKEY CURRENT STATE ──────────────────────────────────────
+Free balance: 2.2442 TAO
+Nonce:        617  (number of transactions signed by coldkey)
+
+Known entity: tao.bot  Roles: validator
+
+── 2. DELEGATE INFO ──────────────────────────────────────────────
+Take rate: 0.0  (fraction of emissions kept by validator; 0 = all to nominators)
+
+── 3. STAKE DISTRIBUTION BY SUBNET ──────────────────────────────
+  Netuid       Stake TAO
+----------------------------
+       0       855,736.2
+
+  Total subnets with stake: 1
+  Total stake: 855,736.2 TAO
+
+── 4. CHILD HOTKEY REGISTRATIONS ────────────────────────────────
+  Netuid   1: 4 child hotkey(s)
+    5C8Em1kDZi5rxgDN4zZtfoT7dUqJ7FFbTzS3yTP5GPgVUsn1    1.8%
+    5H6yVpK56zG3tDdfXcEQTmEqtWgHPNPRmbEA71jj9N72TVRf    0.1%
+    5HbNZ77cXQXbUjXG3YLVBGk6N4WbtKtGQYAWLXd2aWa8fqGe    97.4%
+    5HmkM6X1D3W3CuCSPuHhrbYyZNBy2aGAiZy9NczoJmtY25H7    0.3%
+  Netuid   2: 1 child hotkey(s)
+    5CAiEA3Rmuf2Ddy88X1DdAYS2dedbw7w4Wq3GoDU5ZjgDsn2    100.0%
+  Netuid   3: 2 child hotkey(s)
+    5DiF8vViv8vUYpwpjJqB2GrhLHqSdRzxoeuihhZU2YUkxoPZ    1.9%
+    5HdTZQ6UXD7MWcRsMeExVwqAKKo4UwomUd662HvtXiZXkxmv    98.1%
+  Netuid   4: 1 child hotkey(s)
+    5Hp18g9P8hLGKp9W3ZDr4bvJwba6b6bY3P2u3VdYf8yMR8FM    100.0%
+  Netuid   5: 5 child hotkey(s)
+    5C7i7QfCGuMhXMYBY3aCHDbRhPzSDpibDqRbfeurJg6N6XwC    18.0%
+    5C8V32baxQx7gAh1Tewcpot8hnG2WkGhC87JG3wZgCMsDsn5    13.9%
+    5F9fAFn4qDrjL7B4pu1A5pVYAS6mUFhdTWqtXynjw6fCHNpY    7.4%
+    5FWFRpkjPCGRmY9H7YiEf6gJ6Ch4dsK5X6cCC4Ry4RZ3dWWn    57.6%
+    5GKH9FPPnWSUoeeTJp19wVtd84XqFW4pyK2ijV2GsFbhTrP1    2.6%
+  Netuid   6: 1 child hotkey(s)
+    5C6148694UhbeTkzXVUyBdo471pVbqDmN6fhEphavjZsRsn6    99.9%
+  Netuid   9: 5 child hotkey(s)
+    5Ctb5JXbHN8bMqUBo1cSakEFaWm672tLMJCVttRh6N6tGsn9    5.7%
+    5EnpBz2DoMTzMztFSVPSpi8jP2yfGadU6kgZgsjqnfvonMgu    41.1%
+    5FLoWCDovMPeH3Gv4syQSZ8TuKcMv6N27g8diDU8zJSeRv8m    37.0%
+    5FneL9bgoRFbRMwGamqYstCevwJgbGm51dpvuHW57gN5wvjS    10.5%
+    5HmkM6X1D3W3CuCSPuHhrbYyZNBy2aGAiZy9NczoJmtY25H7    5.2%
+  Netuid  10: 5 child hotkey(s)
+    5CnvuQgNLBd2tmhykivRfnJZBYc5D2NZEBYxjFm2fc5Msn1o    40.3%
+    5CsvRJXuR955WojnGMdok1hbhffZyB4N5ocrv82f3p5A2zVp    5.2%
+    5Dqju4W4XhiXAenAVnGNq9MT8V7m8NcUkpdtpSGJjRmCWwXX    3.2%
+    5FLoWCDovMPeH3Gv4syQSZ8TuKcMv6N27g8diDU8zJSeRv8m    10.0%
+    5FnRBvUdPhtdRNekk7Tyru5RcJSMwusQcvykHFjcpqSdvQh9    39.4%
+  Netuid  12: 1 child hotkey(s)
+    5DoKZ3oPk1T1dedm5E7LrbJBS4ioEJPf3WYgULn2x6NvzNr5    100.0%
+  Netuid  13: 5 child hotkey(s)
+    5CBDSQvfp8hwYnnGEYQymk4ANFhpPy3siWPWmsU6Vt9Asn13    3.9%
+    5ChzWkapDYgVxT88ZmBQS8QM63V9VWSA3eFpSipsX2xbTNZN    79.4%
+    5D4aUZhfkKeYwqUARH79uEmAgPPo2sT6qFckgJ2Xqrmicx1i    7.0%
+    5FLoWCDovMPeH3Gv4syQSZ8TuKcMv6N27g8diDU8zJSeRv8m    4.5%
+    5HbScNssaEfioJHXjcXdpyqo1AKnYjymidGF8opcF9rTFZdT    5.2%
+  Netuid  14: 1 child hotkey(s)
+    5Cf4LPRv6tiyuFsfLRQaFYEEn3zJRGi4bAE9DwbbKmbCSHpV    100.0%
+  Netuid  16: 5 child hotkey(s)
+    5CfjpjT87Yx2SkD8aVnb6knZHqB42pwL6r5LpczzBSeFsn16    18.6%
+    5DrCEB6aDbgswxsjX2qPMUzcdH54KxBm4XnTyVnyHQemkYFC    60.7%
+    5DvTpiniW9s3APmHRYn8FroUWyfnLtrsid5Mtn5EwMXHN2ed    5.8%
+    5FLoWCDovMPeH3Gv4syQSZ8TuKcMv6N27g8diDU8zJSeRv8m    0.5%
+    5FxHYvn8rb2NTGn98YhdYnjzocB5vN91kssbuWUrN1z5g4FN    13.9%
+  Netuid  17: 5 child hotkey(s)
+    5CDaGPTL3ngrn2Ypfvrf8HEpb4ij2UjS1Rjave5cZBoPsn17    14.4%
+    5Cqoxox8wa5bgpLqPn3caDknFSY8AjtYJDtozQe2nw2oGW4s    14.1%
+    5E7eSeRr2aHzCV7SkY4a2Pi5NXHrU4anZz3phEQgn4HCen2B    26.4%
+    5EC5RCGVEyx5A9GBahsdMnCZ6EQyfP8vQDFuam1GTA75SLti    17.7%
+    5EFcCVkxv19qramQsN2DaBEg1QGC9ooYqDJDxwfjFmf2b1b9    27.4%
+  Netuid  18: 5 child hotkey(s)
+    5ChjhB6CK3FSNGWova8aPoafCAgktVeHRrQyGLhUshXRsn18    24.1%
+    5D2zBM1PLBCfJNFjQm4mU7f1BFJnsTXs2xJwSGLh2JjWCtoR    15.1%
+    5DSQNoFQoQ69jVcfTSRPzauYHMsWuoc8arfDmtcutPkZKmcD    20.5%
+    5G1G2kJPomq9xJttsfvX3XchywHvS1o2qUFCoUkPo5ShZs18    3.5%
+    5HdrwVQQbMa8Wh271PDzvMHmM44wYM5wfnXCW3o97gDisuaY    36.8%
+  Netuid  19: 5 child hotkey(s)
+    5C89XTgUgBUdGWk2zGc6S6hFK4UV2vs99c1KrxntHtM4Ehsw    9.7%
+    5CK49hDJcseEk1V7iB1dmmztdw4igafhxLsVN82VtUVAQRfC    54.8%
+    5CfmLcFBm2kbo6scdAmNeb3cDrNhgxXxtrLiWkvsvACYsn19    18.8%
+    5DwE8KR29yqSeVBD4T2YUHeqJXSBJF4v8abBErsT8ggdfn9q    13.5%
+    5FLoWCDovMPeH3Gv4syQSZ8TuKcMv6N27g8diDU8zJSeRv8m    2.8%
+  Netuid  22: 4 child hotkey(s)
+    5CkmTfQH8UbYAbohFr2m3jPm5gWJ6L3XrSqHd1ijKuzz4iZ5    95.2%
+    5Dw3g8BujZQwX9ae4PFmWhWthP1PHRdwqcQJrXUf7ARn5qF2    0.2%
+    5FbSFsLtGYVh5UwHWYvQWQCmQdftApS6V2xzknTnjkz22MUV    1.0%
+    5HbScNssaEfioJHXjcXdpyqo1AKnYjymidGF8opcF9rTFZdT    2.3%
+  Netuid  23: 3 child hotkey(s)
+    5CAMzp7CV9nCSwLoLgCo7wu3ZmayxewJ3KeBLb4R8UkMsn23    99.1%
+    5Eq4YubAmXyrysJuB1kSZg22XF5frn87YRZzG5pGi2uZk2ke    0.1%
+    5HbScNssaEfioJHXjcXdpyqo1AKnYjymidGF8opcF9rTFZdT    0.5%
+  Netuid  24: 5 child hotkey(s)
+    5CXffbsAbEZzdUwWJDQsASRtdrk366FtBGGr3CrjbGjSsn24    1.5%
+    5CqRMuYSSqYkSa8AM3VawVfdyUhyBufyesvvgh3vCgaGb9Ed    1.5%
+    5EeEtyM13mMLeLSoSK16XrtEkWTjYGPEawkuFJWReoFYPtkp    36.8%
+    5H3L6XQZy63SsSy3jTanceiroaVhx6Z8DL3cyNo4rbso1Sqk    4.8%
+    5HbScNssaEfioJHXjcXdpyqo1AKnYjymidGF8opcF9rTFZdT    55.4%
+  Netuid  25: 5 child hotkey(s)
+    5C7qRHitxaoMVCWC9kxoqt5tuW1MSC8FNMrqHzUpwfHEsn25    46.0%
+    5CqRMuYSSqYkSa8AM3VawVfdyUhyBufyesvvgh3vCgaGb9Ed    9.1%
+    5FFSag8NxXgHeEEFxp12EMoK93wLGR3MCehMTFw2LcWUA6fU    11.0%
+    5G1NjW9YhXLadMWajvTkfcJy6up3yH2q1YzMXDTi6ijanChe    3.3%
+    5GEiaoZZqiR3hi17Vk8oBeajXZgms1Bk3an95fCWgYHYg1MM    30.6%
+  Netuid  26: 5 child hotkey(s)
+    5C5FHQegbo5pVioyCUDVfPY4HyrKQ6novb36b66fgGgGsn26    5.0%
+    5CyUfqGAcgWYUZbUxae21LUUM5vJ6QbuzuohatcUHRf6fWq4    34.1%
+    5FLoWCDovMPeH3Gv4syQSZ8TuKcMv6N27g8diDU8zJSeRv8m    1.0%
+    5FnLxqpzUFgrzW8aLjR5oYB8BUUS7XN9efw3N3diPpaxmTgt    57.9%
+    5GDxzsjt4gdepExgUSa3xdwZykb9kegXLxza2wqyPVq4TkcA    2.0%
+  Netuid  27: 5 child hotkey(s)
+    5CFeWY3WtieNGnpC64rUrYaXKvsLj7zigF229cHqkEKr9hTK    30.9%
+    5CtwoeX4xVXLLqYksbXv2Ho2BjP93QnH17thTEGux1gh6Znn    19.7%
+    5Cvf4UdxkUsoKaAWyJBjuLykUBkws35hnwWNBB2KHHyHsn27    34.8%
+    5E4J7xXqahkqu4rw3xcrtDaVHRCL2dpbc6f6fZsFiLo27MUV    4.7%
+    5FLoWCDovMPeH3Gv4syQSZ8TuKcMv6N27g8diDU8zJSeRv8m    9.9%
+  Netuid  28: 5 child hotkey(s)
+    5CSMqci3SLXo1smNbArQyo2RKmdSPDE29biPdxg2gwwbtpdi    8.9%
+    5CkeM889QdTd4KNS7yB7JpJiUh6u8oiebckERGaHfwFZsn28    51.1%
+    5CsvRJXuR955WojnGMdok1hbhffZyB4N5ocrv82f3p5A2zVp    3.8%
+    5FLoWCDovMPeH3Gv4syQSZ8TuKcMv6N27g8diDU8zJSeRv8m    3.2%
+    5H9dtjbCuTEs4GpxwoLtiVkvtAvSTr1MS3b1K1wJqT3HkhVq    7.3%
+  Netuid  29: 5 child hotkey(s)
+    5DPqkF68UAPVH7ju6NAJt8VFBM8G5i1BCGsUGsug1MP29MUV    0.6%
+    5EnRuFosuvQUv6dRdJToGUAy5fuKgiN5zBS4zpRSgZGoMhnK    14.3%
+    5FLoWCDovMPeH3Gv4syQSZ8TuKcMv6N27g8diDU8zJSeRv8m    2.5%
+    5Grv1QL8pqjedKTHsf65CqfyEWqMK8yuewi8TaTAFVsaZHEM    8.1%
+    5HmmmmhaoDbmt4KcYmAXETvfGBwFmcNgVCYSBH5JZRv6wrFf    71.1%
+  Netuid  32: 2 child hotkey(s)
+    5CcPDahBfq4J92C91PnYR9XQh9Un3SMPyovFY3EjX2pNsn32    96.7%
+    5HbScNssaEfioJHXjcXdpyqo1AKnYjymidGF8opcF9rTFZdT    1.8%
+  Netuid  34: 5 child hotkey(s)
+    5CALNi3ErGHvfa1abpghUxQ5efqqwk7bE5TFJ9CLmmTZsn34    2.8%
+    5EEjs3ffK9J2wvh5UccMeC61MxqSQQ82C9kucRgTCqoeMnfk    6.7%
+    5FLoWCDovMPeH3Gv4syQSZ8TuKcMv6N27g8diDU8zJSeRv8m    8.2%
+    5HjBSeeoz52CLfvDWDkzupqrYLHz1oToDPHjdmJjc4TF68LQ    77.5%
+    5HmkM6X1D3W3CuCSPuHhrbYyZNBy2aGAiZy9NczoJmtY25H7    4.8%
+  Netuid  35: 1 child hotkey(s)
+    5CATQqY6rA26Kkvm2abMTRtxnwyxigHZKxNJq86bUcpYsn35    100.0%
+  Netuid  36: 5 child hotkey(s)
+    5C5hkvYVTtArY7sG39UUd1zrM1AczdtRgyydHSJRkdXGsn36    1.1%
+    5CUui1T218PsDJZLVQRUUfof7XX4zXW2riUpS1vrAS9VMWSd    1.1%
+    5CqRMuYSSqYkSa8AM3VawVfdyUhyBufyesvvgh3vCgaGb9Ed    1.3%
+    5CsvRJXuR955WojnGMdok1hbhffZyB4N5ocrv82f3p5A2zVp    0.4%
+    5DUmbxsTWuMxefEk36BYX8qNsF18BbUeTgBPuefBN6gSDe8j    95.8%
+  Netuid  37: 5 child hotkey(s)
+    5CSrYw5nGquFeZKL1Py8H3vgqcEh2v9pzDaFnrCFySG5m5AY    62.7%
+    5CUaVirdkxdTnMDJWGwqbhSXYUogULj9WUneqnXV4Wc5RwWJ    9.2%
+    5CVJBL8pxyYeXGz6QksFgbqjuHds7ViatjhMqMgSyN1Jsn37    5.2%
+    5FLoWCDovMPeH3Gv4syQSZ8TuKcMv6N27g8diDU8zJSeRv8m    20.2%
+    5GKmm4QbG1DHawvT1EPSY4c54izy1fo7AirJUC1GDkW37MUV    2.7%
+  Netuid  39: 2 child hotkey(s)
+    5FLoWCDovMPeH3Gv4syQSZ8TuKcMv6N27g8diDU8zJSeRv8m    2.0%
+    5G3qVaXzKMPDm5AJ3dpzbpUC27kpccBvDwzSWXrq8M6qMmbC    97.0%
+  Netuid  40: 5 child hotkey(s)
+    5CyeiPYLyH4SzinC7uTjXRbHQ3VVDJZyykxnajZMAUYTsn4o    85.3%
+    5EqSzXTY2SjrU3zNjeMc5RjeyuCfVDGCbeGXoUJkXhcH3MiH    4.0%
+    5FLoWCDovMPeH3Gv4syQSZ8TuKcMv6N27g8diDU8zJSeRv8m    1.1%
+    5Fy3MjrdKRvUWSuJa4Yd5dmBYunzKNmXnLcvP22NfaTvhQCY    2.6%
+    5G9jquyVtZr2Rctb3aUBxzQmzYHq3tkevPKUc9gP6gQQAkuP    7.0%
+  Netuid  41: 2 child hotkey(s)
+    5DF3nhgzpr4EZas8dXZYa4mYZBxRCU7AuiCV7Qs2JWAGA6sY    0.3%
+    5GxADSjVkV22Kbi7v4BTFsUzqTavrjkVNmf1zKq6FZLkYJ7H    99.4%
+  Netuid  42: 4 child hotkey(s)
+    5CJgcA4m11XksEqkgby8ow13YEj2omSEcVPshKqow5xNsn42    18.8%
+    5CZv4oXgYsAFjJj8rLmmbLG29y7x9RGEc6hM9tzCwRU8NeDe    72.7%
+    5DRS1HpQg8T7XqgUzwFk1vfcGcejpBVZVXyu8jukXAvpwgvn    5.6%
+    5FLoWCDovMPeH3Gv4syQSZ8TuKcMv6N27g8diDU8zJSeRv8m    2.9%
+  Netuid  43: 1 child hotkey(s)
+    5HjMs5JDrLH3Hknmfm1gDq7nFYAv6M7t9v3EWMctSRXJS9HC    100.0%
+  Netuid  44: 1 child hotkey(s)
+    5DFwFpurRFaT5VtjdsATUnRakGhvUdgCghF61457QbWdsnJp    100.0%
+  Netuid  45: 5 child hotkey(s)
+    5C4z2FJzsxh9uWxGTThdK7EBKuMNpWbCEFnrKrQene6Rsn45    6.4%
+    5DnNzmms8Pg7YekmHsDjJXKUMYeBG8ziM9nMj19pfiH5vs45    28.7%
+    5EnvVf9efbcLvzJTKL8ZZMwuygRRRKqa1hiZcKApUzWUzFhS    1.9%
+    5FLoWCDovMPeH3Gv4syQSZ8TuKcMv6N27g8diDU8zJSeRv8m    54.5%
+    5GvW4gtNUDcy3VrGqtUhqyYu6iscDuKJ5iMGhZ27TDcGr3BB    5.3%
+  Netuid  46: 1 child hotkey(s)
+    5CdNo8k6UQgW9mGAmEKUGU5MTvazvF96q75KMMJbbCqBsn46    100.0%
+  Netuid  48: 5 child hotkey(s)
+    5C841jTJAvvF7kij23JjHFjqUEDtNeXDrAtyNBRFewmJsn48    4.6%
+    5CsvRJXuR955WojnGMdok1hbhffZyB4N5ocrv82f3p5A2zVp    1.7%
+    5DFYr1VRv24yoF5BierEd18Rv7uX9r41gsgGS5sTRCgbAfQs    6.6%
+    5EZ52JMq4S7PYqzmLAggYahyDirMx3p1f1uBtLQgx6fk7kR8    37.1%
+    5FLoWCDovMPeH3Gv4syQSZ8TuKcMv6N27g8diDU8zJSeRv8m    50.0%
+  Netuid  50: 4 child hotkey(s)
+    5CsvRJXuR955WojnGMdok1hbhffZyB4N5ocrv82f3p5A2zVp    3.5%
+    5FLoWCDovMPeH3Gv4syQSZ8TuKcMv6N27g8diDU8zJSeRv8m    41.5%
+    5G1NjW9YhXLadMWajvTkfcJy6up3yH2q1YzMXDTi6ijanChe    1.9%
+    5Gy7xTzDwXYw4JV1TUUUt28PwUTQ95HBCYFJMwkaDmnbQUJ5    53.1%
+  Netuid  51: 2 child hotkey(s)
+    5D7aRtpmVBKsQRzMA2ioUPL25onJPzBjiFVVt5uPZ3TDsn51    20.0%
+    5F7X5UpKSr26KU3jKfpLmT8kuKtBNyHhEnfS8xtxPCqCb13p    80.0%
+  Netuid  52: 5 child hotkey(s)
+    5C9xt3LSmVDqiGQQ6XudjXEMJZc9bMxMGuTQFYrGULvT3Ti8    16.0%
+    5CGR2KhuCkWhNECkrbk7D1zA8vPyh1vH6muox28geXtNsn52    7.8%
+    5E26fmSrLz2XCb8TTBWy2cZrsYpfgHbgj6reC3q6WTu9aCab    62.7%
+    5E4z3h9yVhmQyCFWNbY9BPpwhx4xFiPwq3eeqmBgVF6KULde    9.2%
+    5FLoWCDovMPeH3Gv4syQSZ8TuKcMv6N27g8diDU8zJSeRv8m    4.3%
+  Netuid  53: 5 child hotkey(s)
+    5Ceuezr4FsuRNoGppVRsbyjgPKyZBbyqx1m4KAVve6LDsn53    18.4%
+    5CsvRJXuR955WojnGMdok1hbhffZyB4N5ocrv82f3p5A2zVp    7.3%
+    5EhY3b6yE4kNusQQ3tmYHDHYtDUjuxks4QaFmFs3rqQahD2m    3.1%
+    5FLoWCDovMPeH3Gv4syQSZ8TuKcMv6N27g8diDU8zJSeRv8m    44.2%
+    5GxchQQ5zzrtT8gJSBj5vHwmeMRXcUmyzbQwzJVDJ2uVMNSa    24.9%
+  Netuid  54: 3 child hotkey(s)
+    5C4qiYkqKjqGDSvzpf6YXCcnBgM6punh8BQJRP78bqMGsn54    0.4%
+    5DUB7kNLvvx8Dj7D8tn54N1C7Xok6GodNPQE2WECCaL9Wgpr    98.7%
+    5DyM1rxnDu8QSjbbh5bPV2GMK6UTPRXdUM6mNViBBut9Ma6w    0.9%
+  Netuid  55: 2 child hotkey(s)
+    5CzSYnS88EpVv7Kve7U1VCYKjCbtKpxZNHMacAy3BkfCsn55    98.9%
+    5D2V2Zu6kKbBwLYGhFzpFNPQZjJ4DA8djzPdcRLPk8dLwZkv    1.1%
+  Netuid  56: 5 child hotkey(s)
+    5C515Vu4AesgMjdUekVJqsxdJLP2x7oRjR2ouVVSuFXDsn56    9.0%
+    5EZs9RgwoVAH7Gc1fWFpGcjSmJ9dDw8zjwgkKLgkTBUW6qXq    49.6%
+    5F1x7VamfbwyyzCwYSFeUUotxQdYVa2yGkaM7ADd3m9nyZZi    15.1%
+    5FLoWCDovMPeH3Gv4syQSZ8TuKcMv6N27g8diDU8zJSeRv8m    21.7%
+    5GU4Xkd3dCGTU3s8VLcHGc5wsD5M8XyxDca5yDQhYm1mVXFu    4.6%
+  Netuid  57: 4 child hotkey(s)
+    5C4jtv7VBZ1WfDbsJD9zwj3w83D7Ltoi7tJ7YhS3AhTLsn57    17.2%
+    5CsvRJXuR955WojnGMdok1hbhffZyB4N5ocrv82f3p5A2zVp    1.4%
+    5FLoWCDovMPeH3Gv4syQSZ8TuKcMv6N27g8diDU8zJSeRv8m    59.9%
+    5GxzfbdPxQ9HQkejbR32JnGE86PrAqxBdxiuYrwvpnfT9jq6    21.5%
+  Netuid  58: 5 child hotkey(s)
+    5CK1rYwePRRDTcsRMMrc7PQvREvJrGXb1cxAkAyEX72Zsn58    36.5%
+    5CoUaib23Yk6LTodYSygS3SaQpWFgtqscB3JvBrrVi5xPSdH    39.0%
+    5D4R1VGVzfxoVuhohhShs7VSCzrDhGpoT7UoHnm6CeUJ3JK9    9.5%
+    5D8GfQFmkCc8V434p5RLwZrWVCTGJfqaYUT9oGzugvGc9s58    11.2%
+    5FLoWCDovMPeH3Gv4syQSZ8TuKcMv6N27g8diDU8zJSeRv8m    2.5%
+  Netuid  59: 5 child hotkey(s)
+    5ChTYCkTrJ5bsR2mh3HtVZqpvmZvLuSF1UpuA1okgwBsws59    2.4%
+    5EF9dnwEup1QD1vAg6j9Z7yqYKbpQSMK2Rax2JhhUEFjNdve    18.4%
+    5F9F5n9e89SKPHfPkR6Ujtob3WNQzCr32RzC5feaZHGJSTCy    5.3%
+    5GpB2qoEsQTD2Gy9ZQMzH4LxPqDg6QcUjcTC2ssikRJR6aFA    69.0%
+    5GpBn2DayzyRwBJJ7hdsNkgciDgqWvN5dbzFmDxXqvtW4heQ    4.6%
+  Netuid  61: 5 child hotkey(s)
+    5C5YFeG8iqHzL4heG5WpxsEJJ5EVL3u1uMiod59WgYvWsn61    51.8%
+    5DXGoPiDWPA7dzf1AjcWdDb9s7hrL1au6xFUXgosfHD8EjqU    1.7%
+    5FLoWCDovMPeH3Gv4syQSZ8TuKcMv6N27g8diDU8zJSeRv8m    8.9%
+    5GNrmRVGHpFpsBR5c2oDeqDE4nNw15J95vvggqAJ7AHeEBdZ    10.3%
+    5GW3uC18qqyjkC5tm73zvZzYkhTQT4nBiDmwx4fGNt5LVi5w    27.3%
+  Netuid  62: 5 child hotkey(s)
+    5DP7gcGeTfGfmCzxVNCXQvWBxu58TrrkdikuHQNnGDYb7THU    14.6%
+    5Djyacas3eWLPhCKsS3neNSJonzfxJmD3gcrMTFDc4eHsn62    45.0%
+    5F4U4P2j3ctdDS45naSUCxzYAHWTHarsY5JQdcRmMkc8UQZM    3.5%
+    5FLoWCDovMPeH3Gv4syQSZ8TuKcMv6N27g8diDU8zJSeRv8m    33.4%
+    5HmkM6X1D3W3CuCSPuHhrbYyZNBy2aGAiZy9NczoJmtY25H7    3.3%
+  Netuid  63: 5 child hotkey(s)
+    5CaEd14Wjz6h6Yy4Z74GSa2sdPjUm1oNsdrxX7sXz1HPsn63    50.4%
+    5EZ52JMq4S7PYqzmLAggYahyDirMx3p1f1uBtLQgx6fk7kR8    33.1%
+    5EbaPDBSyrVyrscVdzx8Q1gwAf1HbrwbM2gxb2jc59kpVDob    3.1%
+    5EbgHdjhoeTG6ddfDesJ3B6NbCRRT1oQnRq7M8J2jsEtr3vH    9.8%
+    5FLoWCDovMPeH3Gv4syQSZ8TuKcMv6N27g8diDU8zJSeRv8m    3.4%
+  Netuid  64: 3 child hotkey(s)
+    5Ci5t4vPK3eCGhFWneB58fodg3x9oS2m8seKoDApFKUqyw4e    6.1%
+    5Dt7HZ7Zpw4DppPxFM7Ke3Cm7sDAWhsZXmM5ZAmE7dSVJbcQ    78.9%
+    5FLoWCDovMPeH3Gv4syQSZ8TuKcMv6N27g8diDU8zJSeRv8m    14.6%
+  Netuid  65: 5 child hotkey(s)
+    5CrFBtatYPKZMCRWp9sa6zr9SjXfVhv6FrG9yTciJBofgto5    8.4%
+    5CsvRJXuR955WojnGMdok1hbhffZyB4N5ocrv82f3p5A2zVp    5.2%
+    5D52KSDwLyaN4vAUhm16CoBgPWQX52qTnCMeJwVanGaFsn65    42.5%
+    5G1NjW9YhXLadMWajvTkfcJy6up3yH2q1YzMXDTi6ijanChe    13.8%
+    5HY9hGb2tY5zjjcbS1puJoQQXo1cYMrwWnpTeMYRbQjgxs65    12.8%
+  Netuid  66: 5 child hotkey(s)
+    5CdG8JDyzBPvXD1PM3ctdVmk3DbC52aTmYbQNezasVUXsn66    9.0%
+    5DRPoRiBSPNvgSvRsehaUhtXqPgXYrds8VS42vdzT5MzcpZV    74.6%
+    5ExiuLNctkEUL5xMijujmAdhJGdzb5d6vxdzLdjpH3MLNovF    4.8%
+    5FLoWCDovMPeH3Gv4syQSZ8TuKcMv6N27g8diDU8zJSeRv8m    1.4%
+    5HBnYFUu9HZ2D2hERvDXcYP3rGZBVnWdGwHk77oaHTYvmjSw    10.0%
+  Netuid  68: 1 child hotkey(s)
+    5F1tQr8K2VfBr2pG5MpAQf62n5xSAsjuCZheQUy82csaPavg    100.0%
+  Netuid  69: 5 child hotkey(s)
+    5CUSSYCv9QfhDE5X4f7nuFnTLx7DGCph43u6eMUHB8FHsn69    47.4%
+    5CoyNUADxZbM2gMxRxV5LAex5VxvRgjmsjpJgshqi7s69MUV    5.7%
+    5FLoWCDovMPeH3Gv4syQSZ8TuKcMv6N27g8diDU8zJSeRv8m    3.5%
+    5Fy3MjrdKRvUWSuJa4Yd5dmBYunzKNmXnLcvP22NfaTvhQCY    36.4%
+    5HQEtKgqcnZx61JzEbapWtN2a5gUb4cuPLDwoDCXaBRxJgey    6.7%
+  Netuid  70: 1 child hotkey(s)
+    5C7MxkBuifQF3DUBcxGwWtUbccVUSoqhih9irgAJJ3YMsn7o    100.0%
+  Netuid  71: 1 child hotkey(s)
+    5FNVgRnrxMibhcBGEAaajGrYjsaCn441a5HuGUBUNnxEBLo9    100.0%
+  Netuid  72: 2 child hotkey(s)
+    5CG2Yv2LbuAC37cEShEDD5AmeYrbx65e5mbGfdsH3c6Rsn72    1.1%
+    5Fmvr2VJs9EpyR5NbNpLTKgEXS8fRnQA6F349xqswsz6VL88    98.9%
+  Netuid  73: 5 child hotkey(s)
+    5Ci5Zgntd5uMJqcKVB2Z6AQFFPFa3jrk48436JsY2bcLsn73    5.0%
+    5Dnkprjf9fUrvWq3ZfFP8WrUNSjQws6UoHkbDfR1bQK8pFhW    58.8%
+    5DyQkk4x6CwDtjtxe1NG2aMgQVXe9ZpZdT14SdYYwEVd3XUk    24.3%
+    5ECTMCExuUhNeMDFvw7hCpepo5U2AtGe9bLNF1gTCQ8nuieu    4.4%
+    5FLoWCDovMPeH3Gv4syQSZ8TuKcMv6N27g8diDU8zJSeRv8m    1.4%
+  Netuid  74: 4 child hotkey(s)
+    5CoHiXKJVsTRLjqecqJH4D2Q131D2zXyGUALQ2uWTUqKF6FK    4.7%
+    5FLoWCDovMPeH3Gv4syQSZ8TuKcMv6N27g8diDU8zJSeRv8m    14.8%
+    5Gjr7VuYJC8D58d9S2iZofu7FzFvRiRjpM4zpAaDdqb1Wy6V    74.3%
+    5HbScNssaEfioJHXjcXdpyqo1AKnYjymidGF8opcF9rTFZdT    5.3%
+  Netuid  75: 5 child hotkey(s)
+    5Dc1f1nAxVJrV9oc8v8HHpDfwG5fA2auHLwfXb8NqF8Xsn75    2.6%
+    5FH2vToACmzqqD2WXJsUZ5dDaXEfejYg4EMc4yJThCFBwhZK    3.4%
+    5FLcxzsKzaynqMvXcX4pwCD4GV8Cndx5WCqzTfL7LLuwoyWq    0.6%
+    5FZbdcj58ZE26KFF2XUkg5jzZSHNMPWGQfBSsC83FTrwVZpi    21.8%
+    5G1Qj93Fy22grpiGKq6BEvqqmS2HVRs3jaEdMhq9absQzs6g    71.6%
+  Netuid  76: 2 child hotkey(s)
+    5CSahk2S4CqtXCtUMBayhrjPH8DFY5dojAaEuhyLT6rMsn76    30.9%
+    5CsvRJXuR955WojnGMdok1hbhffZyB4N5ocrv82f3p5A2zVp    27.9%
+  Netuid  77: 5 child hotkey(s)
+    5CDAuq2vQyqfPGaxLnQXATHUhNUrGc8P5pyQrnnnADPVsn77    7.9%
+    5Cg5MDHuLisy76beTHnWkWapHuaMznpUPDmraxwVTVDdU8vc    14.1%
+    5CsvRJXuR955WojnGMdok1hbhffZyB4N5ocrv82f3p5A2zVp    1.9%
+    5DqALXRZumwGDyaJWRJ2fMzBqPxEuoqWypnexcwuYMDdohsE    66.8%
+    5FLoWCDovMPeH3Gv4syQSZ8TuKcMv6N27g8diDU8zJSeRv8m    9.3%
+  Netuid  78: 5 child hotkey(s)
+    5CJ5smJJ2zYQ7qetkdtqhVxwy3WFbELPf3Z9qYZdFa3AXEyR    22.2%
+    5CRpdVCn8ZJ45wb4TcEJgGPW1ZX4RaZLW4B9iLthztqWsn78    12.8%
+    5FLoWCDovMPeH3Gv4syQSZ8TuKcMv6N27g8diDU8zJSeRv8m    6.0%
+    5HEFmnv5f8jW24xb6Z61xsaj4mRPGxUybxuJ88uiTej98bzJ    6.8%
+    5HK7dfn88LdRGtevp3JcEyk17bXs2kUiqUw3QYsKvpnMAXM1    16.0%
+  Netuid  79: 2 child hotkey(s)
+    5EWwdZB7qCCMaAso5Mzcks4UUcPxKYvpAj32t5Mg1v6HSxoF    99.9%
+    5HYyPA43Hof3Lc9ubf6k3QC5TRAnRvGvfprae67ncWizXMnd    0.1%
+  Netuid  80: 4 child hotkey(s)
+    5CARjixx8q2Bm8W8dZ7zUU6dL4qL8TBnrjxZNmEdZ2ESoYSs    3.5%
+    5Dy4oTWYW8HqART9sLNFFGnLRet6owbhRUY4ZE7RfD5Csn8o    0.4%
+    5EgzaDVXQ5VwxK7QbBmHfqVayHjjSL2L3urSivQVbVGp6Ffs    0.2%
+    5Fmon2rUDrMpninw689bXRz6o2nqn6notjHY9pMPf6dD4f4A    1.4%
+  Netuid  81: 5 child hotkey(s)
+    5CMF6fgMhv1FFu95MmQP9ZNCh3TffCfPoeE4c6jTnKBBoW4Q    14.2%
+    5CoryY2t7t27C1pfRq6DEzC35vrmAm6sLyaDaggD9WbWsn81    21.7%
+    5CsvRJXuR955WojnGMdok1hbhffZyB4N5ocrv82f3p5A2zVp    1.2%
+    5EtY2ekAKHXNgwiTTehrbuyVAv39jh1AJae1xUKkreid3ac1    2.2%
+    5F9uEDDovurwEJihzZSpKypipVy84EEAPHTt3EfepTjcQfij    52.3%
+  Netuid  82: 2 child hotkey(s)
+    5C9yALD6gjxhzyawXomy4E6ykcYm8bKXTJrGnQNa498Hsn82    97.9%
+    5FLoWCDovMPeH3Gv4syQSZ8TuKcMv6N27g8diDU8zJSeRv8m    1.9%
+  Netuid  83: 5 child hotkey(s)
+    5CFZgeUAguZLv4VYt38jN6HtWAVEn3vxVmBJByHXGTeEsn83    32.4%
+    5EHGayLmiXfwz6oYmQFYmDz12RPXkhJw8Ty8RYVDeVZH9Q5L    43.7%
+    5FLoWCDovMPeH3Gv4syQSZ8TuKcMv6N27g8diDU8zJSeRv8m    10.9%
+    5Fh1YDPcJ2Bs6JHfE5Ck1gCwvPxgkK32ZpHy94oy9XKMEyh9    8.1%
+    5H3eeWLTVecMZaHArCssXFRz9SJqTejpLc9RcHxPQaqioqxm    4.2%
+  Netuid  84: 5 child hotkey(s)
+    5C5UBuSdnC6NHJGQzngMH9qwpX6omLYDRPx63m7CqEkBsn84    31.1%
+    5CUbSHpf2AAMvsyKztvaF8BgoMmPAUdLLB1oYNmn23Mcts84    2.0%
+    5Di8S6xuHBExtNfbRTzBobFWfbe5qk7WXUnBWrpCidAwxtN7    3.9%
+    5FLoWCDovMPeH3Gv4syQSZ8TuKcMv6N27g8diDU8zJSeRv8m    2.3%
+    5HjH8ZqfoWG6SS6UTvLHEmQVBA6gjTCdpcy7wveoDGWSPZwk    60.7%
+  Netuid  85: 1 child hotkey(s)
+    5FR392L6eKrTGwUjQurpxw89YUe7LzKANktDwRKLYYSgwxhb    99.8%
+  Netuid  86: 5 child hotkey(s)
+    5CqzMkZW91jDc6rUqfCBYrMBxAgJUaq1jHLQEBR9W8ZTsn86    48.4%
+    5CsvRJXuR955WojnGMdok1hbhffZyB4N5ocrv82f3p5A2zVp    6.9%
+    5EjnETvje47GbcjaWLVEizoevENYAPYnKkbL4ptPme5gnxK4    30.7%
+    5F9FAMhhzZJBraryVEp1PTeaL5bgjRKcw1FSyuvRLmXBds86    8.8%
+    5GnJcnheozK5etVqEKNYQYBQaqP9jdxHVSZ87ZuF6KkwtxH1    5.2%
+  Netuid  88: 5 child hotkey(s)
+    5ChZxXm3SG7ti6XcH53KzAk529bURTd3t5HhANcgmQLDsn88    10.2%
+    5DsetxFmMwBxhUaU76wXjtBkQnjwMXmdnVJD6V5dGJzf8868    2.5%
+    5FBqnTwnCq6yeVeXTnVGHbiRR6zh6ZGbKVRBusu4zSCu4WUw    2.5%
+    5FLoWCDovMPeH3Gv4syQSZ8TuKcMv6N27g8diDU8zJSeRv8m    5.1%
+    5HK4vbGgLQdFKarN3hLVqNRbgQtQR5w3WTZ2tTnFHHLPgXpY    79.3%
+  Netuid  89: 1 child hotkey(s)
+    5FCN4P1KqFtsgBk29ABeDZuAnhrcHP2iTN2fG1kBefJBhBLd    100.0%
+  Netuid  92: 5 child hotkey(s)
+    5CAvneqrSRkCR723u1nVdFQDH2B9mLq1FaA1agZdngVWsn92    55.5%
+    5CsvRJXuR955WojnGMdok1hbhffZyB4N5ocrv82f3p5A2zVp    14.8%
+    5Fv6Sp1h3jyyXL7MgiiYM4dbGBDsBT9AHVEfA5KR4jbVBm9P    8.7%
+    5HJzauLAhLj9ewoXHfMjhKXaLaZmr1rutkorc6vBXsBZbs4X    15.3%
+    5HbScNssaEfioJHXjcXdpyqo1AKnYjymidGF8opcF9rTFZdT    1.7%
+  Netuid  93: 4 child hotkey(s)
+    5C7NqjdoETbvsZPtqVjCQHyRSdAf9yLao6oZqV7BguiJsn93    18.8%
+    5DAoDtMxVqtMu2Nd5E7QhPEGXDMgrySvE1b3rRT5ARDhfNNK    73.0%
+    5Et5VQUMX7VqGyvZycjv5FBBC5FQbLGUJiRMWMnEVnMLXKm9    7.8%
+    5FLoWCDovMPeH3Gv4syQSZ8TuKcMv6N27g8diDU8zJSeRv8m    0.4%
+  Netuid  94: 3 child hotkey(s)
+    5C7eJLN6Wk1rh9oQoUmX4AZrFm9BWU6tRRserToeJ7fPsn94    99.0%
+    5CsvRJXuR955WojnGMdok1hbhffZyB4N5ocrv82f3p5A2zVp    0.1%
+    5HbScNssaEfioJHXjcXdpyqo1AKnYjymidGF8opcF9rTFZdT    0.3%
+  Netuid  95: 5 child hotkey(s)
+    5CfQSDASnDwnz2GEBom8ZNyZbXqy5vqjLBQgXweLCsUGsn95    43.0%
+    5CsvRJXuR955WojnGMdok1hbhffZyB4N5ocrv82f3p5A2zVp    3.3%
+    5EkAky7V8u2T4eHduWLRnwbWJzRGjHwW1fqARUpDuXiv7QCw    4.6%
+    5FLoWCDovMPeH3Gv4syQSZ8TuKcMv6N27g8diDU8zJSeRv8m    18.7%
+    5HjnVYh4qbNt6fLQ73tmfjKZGa18TiFWaZa5mZfSEwd7m3UR    30.0%
+  Netuid  97: 1 child hotkey(s)
+    5EvHrbHz8rT8DrWazxFhzfMsmscFtPE3qhRDeY4ggKZrBcxZ    100.0%
+
+  Total child hotkeys across all subnets: 289
+
+── 5. COLDKEY FUNDING HISTORY ────────────────────────────────────
+  Not queried via archive node (nonce=617 → slow; use tao.app API).
+  Query: GET /api/beta/accounting/events?coldkey=5GsbTgfvgCH4xdqSkiPb7EaBBFLHjWH5vfEALhJaewSFpZX9
+

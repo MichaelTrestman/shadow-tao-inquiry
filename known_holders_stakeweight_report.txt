@@ -1,0 +1,278 @@
+================================================================================
+KNOWN HOLDER ANALYSIS — By Combined Stakeweight (Free + Validator Stake)
+Known entities: 2369  |  Source: known_holders.json + validator_stake_weight.json
+================================================================================
+
+--- TOP 100 KNOWN HOLDERS BY COMBINED WEIGHT (n=2369 total) ---
+Name                               Free TAO     Stake TAO      Combined  HKs  Role
+----------------------------------------------------------------------------------------------------
+  tao.bot                                 3       853,488       853,491    1  validator
+  Kraken                                 10       723,400       723,410   95  validator
+  Taostats                                2       583,924       583,925    2  validator
+  Yuma, a DCG Company                    10       567,258       567,268  128  validator
+  Openτensor Foundaτion                  23       413,881       413,904  106  validator
+  General Tensor (RoundTable21           44       293,751       293,796  134  validator
+  Crucible Labs                         486       276,705       277,190    3  validator
+  Polychain                               7       223,286       223,292    2  validator
+  (no identity)                          42       209,589       209,631    1  validator
+  TAO.com                                 8       206,364       206,372  112  validator
+  tao5                                    6       196,277       196,283    1  validator
+  Rizzo (Insured)                         7        98,894        98,901  136  validator,sn_owner([20])
+  (no identity)                          26        93,432        93,459    1  validator
+  Datura                                  0        68,519        68,519    1  validator
+  (no identity)                          12        63,104        63,116    5  validator
+  xTAO                                    1        60,195        60,196    1  validator
+  1T1B.AI                                55        56,801        56,855    2  validator
+  Neuralteq.com                          12        54,245        54,256    2  validator
+  (no identity)                           7        52,884        52,891    1  validator
+  FirstTensor.com                         0        48,807        48,807    1  validator
+  Tatsu                                   0        44,971        44,971    2  validator
+  Firepool                                1        40,971        40,971    1  validator
+  PRvalidator                             0        36,013        36,013    1  validator
+  TAO.app                                 0        32,951        32,951   22  validator
+  NorthTensor                             7        28,695        28,702    1  validator
+  Tensorplex Labs                         2        19,690        19,693    1  validator
+  Ary van der Touw                       11        19,633        19,644    7  validator
+  MUV                                     0         8,096         8,096   56  validator
+  Neural Internet                         1         7,893         7,894    2  validator,sn_owner([27])
+  Cortex Foundαtion                       1         4,651         4,652    1  validator
+  (no identity)                           0         4,423         4,424   22  validator
+  Kooltek68                               0         2,433         2,434   59  validator
+  Owner51                             1,941             0         1,941    2  validator,sn_owner([51])
+  Astrid                                  6         1,810         1,816    1  validator
+  TaoStation                              0         1,801         1,801    1  validator
+  (no identity)                           0         1,524         1,525    1  validator
+  (no identity)                       1,341           100         1,441    1  validator,sn_owner([97])
+  Sportstensor                        1,403             0         1,403    1  validator,sn_owner([41])
+  (no identity)                       1,126             0         1,126    1  validator,sn_owner([125])
+  Kiln                                    3         1,074         1,077    1  validator
+  (no identity)                           4         1,062         1,066    1  validator
+  (no identity)                         803             0           803    1  validator
+  Tensor.Exchange                         0           713           713    1  validator
+  FlameWire | SN97                      600             0           600    1  validator
+  Tao Bridge                            540            38           578    1  validator
+  (no identity)                         553             0           553    2  validator
+  (no identity)                           0           542           543    1  validator
+  (no identity)                         498             0           498    1  validator
+  InfStones                               0           412           412    1  validator
+  (no identity)                         387             0           387    1  validator
+  TaoPolishNode                           0           328           329    1  validator
+  (no identity)                         313             0           313    3  validator
+  Chutes / SN64 Primary Valida            0           305           305    1  validator
+  CliqueAI                              273             0           273    1  validator,sn_owner([83])
+  Ary van der Touw                        0           258           258    1  validator
+  Vune                                    0           236           236    1  validator
+  (no identity)                           6           213           219    1  validator
+  01Lamida, Inc.                          0           209           209    1  validator
+  Owner3                                206             0           206    0  sn_owner([3])
+  (no identity)                         189             0           189    2  validator
+  (no identity)                          68            95           163    1  validator
+  grail                                  69            80           148    1  validator,sn_owner([81])
+  (no identity)                           0           148           148    1  validator
+  (no identity)                         147             0           147    1  validator,sn_owner([101])
+  CheckerChain Validator                135             0           135    7  validator
+  RunPod                                130             2           132    1  validator
+  Giga Corporation                        0           128           128    1  validator
+  (no identity)                         121             0           121    1  validator
+  Love                                    1           113           114    1  validator
+  (no identity)                         113             0           113    1  validator
+  (no identity)                           0           112           112    1  validator
+  Nepher Robotics                       111             0           111    1  validator,sn_owner([49])
+  Owner30                               100             0           100    1  validator,sn_owner([30])
+  (no identity)                          98             0            98    1  validator
+  (no identity)                          98             0            98    1  validator,sn_owner([100])
+  (no identity)                          95             0            95    1  validator
+  const                                  91             0            91    1  validator,sn_owner([120])
+  (no identity)                          91             0            91    1  validator
+  (no identity)                          90             0            90    1  validator
+  (no identity)                           1            88            89    1  validator,sn_owner([76])
+  (no identity)                          85             0            85    1  validator
+  Lucrosus Capital                        0            85            85    1  validator
+  Owner38                                82             0            82    1  validator
+  zelytria                               77             0            77    1  validator
+  basilica                               76             0            76    1  validator,sn_owner([39])
+  TaoFi Validator                         1            69            70    1  validator
+  (no identity)                          68             0            68    1  validator
+  (no identity)                          67             0            67    1  validator
+  (no identity)                          66             0            66    1  validator
+  (no identity)                          65             0            65    1  validator
+  (no identity)                          60             0            60    3  validator
+  (no identity)                          56             0            56    1  validator,sn_owner([77])
+  ShiftLayer                              2            49            51    1  validator,sn_owner([117])
+  (no identity)                          50             0            50    1  validator
+  HODL.Validators                        50             0            50    2  validator
+  Owner56                                50             0            50    1  validator,sn_owner([56])
+  MoYi                                    0            48            48    1  validator
+  (no identity)                          46             0            46    9  validator
+  (no identity)                          43             0            43    1  validator
+  (no identity)                           1            40            40    1  validator
+
+--- NAMED HOLDERS BY COMBINED WEIGHT (n=569 total) ---
+Name                               Free TAO     Stake TAO      Combined  HKs  Role
+----------------------------------------------------------------------------------------------------
+  tao.bot                                 3       853,488       853,491    1  validator
+  Kraken                                 10       723,400       723,410   95  validator
+  Taostats                                2       583,924       583,925    2  validator
+  Yuma, a DCG Company                    10       567,258       567,268  128  validator
+  Openτensor Foundaτion                  23       413,881       413,904  106  validator
+  General Tensor (RoundTable21           44       293,751       293,796  134  validator
+  Crucible Labs                         486       276,705       277,190    3  validator
+  Polychain                               7       223,286       223,292    2  validator
+  TAO.com                                 8       206,364       206,372  112  validator
+  tao5                                    6       196,277       196,283    1  validator
+  Rizzo (Insured)                         7        98,894        98,901  136  validator,sn_owner([20])
+  Datura                                  0        68,519        68,519    1  validator
+  xTAO                                    1        60,195        60,196    1  validator
+  1T1B.AI                                55        56,801        56,855    2  validator
+  Neuralteq.com                          12        54,245        54,256    2  validator
+  FirstTensor.com                         0        48,807        48,807    1  validator
+  Tatsu                                   0        44,971        44,971    2  validator
+  Firepool                                1        40,971        40,971    1  validator
+  PRvalidator                             0        36,013        36,013    1  validator
+  TAO.app                                 0        32,951        32,951   22  validator
+  NorthTensor                             7        28,695        28,702    1  validator
+  Tensorplex Labs                         2        19,690        19,693    1  validator
+  Ary van der Touw                       11        19,633        19,644    7  validator
+  MUV                                     0         8,096         8,096   56  validator
+  Neural Internet                         1         7,893         7,894    2  validator,sn_owner([27])
+  Cortex Foundαtion                       1         4,651         4,652    1  validator
+  Kooltek68                               0         2,433         2,434   59  validator
+  Owner51                             1,941             0         1,941    2  validator,sn_owner([51])
+  Astrid                                  6         1,810         1,816    1  validator
+  TaoStation                              0         1,801         1,801    1  validator
+  Sportstensor                        1,403             0         1,403    1  validator,sn_owner([41])
+  Kiln                                    3         1,074         1,077    1  validator
+  Tensor.Exchange                         0           713           713    1  validator
+  FlameWire | SN97                      600             0           600    1  validator
+  Tao Bridge                            540            38           578    1  validator
+  InfStones                               0           412           412    1  validator
+  TaoPolishNode                           0           328           329    1  validator
+  Chutes / SN64 Primary Valida            0           305           305    1  validator
+  CliqueAI                              273             0           273    1  validator,sn_owner([83])
+  Ary van der Touw                        0           258           258    1  validator
+  Vune                                    0           236           236    1  validator
+  01Lamida, Inc.                          0           209           209    1  validator
+  Owner3                                206             0           206    0  sn_owner([3])
+  grail                                  69            80           148    1  validator,sn_owner([81])
+  CheckerChain Validator                135             0           135    7  validator
+  RunPod                                130             2           132    1  validator
+  Giga Corporation                        0           128           128    1  validator
+  Love                                    1           113           114    1  validator
+  Nepher Robotics                       111             0           111    1  validator,sn_owner([49])
+  Owner30                               100             0           100    1  validator,sn_owner([30])
+  const                                  91             0            91    1  validator,sn_owner([120])
+  Lucrosus Capital                        0            85            85    1  validator
+  Owner38                                82             0            82    1  validator
+  zelytria                               77             0            77    1  validator
+  basilica                               76             0            76    1  validator,sn_owner([39])
+  TaoFi Validator                         1            69            70    1  validator
+  ShiftLayer                              2            49            51    1  validator,sn_owner([117])
+  HODL.Validators                        50             0            50    2  validator
+  Owner56                                50             0            50    1  validator,sn_owner([56])
+  MoYi                                    0            48            48    1  validator
+  Owner60                                40             0            40    1  validator,sn_owner([60])
+  Dale Cooper                            10            30            40    1  validator
+  TaoStake                                1            38            38    1  validator
+  P2P.org                                 1            37            38    2  validator
+  Chat with Hal                           0            37            37    1  validator
+  A52                                    36             0            36    0  identity_only
+  Exchange Listings                       0            36            36    1  validator
+  Yanez MIID                              0            35            35    1  validator,sn_owner([54])
+  Unit 410                                0            33            33    1  validator
+  Luminar                                 2            30            31    1  validator,sn_owner([87])
+  ByteLeap / SN128 Primary Val            0            28            28    1  validator
+  ReadyAI                                24             0            24    1  validator,sn_owner([33])
+  ByteLeap                                0            23            23    1  validator,sn_owner([128])
+  NKQ                                    22             0            22    0  identity_only
+  P.I.C                                   1            21            21    1  validator,sn_owner([92])
+  Tao Stake                               0            20            20    1  validator
+  Tenexium.io                            15             1            17    1  validator
+  TensorPulse                            15             0            15    1  validator
+  Uncle Tao                              11             0            11    1  validator
+  Hand of Midas                           2             9            10    2  validator
+
+--- VALIDATORS BY STAKE-WEIGHT (n=1966) ---
+Name                               Free TAO     Stake TAO      Combined  HKs
+--------------------------------------------------------------------------------
+  tao.bot                                 3       853,488       853,491    1
+  Kraken                                 10       723,400       723,410   95
+  Taostats                                2       583,924       583,925    2
+  Yuma, a DCG Company                    10       567,258       567,268  128
+  Openτensor Foundaτion                  23       413,881       413,904  106
+  General Tensor (RoundTable21           44       293,751       293,796  134
+  Crucible Labs                         486       276,705       277,190    3
+  Polychain                               7       223,286       223,292    2
+  (no identity)                          42       209,589       209,631    1
+  TAO.com                                 8       206,364       206,372  112
+  tao5                                    6       196,277       196,283    1
+  Rizzo (Insured)                         7        98,894        98,901  136
+  (no identity)                          26        93,432        93,459    1
+  Datura                                  0        68,519        68,519    1
+  (no identity)                          12        63,104        63,116    5
+  xTAO                                    1        60,195        60,196    1
+  1T1B.AI                                55        56,801        56,855    2
+  Neuralteq.com                          12        54,245        54,256    2
+  (no identity)                           7        52,884        52,891    1
+  FirstTensor.com                         0        48,807        48,807    1
+  Tatsu                                   0        44,971        44,971    2
+  Firepool                                1        40,971        40,971    1
+  PRvalidator                             0        36,013        36,013    1
+  TAO.app                                 0        32,951        32,951   22
+  NorthTensor                             7        28,695        28,702    1
+  Tensorplex Labs                         2        19,690        19,693    1
+  Ary van der Touw                       11        19,633        19,644    7
+  MUV                                     0         8,096         8,096   56
+  Neural Internet                         1         7,893         7,894    2
+  Cortex Foundαtion                       1         4,651         4,652    1
+  (no identity)                           0         4,423         4,424   22
+  Kooltek68                               0         2,433         2,434   59
+  Astrid                                  6         1,810         1,816    1
+  TaoStation                              0         1,801         1,801    1
+  (no identity)                           0         1,524         1,525    1
+  Kiln                                    3         1,074         1,077    1
+  (no identity)                           4         1,062         1,066    1
+  Tensor.Exchange                         0           713           713    1
+  (no identity)                           0           542           543    1
+  InfStones                               0           412           412    1
+
+--- SUBNET OWNERS BY COMBINED WEIGHT (n=129) ---
+Name                               Free TAO     Stake TAO      Combined  Role
+-------------------------------------------------------------------------------------
+  Rizzo (Insured)                         7        98,894        98,901  validator,sn_owner([20])
+  Neural Internet                         1         7,893         7,894  validator,sn_owner([27])
+  Owner51                             1,941             0         1,941  validator,sn_owner([51])
+  (no identity)                       1,341           100         1,441  validator,sn_owner([97])
+  Sportstensor                        1,403             0         1,403  validator,sn_owner([41])
+  (no identity)                       1,126             0         1,126  validator,sn_owner([125])
+  CliqueAI                              273             0           273  validator,sn_owner([83])
+  Owner3                                206             0           206  sn_owner([3])
+  grail                                  69            80           148  validator,sn_owner([81])
+  (no identity)                         147             0           147  validator,sn_owner([101])
+  Nepher Robotics                       111             0           111  validator,sn_owner([49])
+  Owner30                               100             0           100  validator,sn_owner([30])
+  (no identity)                          98             0            98  validator,sn_owner([100])
+  const                                  91             0            91  validator,sn_owner([120])
+  (no identity)                           1            88            89  validator,sn_owner([76])
+  basilica                               76             0            76  validator,sn_owner([39])
+  (no identity)                          56             0            56  validator,sn_owner([77])
+  ShiftLayer                              2            49            51  validator,sn_owner([117])
+  Owner56                                50             0            50  validator,sn_owner([56])
+  Owner60                                40             0            40  validator,sn_owner([60])
+  Yanez MIID                              0            35            35  validator,sn_owner([54])
+  Luminar                                 2            30            31  validator,sn_owner([87])
+  ReadyAI                                24             0            24  validator,sn_owner([33])
+  ByteLeap                                0            23            23  validator,sn_owner([128])
+  P.I.C                                   1            21            21  validator,sn_owner([92])
+  (no identity)                          16             0            16  validator,sn_owner([127])
+  (no identity)                          13             0            13  sn_owner([67])
+  AlphaCore                               2             8            10  validator,sn_owner([66])
+  Owner10                                10             0            10  validator,sn_owner([10])
+  TaoLend                                 5             5            10  validator,sn_owner([116])
+
+--- TOTALS ---
+  Total free TAO (known entities):             14,759
+  Total stake TAO (known entities):         5,407,513
+  Total combined (known entities):          5,422,272
+
+Note: stake_tao = sum of DelegateInfo.total_stake across all owned hotkeys.
+      free_tao from System.Account.data.free at block ~7,738,261.

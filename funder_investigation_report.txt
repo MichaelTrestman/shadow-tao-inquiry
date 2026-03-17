@@ -1,0 +1,102 @@
+========================================================================
+FUNDER ADDRESS INVESTIGATION
+========================================================================
+
+────────────────────────────────────────────────────────────────────────
+Funder-A: 5EiXej3AwjKqb9mjQAf29JG5HJf9Dwtt8CjvDqA8biprWTiN
+────────────────────────────────────────────────────────────────────────
+Current balance: 242.5138 TAO
+Nonce: 23,452  (number of transactions signed)
+Not in known_holders.json (no registered identity, not a validator or SN owner)
+
+Balance history (14 sample points):
+  Block  5,000,000:        26.7452 TAO
+  Block  6,000,000:     1,040.3156 TAO
+  Block  7,000,000:       128.9837 TAO
+  Block  7,761,208:       242.5138 TAO
+
+Inbound funding (blocks where balance increased):
+  Block 4,813,834: received 0.0211 TAO from 5FXw2v9BH1wMCoP4vws27FWMqLGXFK647NwGGRaMHVeSnzKE
+  Block 4,844,283: received 0.0221 TAO from 5FXw2v9BH1wMCoP4vws27FWMqLGXFK647NwGGRaMHVeSnzKE
+  Block 4,844,293: received 0.0143 TAO from 5F2BLayFnkn9bPUwZju1UQHqaZY8qqWQBRhuRhtU4Vu6yK2m
+  Block 4,877,017: received 0.1984 TAO from 5HmzvWPJi2qjqA3guPN8aimUpD9eME6aqzXtpPah9N7AwUia
+  Block 4,962,438: received 0.2969 TAO from 5HUPxAsF52CX7RWAe3vDA7Wu7fiKT78dG3XpxRisfnwKYsn4
+  Block 4,963,183: received 0.2287 TAO from 5CnsvMnwkibEG1EZzSbBLRAEXBsuYZaWX95a119bi4Mnh5wq
+  Block 4,963,243: received 0.1890 TAO from 5GXDDosFMHLgdyUrRcHXzJ8qr3ecYdcpbzh69HAEUwdUFPza
+  Block 4,963,328: received 9.8009 TAO from 5GXDDosFMHLgdyUrRcHXzJ8qr3ecYdcpbzh69HAEUwdUFPza
+  Block 4,963,943: received 0.0009 TAO from 5Fpw13BWL1dnv9755YdVW1WKg61MZD8K3nyfF9FbJvLaYjgr
+  Block 4,964,048: received 10.5790 TAO from 5HddVJRbh1i4XuAYnRxDF6bHtcPj1HfaeLSBbASNvUENt6Gw
+  Block 4,964,113: received 3.6999 TAO from 5EQjSevJFDs4GRFAyA3YZmxUtgZMBToXGWFn5bidk1HDorsj
+  Block 4,964,128: received 0.2201 TAO from 5CXbNUV15obrkHRYYztnX2gvoxnGjTMf8RFRKK68xY3zap1y
+  Block 4,964,213: received 2.5190 TAO from 5CXbNUV15obrkHRYYztnX2gvoxnGjTMf8RFRKK68xY3zap1y
+  Block 5,032,618: received 22.9590 TAO from 5Cgr8ndzJs5cgoKvvM8e7o9ZQfUjCopFqk7ESHEHFmeCrTKW
+  Block 5,032,833: received 2.2199 TAO from 5DvskdAfp6K12GeUPxX579xi1E7bzRKmyk1FjMPVcYLLmiBz
+  Block 5,093,418: received 75.6616 TAO from 5CnsvMnwkibEG1EZzSbBLRAEXBsuYZaWX95a119bi4Mnh5wq
+  Block 5,093,648: received 2.9181 TAO from 5EZ6wJCb72efHMkCdFZGTaAu32UTkC8AWY1y2uhagtLUgywh
+  Block 5,093,673: received 0.9999 TAO from 5G4twmgLS3WrNxdxopSTH86LmnyS1oFmTWDyDmHWHm4dviQq
+  Block 5,093,713: received 5.5669 TAO from 5HM15GSqmWuX7wTmTzHXJkcz5rUN3tVPboV8zXTuDZwc9XXE
+  Block 5,094,903: received 2.9999 TAO from 5GfBWztxHo1STTgt7H6RhUQrksAnvp6oMZFpGcSpDzjHx7Hg
+  Block 5,629,888: received 734.9999 TAO from 5HB2Q8H9Rvxr3ejZ1o58FfXk3S3jMij6mB7Vu7b7SPqUdhTQ
+  Block 5,860,339: received 1,373.9999 TAO from 5HB2Q8H9Rvxr3ejZ1o58FfXk3S3jMij6mB7Vu7b7SPqUdhTQ
+  Block 7,196,237: received 78.0022 TAO from 5ESDyJBqh3SRcmboQpHc3761pZqV5C9vrFPFy8qxtAzerktB
+  Block 7,336,427: received 471.7707 TAO from 5GYLRjVVUz3GzcXWjrgYRp4FLaVBb2y5McUfkQNAKqT9d82a
+
+All transfers at blocks where Funder-A funded shadow wallets:
+
+  Block 5,946,516 (first deposit to 5FEA1FfUPwT3K4zT...):
+    → 5FEA1FfUPwT3K4zTsYbQx5X1G9R2ZjYLyFv12xBQxW9QgoCL  923.4418 TAO
+    → 5FEA1FfUPwT3K4zTsYbQx5X1G9R2ZjYLyFv12xBQxW9QgoCL  692.4152 TAO
+
+  Block 6,581,276 (first deposit to 5Dhf6WgqrfhVyFCG...):
+    → 5Dhf6WgqrfhVyFCGqK4G5utro2jepscwryMhLHtpMfopxweC  256.5047 TAO
+
+  Block 6,784,524 (first deposit to 5C9CxW9355u1sqy6...):
+    → 5C9CxW9355u1sqy6Np85FfGssJAdyA8cAsjjV9YP8aaLvjEY  632.9372 TAO
+
+────────────────────────────────────────────────────────────────────────
+Funder-B: 5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E
+────────────────────────────────────────────────────────────────────────
+Current balance: 115.1728 TAO
+Nonce: 23,089  (number of transactions signed)
+Not in known_holders.json (no registered identity, not a validator or SN owner)
+
+Balance history (14 sample points):
+  Block  5,000,000:        67.4591 TAO
+  Block  6,000,000:       126.4316 TAO
+  Block  7,000,000:       169.3021 TAO
+  Block  7,761,208:       115.1728 TAO
+
+Inbound funding (blocks where balance increased):
+  Block 4,869,772: received 0.0033 TAO from 5FXw2v9BH1wMCoP4vws27FWMqLGXFK647NwGGRaMHVeSnzKE
+  Block 4,905,153: received 0.0121 TAO from 5FXw2v9BH1wMCoP4vws27FWMqLGXFK647NwGGRaMHVeSnzKE
+  Block 4,956,543: received 0.0019 TAO from 5CZyR91WgiM2vK7knGSnUfQAWVD1omtva1AbVFTSv5ZoLjXN
+  Block 4,962,353: received 0.0887 TAO from 5HUPxAsF52CX7RWAe3vDA7Wu7fiKT78dG3XpxRisfnwKYsn4
+  Block 4,962,718: received 0.9770 TAO from 5EQjSevJFDs4GRFAyA3YZmxUtgZMBToXGWFn5bidk1HDorsj
+  Block 4,963,788: received 0.0890 TAO from 5DfKewdxchFx7umvw6qcHKXKgvVxEtMFXFXVaXShjf7anzet
+  Block 4,963,808: received 4.0754 TAO from 5GHA4rixLjeEiMyKXaVjpewaXKJzW48UePjwHvTqemz7kkHQ
+  Block 4,963,858: received 0.7499 TAO from 5Fpw13BWL1dnv9755YdVW1WKg61MZD8K3nyfF9FbJvLaYjgr
+  Block 4,963,873: received 877.3709 TAO from 5DfKewdxchFx7umvw6qcHKXKgvVxEtMFXFXVaXShjf7anzet
+  Block 5,250,203: received 57.3696 TAO from 5DC8Uq5wy1M4m9XRJaEFFt2PtV8zdKUUVQemEe5whZ2bguq6
+  Block 5,783,692: received 97.0052 TAO from 5ESDyJBqh3SRcmboQpHc3761pZqV5C9vrFPFy8qxtAzerktB
+  Block 6,135,677: received 95.7881 TAO from 5Gorfuxev7QmgDzBK92YrVW2K5PEvfZRW49SQrKm3VXcAGi1
+
+All transfers at blocks where Funder-B funded shadow wallets:
+
+  Block 6,084,503 (first deposit to 5ChHTBkaE1VgK5NX...):
+    → 5ChHTBkaE1VgK5NX59uHuZoK8VQShojKBB1sGfXaZQpxVDCi  196.3578 TAO
+
+  Block 7,061,941 (first deposit to 5Epz8SQ69FuZRLyj...):
+    → 5Epz8SQ69FuZRLyjCAicn8i71SdyEYaWR5rZ5a1i1bgoxGaQ  1,026.4809 TAO
+
+  Block 7,066,018 (first deposit to 5GVKorR78gqQCV6m...):
+    → 5Epz8SQ69FuZRLyjCAicn8i71SdyEYaWR5rZ5a1i1bgoxGaQ  277.5324 TAO
+    → 5GVKorR78gqQCV6mrWMWX95hHG93ZaRAUShZVBNT768dvqv8  996.5170 TAO
+    → 5GVKorR78gqQCV6mrWMWX95hHG93ZaRAUShZVBNT768dvqv8  996.5170 TAO
+    → 5GVKorR78gqQCV6mrWMWX95hHG93ZaRAUShZVBNT768dvqv8  996.5170 TAO
+    → 5GVKorR78gqQCV6mrWMWX95hHG93ZaRAUShZVBNT768dvqv8  996.5170 TAO
+    → 5GVKorR78gqQCV6mrWMWX95hHG93ZaRAUShZVBNT768dvqv8  996.5170 TAO
+    → 5GVKorR78gqQCV6mrWMWX95hHG93ZaRAUShZVBNT768dvqv8  996.5170 TAO
+    → 5GVKorR78gqQCV6mrWMWX95hHG93ZaRAUShZVBNT768dvqv8  996.5170 TAO
+    → 5GVKorR78gqQCV6mrWMWX95hHG93ZaRAUShZVBNT768dvqv8  996.5170 TAO
+    → 5GVKorR78gqQCV6mrWMWX95hHG93ZaRAUShZVBNT768dvqv8  996.5170 TAO
+

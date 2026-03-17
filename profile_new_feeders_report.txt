@@ -1,0 +1,99 @@
+========================================================================
+NEW FEEDER PROFILE REPORT
+Min transfer threshold: 100.0 TAO
+========================================================================
+
+────────────────────────────────────────────────────────────────────────
+EJMGn13 (round-trip feeder)
+  Address: 5EJMGn13311deMfe9pwZYd5bPkyMGs1ZmkmNtbpbv7wPcG9C
+  Inbound (>=100 TAO):  599 txs,   298,962.27 TAO
+  Outbound (>=100 TAO): 248 txs,   297,537.47 TAO
+  First inbound block:  6,421,401
+  First outbound block: 6,440,446
+
+  TOP SENDERS (upstream sources):
+    5FV99mBYw3tYrMTXXe52PDa69an1AE19aTrpnB4kzxW73yUj    125,573.64 TAO
+    5EiXej3AwjKqb9mjQAf29JG5HJf9Dwtt8CjvDqA8biprWTiN    106,965.53 TAO  [infra: Funder-A]
+    5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E     66,423.09 TAO  [infra: Funder-B]
+
+  TOP RECEIVERS (downstream destinations):
+    5FV99mBYw3tYrMTXXe52PDa69an1AE19aTrpnB4kzxW73yUj    123,357.12 TAO
+    5EiXej3AwjKqb9mjQAf29JG5HJf9Dwtt8CjvDqA8biprWTiN    121,900.60 TAO  [infra: Funder-A]
+    5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E     52,279.74 TAO  [infra: Funder-B]
+
+────────────────────────────────────────────────────────────────────────
+Gorfuxev7 (cross-funder hub)
+  Address: 5Gorfuxev7QmgDzBK92YrVW2K5PEvfZRW49SQrKm3VXcAGi1
+  Inbound (>=100 TAO):  520 txs,    77,427.19 TAO
+  Outbound (>=100 TAO): 582 txs,    90,482.38 TAO
+  First inbound block:  6,003,584
+  First outbound block: 6,003,600
+
+  TOP SENDERS (upstream sources):
+    5GBnPzvPghS8AuCoo6bfnK7JUFHuyUhWSFD4woBNsKnPiEUi     70,802.72 TAO  [infra: GBnPzv]
+    5HbDZ6ULuwZegAMSPaS2kaUfBLMDaht5t48RcDrQATSgGCAR      6,624.48 TAO
+
+  TOP RECEIVERS (downstream destinations):
+    5EiXej3AwjKqb9mjQAf29JG5HJf9Dwtt8CjvDqA8biprWTiN     32,856.96 TAO  [infra: Funder-A]
+    5FV99mBYw3tYrMTXXe52PDa69an1AE19aTrpnB4kzxW73yUj     30,764.05 TAO
+    5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E     26,861.37 TAO  [infra: Funder-B]
+
+────────────────────────────────────────────────────────────────────────
+HnhgYXb (Funder-A sender)
+  Address: 5HnhgYXb9pJcAWceju1a5aZttSPpeMqYDNqUbxntGyUNqGxR
+  Inbound (>=100 TAO):  190 txs,    97,988.67 TAO
+  Outbound (>=100 TAO): 78 txs,    98,282.93 TAO
+  First inbound block:  6,421,401
+  First outbound block: 6,430,006
+
+  TOP SENDERS (upstream sources):
+    5FV99mBYw3tYrMTXXe52PDa69an1AE19aTrpnB4kzxW73yUj     34,877.48 TAO
+    5EiXej3AwjKqb9mjQAf29JG5HJf9Dwtt8CjvDqA8biprWTiN     32,938.75 TAO  [infra: Funder-A]
+    5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E     30,172.44 TAO  [infra: Funder-B]
+
+  TOP RECEIVERS (downstream destinations):
+    5FV99mBYw3tYrMTXXe52PDa69an1AE19aTrpnB4kzxW73yUj     47,280.78 TAO
+    5EiXej3AwjKqb9mjQAf29JG5HJf9Dwtt8CjvDqA8biprWTiN     33,301.95 TAO  [infra: Funder-A]
+    5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E     17,700.20 TAO  [infra: Funder-B]
+
+────────────────────────────────────────────────────────────────────────
+EfXUFMj (Funder-A sender)
+  Address: 5EfXUFMjjc78YKgDrEta3SQFDvwvV7PtPnV2MKBd35SqvhQJ
+  Inbound (>=100 TAO):  106 txs,    58,528.07 TAO
+  Outbound (>=100 TAO): 45 txs,    58,525.97 TAO
+  First inbound block:  6,421,401
+  First outbound block: 6,655,861
+
+  TOP SENDERS (upstream sources):
+    5EiXej3AwjKqb9mjQAf29JG5HJf9Dwtt8CjvDqA8biprWTiN     28,140.44 TAO  [infra: Funder-A]
+    5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E     15,965.41 TAO  [infra: Funder-B]
+    5FV99mBYw3tYrMTXXe52PDa69an1AE19aTrpnB4kzxW73yUj     14,422.23 TAO
+
+  TOP RECEIVERS (downstream destinations):
+    5FV99mBYw3tYrMTXXe52PDa69an1AE19aTrpnB4kzxW73yUj     37,569.81 TAO
+    5EiXej3AwjKqb9mjQAf29JG5HJf9Dwtt8CjvDqA8biprWTiN     16,340.13 TAO  [infra: Funder-A]
+    5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E      4,616.03 TAO  [infra: Funder-B]
+
+────────────────────────────────────────────────────────────────────────
+FJMfoeUX (cross-funder hub)
+  Address: 5FJMfoeUXsDXQSABaai8CUQvMyAK1a7jXqJvkBMnabfuJCjv
+  Inbound (>=100 TAO):  344 txs,    82,122.19 TAO
+  Outbound (>=100 TAO): 341 txs,   108,332.85 TAO
+  First inbound block:  4,969,463
+  First outbound block: 4,969,478
+
+  TOP SENDERS (upstream sources):
+    5GBnPzvPghS8AuCoo6bfnK7JUFHuyUhWSFD4woBNsKnPiEUi     57,034.40 TAO  [infra: GBnPzv]
+    5CNChyk2fnVgVSZDLAVVFb4QBTMGm6WfuQvseBG6hj8xWzKP      9,091.54 TAO
+    5E2b2DcMd5W8MBhzTCFt63t2ZEN8RsRgL7oDd7BFYL9aMQux      6,036.33 TAO
+    5FqBL928choLPmeFz5UVAvonBD5k7K2mZSXVC9RkFzLxoy2s      4,464.67 TAO
+    5FqqXKb9zonSNKbZhEuHYjCXnmPbX9tdzMCU2gx8gir8Z8a5      2,363.27 TAO
+    5HbDZ6ULuwZegAMSPaS2kaUfBLMDaht5t48RcDrQATSgGCAR      2,201.00 TAO
+    5FZiuxCBt8p6PFDisJ9ZEbBaKNVKy6TeemVJd1Z6jscsdjib        610.99 TAO
+    5DxcqzHjknv1gUReoRVYg1R6XjGgPMRD1ww4koTQND7ZLJsP        319.99 TAO
+
+  TOP RECEIVERS (downstream destinations):
+    5FV99mBYw3tYrMTXXe52PDa69an1AE19aTrpnB4kzxW73yUj     48,198.73 TAO
+    5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E     32,893.78 TAO  [infra: Funder-B]
+    5EiXej3AwjKqb9mjQAf29JG5HJf9Dwtt8CjvDqA8biprWTiN     27,240.35 TAO  [infra: Funder-A]
+

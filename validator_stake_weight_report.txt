@@ -1,0 +1,49 @@
+========================================================================
+VALIDATOR STAKE-WEIGHT — Bittensor Finney (dTAO)
+Source: DelegateInfo.total_stake (sum across all subnets)
+========================================================================
+
+--- TOP 30 VALIDATORS BY STAKE-WEIGHT ---
+     Stake TAO  Name                            Coldkey
+--------------------------------------------------------------------------------
+    853,488.01  tao.bot                         5GsbTgfvgCH4xdqSkiPb7EaBBFLHjWH5vfEALhJaewSFpZX9
+    723,397.30  Kraken                          5FHxxe8ZKYaNmGcSLdG5ekxXeZDhQnk9cbpHdsJW8RunGpSs
+    583,923.82  Taostats                        5GcCZ2BPXBjgG88tXJCEtkbdg2hNrPbL4EFfbiVRvBZdSQDC
+    566,959.20  Yuma, a DCG Company             5E9fVY1jexCNVMjd2rdBsAxeamFGEMfzHcyTn2fHgdHeYc5p
+    413,410.73  Openτensor Foundaτion           5HBtpwxuGNL1gwzwomwR7sjwUt8WXYSuWcLYN6f9KpTZkP4k
+    293,457.75  General Tensor (RoundTable21)   5DywxdtESjskgPZrDXL86qV44SpPgJuqs9X6noyJJwX9PaSD
+    276,703.11  Crucible Labs                   5Eq8b9p6zJMjEXyH9sX4DRMYspnUyorEKq3Zmha1WN6AC4sf
+    223,285.57  Polychain                       5GP8N57T2oja6qR9y3FQDYjrEFxnhmx3ZuiadE64yw6h5For
+    209,589.24  (no identity)                   5GBkWRazB6zjyKg8GtkDr347Vndkq8pWock2XQP1NMEn1jo5
+    206,364.15  TAO.com                         5Cu7NFMULPDkaQkr3nciUVMADvCfqtnjeuYrZpuoMXo6H8MY
+    196,277.07  tao5                            5EJAqczgzCMvWcmXhKMZH4vMS5gPy8BjeuHjz5o5yN6RYzX2
+     98,721.93  Rizzo (Insured)                 5FuzgvtfbZWdKSRxyYVPAPYNaNnf9cMnpT7phL3s2T3Kkrzo
+     93,432.20  (no identity)                   5DyMLUKuc6T3QFAXKd3w6dTcxmcH1WBZ1gDrRwJAnPf7N28w
+     68,518.85  Datura                          5DkwfxC9mZTTCsRUt6nrnwQEWVrhsmY13SBRparj6cpAVxVY
+     60,195.47  xTAO                            5HK2ASHvfi5MGNQJphGGmtqYn16qH5mkNW1NSyYFebCbB9Dj
+     55,333.71  1T1B.AI                         5Ek8i6wDRakJfJPM9wpJLYDE9G9uaqHLdARoewtTiLtbt33f
+     54,242.92  Neuralteq.com                   5HHS55o12rsvH5cKdAYzFW1bsPiQPPctcC8pcJLBHZbZnpHV
+     52,883.65  (no identity)                   5F4XcaiEBkE3ARx2kG29KJ8e94nFfUZQYC4c7zfticastxiD
+     48,806.96  FirstTensor.com                 5G1KeLg1rda5kBZ9pWVnpAe3y4RwRRphcVxuY5mukLFStJhj
+     44,970.76  Tatsu                           5CcjmmxpBbUGKTSLGWvU7T31EepFt4DBv64iZePE6bUZukaS
+     42,997.25  (no identity)                   5EU2ZJQyZB2e6TsVmvTWZ6vszZSWyrRK9m72zNBKYBvHQuaZ
+     40,970.88  Firepool                        5DqFsZZTDHee2ZFEccSMPH1WLQy54cXtARVPKkErj5VhHNxc
+     36,013.18  PRvalidator                     5GyAMYSxde6x5hG8AHksoPHZZeum8GXk8sXisgADNn6CSi7Y
+     32,925.51  TAO.app                         5HiFDVNX4ivCJFt9RvgRCtQKmAPgAXGX8BRgX3XKqfY9fFve
+     28,695.05  NorthTensor                     5FTxn37JFkQn2c9jAY1SkdtqUHKACsV9ZjmCBnBaYcUktaBo
+     20,107.05  (no identity)                   5EU2ZJQyZB2e6TsVmvTWZ6vszZSWyrRK9m72zNBKYBvHQuaZ
+     19,690.45  Tensorplex Labs                 5FLjGr5a1FHSSPe4Df8uVH5HBpeAkj2aJuWZR18XjFxA6pmH
+     19,633.35  Ary van der Touw                5EsutAGoekFjUm8DHAXSpLBGMKDUGALsLCbEb5JCwK6yiwTH
+      8,095.91  MUV                             5CMUVyexHFz68M5wtuuD8iQCgEMb8e8U2FpvQfWmoYST6dQo
+      7,892.97  Neural Internet                 5HWcFNDtZcpbrq8Qkd92EvgWp6q5dCycHkT1aBQtWsmLT8fB
+
+--- VALIDATORS OF INTEREST ---
+          0.00 TAO  Kraken (coldkey)  (5FHxxe8ZKYaNmGcSLdG5ekxXeZDhQnk9cbpHdsJW8RunGpSs)
+          0.00 TAO  Opentensor Foundation (coldkey)  (5HBtpwxuGNL1gwzwomwR7sjwUt8WXYSuWcLYN6f9KpTZkP4k)
+          0.00 TAO  const (coldkey)  (5Fc3ZZQAYB3SPXKcFnd1WJeyQvArSZZeB6LU1rb7zvQ6XvDh)
+  (not a delegate)        Const public coldkey  (5GH2aUTMRUh1RprCgH4x3tRyCaKeUi5BfmYCfs1NARA8R54n)
+          0.00 TAO  Owner51  (5FqACMtcegZxxopgu1g7TgyrnyD8skurr9QDPLPhxNQzsThe)
+          0.00 TAO  Sportstensor  (5FCSevLkofmKZRixMawp6jyyjBty1AeSCLa7N5Fv892DYkXX)
+
+Total delegated stake across all validators: 5,407,513.43 TAO
+Number of delegates: 5609

@@ -1,0 +1,189 @@
+================================================================================
+ADDRESS CROSS-REFERENCE: SHADOW WHALE CLUSTER vs TAOBOT vs KNOWN ENTITIES
+Sources: known_holders.json (2,369 entities)  |  top100_holders_report.txt
+================================================================================
+
+────────────────────────────────────────────────────────────────────────────────
+SHADOW WALLETS (SW1–SW8)
+────────────────────────────────────────────────────────────────────────────────
+  SW1                     5FEA1FfUPwT3K4zTsYbQx5X1G9R2ZjYLyFv12xBQxW9QgoCL
+      → NOT in known_holders
+      → IN top100  top100 rank=#2  free=141,003 TAO
+  SW2                     5ChHTBkaE1VgK5NX59uHuZoK8VQShojKBB1sGfXaZQpxVDCi
+      → NOT in known_holders
+      → IN top100  top100 rank=#3  free=129,499 TAO
+  SW3                     5Dhf6WgqrfhVyFCGqK4G5utro2jepscwryMhLHtpMfopxweC
+      → NOT in known_holders
+      → IN top100  top100 rank=#5  free=117,065 TAO
+  SW4                     5GUkyA37dHnc1rEijDtvBe5yYNCpaNjaHGqB7DY9Kb2KgSj3
+      → NOT in known_holders
+      → IN top100  top100 rank=#6  free=108,064 TAO
+  SW5                     5C9CxW9355u1sqy6Np85FfGssJAdyA8cAsjjV9YP8aaLvjEY
+      → NOT in known_holders
+      → IN top100  top100 rank=#8  free=93,908 TAO
+  SW6                     5Epz8SQ69FuZRLyjCAicn8i71SdyEYaWR5rZ5a1i1bgoxGaQ
+      → NOT in known_holders
+      → IN top100  top100 rank=#9  free=90,843 TAO
+  SW7                     5GVKorR78gqQCV6mrWMWX95hHG93ZaRAUShZVBNT768dvqv8
+      → NOT in known_holders
+      → IN top100  top100 rank=#13  free=56,342 TAO
+  SW8                     5HAe1pePzBuPqsF6BpTGN8vCngvKKJaRZ2HkHwFmJgWgAzcf
+      → NOT in known_holders
+      → IN top100  top100 rank=#29  free=17,850 TAO
+
+────────────────────────────────────────────────────────────────────────────────
+SHADOW INFRASTRUCTURE — FEEDERS / HUBS
+────────────────────────────────────────────────────────────────────────────────
+  Funder-A                5EiXej3AwjKqb9mjQAf29JG5HJf9Dwtt8CjvDqA8biprWTiN
+      → NOT in known_holders
+      → NOT in top100
+  Funder-B                5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E
+      → NOT in known_holders
+      → IN top100  top100 rank=#93  free=1,809 TAO
+  HB2Q8-hub               5HB2Q8H9Rvxr3ejZ1o58FfXk3S3jMij6mB7Vu7b7SPqUdhTQ
+      → NOT in known_holders
+      → NOT in top100
+  FV99mB                  5FV99mBYw3tYrMTXXe52PDa69an1AE19aTrpnB4kzxW73yUj
+      → NOT in known_holders
+      → NOT in top100
+  HUPxAs                  5HUPxAsF52CX7RWAe3vDA7Wu7fiKT78dG3XpxRisfnwKYsn4
+      → NOT in known_holders
+      → NOT in top100
+  DfKewdx                 5DfKewdxchFx7umvw6qcHKXKgvVxEtMFXFXVaXShjf7anzet
+      → NOT in known_holders
+      → NOT in top100
+  GBnPzv                  5GBnPzvPghS8AuCoo6bfnK7JUFHuyUhWSFD4woBNsKnPiEUi
+      → NOT in known_holders
+      → IN top100  top100 rank=#18  free=23,696 TAO
+  Gorfuxev7               5Gorfuxev7QmgDzBK92YrVW2K5PEvfZRW49SQrKm3VXcAGi1
+      → NOT in known_holders
+      → NOT in top100
+  FJMfoeUX                5FJMfoeUXsDXQSABaai8CUQvMyAK1a7jXqJvkBMnabfuJCjv
+      → NOT in known_holders
+      → NOT in top100
+  EJMGn13                 5EJMGn13311deMfe9pwZYd5bPkyMGs1ZmkmNtbpbv7wPcG9C
+      → NOT in known_holders
+      → IN top100  top100 rank=#52  free=5,834 TAO
+  HnhgYXb                 5HnhgYXb9pJcAWceju1a5aZttSPpeMqYDNqUbxntGyUNqGxR
+      → NOT in known_holders
+      → NOT in top100
+  EfXUFMj                 5EfXUFMjjc78YKgDrEta3SQFDvwvV7PtPnV2MKBd35SqvhQJ
+      → NOT in known_holders
+      → IN top100  top100 rank=#46  free=7,901 TAO
+  CNChyk2                 5CNChyk2fnVgVSZDLAVVFb4QBTMGm6WfuQvseBG6hj8xWzKP
+      → NOT in known_holders
+      → IN top100  top100 rank=#75  free=2,507 TAO
+  HbDZ6UL                 5HbDZ6ULuwZegAMSPaS2kaUfBLMDaht5t48RcDrQATSgGCAR
+      → NOT in known_holders
+      → IN top100  top100 rank=#56  free=5,213 TAO
+  FqBL928                 5FqBL928choLPmeFz5UVAvonBD5k7K2mZSXVC9RkFzLxoy2s
+      → NOT in known_holders
+      → IN top100  top100 rank=#4  free=122,232 TAO
+
+────────────────────────────────────────────────────────────────────────────────
+TAO.BOT ADDRESSES
+────────────────────────────────────────────────────────────────────────────────
+  taobot-coldkey          5GsbTgfvgCH4xdqSkiPb7EaBBFLHjWH5vfEALhJaewSFpZX9
+      → IN known_holders  KNOWN: name='tao.bot' roles=['validator']
+      → NOT in top100
+  taobot-hotkey           5E2LP6EnZ54m3wS8s1yPvD5c3xo71kQroBw7aUVK32TKeZ5u
+      → NOT in known_holders
+      → NOT in top100
+  taobot-seed-funder      5E2b2DcMd5W8MBhzTCFt63t2ZEN8RsRgL7oDd7BFYL9aMQux
+      → NOT in known_holders
+      → NOT in top100
+  taobot-recent-funder    5FqqXKb9zonSNKbZhEuHYjCXnmPbX9tdzMCU2gx8gir8Z8a5
+      → NOT in known_holders
+      → IN top100  top100 rank=#34  free=12,248 TAO
+
+────────────────────────────────────────────────────────────────────────────────
+OVERLAP: addresses appearing in multiple sets
+────────────────────────────────────────────────────────────────────────────────
+  No direct address overlap between shadow cluster and tao.bot address sets.
+
+────────────────────────────────────────────────────────────────────────────────
+TOP 100 ADDRESSES NOT IN ANY KNOWN SET (candidates for further profiling)
+────────────────────────────────────────────────────────────────────────────────
+  #  1  5Hd2ze5ug8n1bo3UCAcQsf66VNjKqGos8u6apNfzcU86pg4N       868,020 TAO  [pure_holder]
+  #  7  5H9brHhMA1km3Dp3YCx75oaimgxEYScxCfxbzQRZ3gHk9x3L        98,102 TAO  [pure_holder]
+  # 10  5ELWnR5A7DUmmqHsYPA3iZMFu1BX3gceruEqFPtsmTkCqR7J        81,996 TAO  [pure_holder]
+  # 11  5GzGtUFNxufJoa5mASaC8pJjaz8WynzVZ4KBLzpGbXyJpmGm        72,563 TAO  [pure_holder]
+  # 12  5Ho71YYpmq6VsxxYdfzAmiYRoQVT5VmPWojK46LUHdzad1Gh        70,929 TAO  [pure_holder]
+  # 14  5CsLYxFomrfxLgPpsLGyg2cDrDQwZQVuMQZULHDL6NTiSCda        38,315 TAO  [pure_holder]
+  # 15  5DdfV4KJgkrwyNKPCML87KceNj3in9py2HGiwiGF7KSiJNP9        35,556 TAO  [pure_holder]
+  # 16  5FsWP1GxpzT11xyFBojKpE75pzp54ESDA6BYbRMPJ2nsCZE5        33,579 TAO  [pure_holder]
+  # 17  5E2DRjhMy8BQ1XRQsfjH2FSL9PwqVfBbkn2PL5ELSY6rFo3h        30,173 TAO  [pure_holder]
+  # 19  5DsqKdVuoz8i8uLHqe71EMbLtJ7mSY8NbRb7LHbtFC2V9xbP        23,408 TAO  [pure_holder]
+  # 20  5DohFrx7u4HFuBYgncNY4FivhjpNLnuYtLu9gKJDU1zBx5EW        21,811 TAO  [pure_holder]
+  # 21  5FVp8kAhDAv4wHkux57eBBNxnYhPUt5qHLHAAs7USLqbBBJG        21,490 TAO  [pure_holder]
+  # 22  5CdY3jY6HRPY3BYigJ1Ae5c6kQrht5Br8rpU3MQaq63BHBas        20,537 TAO  [pure_holder]
+  # 23  5FqLi5EG1XJSjWRJrwGDkAFKHKcKPoaibdTSCm8ECCozM2T6        20,451 TAO  [pure_holder]
+  # 24  5FdZcyZNihUnMyLvEUHULHUnMyeVBSdzEzViLEKTvN2Mrbj9        20,092 TAO  [pure_holder]
+  # 25  5FstaFw248ZpYHvkvs1QjAXMcJhoSQSQk9cjbvmqDf46TTx3        19,999 TAO  [pure_holder]
+  # 26  5FJ9RrP3gkiaWi2UTQjHp3wjeLF9goYPdgrjxyFkTKWHesR6        19,566 TAO  [pure_holder]
+  # 27  5EnSqcPPFBDoPZ8Ni4npZWS5BG4jqx39tVrKi2nSRRbA99v9        19,000 TAO  [pure_holder]
+  # 28  5CVSCaCXDRydd3Mkdbu2tHLNYxmNTSpy9yRixa1TRGvgRFS8        18,793 TAO  [pure_holder]
+  # 30  5FGxLCWQzsUpdPPvJG8zHyuUepLhDVnnasMcp6EwtyVvY1hE        15,284 TAO  [pure_holder]
+  # 31  5DwksfKHHG5rURh9jpGaq87m5k3Jn8BJbY9geeX7zTGQD8Pr        15,132 TAO  [pure_holder]
+  # 32  5GBHJgzBANpMQPo5iywMvvnfmKXjRmMHMC6tccoZ7nB3Yq4K        14,340 TAO  [pure_holder]
+  # 33  5GjRLi1ueCeuhF64HNh96AJwDqW9RMNh92qjwpb2b4XqCfxg        13,531 TAO  [pure_holder]
+  # 35  5GhjixW4b6S8MxC4hb2W8xud3U4gw4rUGrqEjTgfSsa2pvPN        12,003 TAO  [pure_holder]
+  # 36  5EE7eFjdM5tPjizRywj25rK82GH4eDQCxh3PT4BZgkaWBuvn        12,003 TAO  [pure_holder]
+  # 37  5GEQHK4XnfJAzqVJQ1twRiNdfTEBTPmCMcmmLpRY3qrJkMzJ        12,003 TAO  [pure_holder]
+  # 38  5GgeiyNgHu7dL961ZDFVpStm53VeqQVoSCZmM4Xt4T1p27ta        12,003 TAO  [pure_holder]
+  # 39  5HAZamWxtVYNkukfc8cEWDrk64JLRncuG1rC7t4Pcm3BVVAt        12,003 TAO  [pure_holder]
+  # 40  5CXHJRRk5WAQ8hTkzRDEK89pbsZD2e4Lu7KBTFrHcUQ6GZvz         9,800 TAO  [pure_holder]
+  # 41  5EfY9WzLjw7THTibna6eBBbtRK7pP1LZNve7XSnT5x46QDCi         9,588 TAO  [pure_holder]
+  # 42  5DAqRxdSLMj2z96SrJhFiPcB3BWQeyuh9pCSvaLfvbQktc54         9,331 TAO  [pure_holder]
+  # 43  5GxcXuvJB4JLekTgo66eny3NSZzHjYPoPJPD3F6Nc2zZ1vTB         9,173 TAO  [pure_holder]
+  # 44  5HaP1aXygm83Dt7mL3bHxAyDqymoJ5QtiAytzm5eGisUrBb9         8,597 TAO  [pure_holder]
+  # 45  5EHQ4MhtVBCLwhirJNDbeGt1sumK334jLdvzXjYfWDBzH6mw         8,183 TAO  [pure_holder]
+  # 47  5Csy92Bbjh5gjkkrxbaq89G9pQjgRG6BkEs3J4XJxsEfwQq7         7,594 TAO  [pure_holder]
+  # 48  5G8aGRJyMF1zpLmGirvkMKqvPq5PaDUVGA8Pc17A4dmzMgQ8         7,315 TAO  [pure_holder]
+  # 49  5DuzRp8mRLfVxVeqBbXpfQsMur1WRs6MxcKKHGUZQhCaf73G         6,696 TAO  [pure_holder]
+  # 50  5EogxZM6o6R1xVRhEmKt6cv27NUKqYfwaubEsyh6uF6QietF         6,384 TAO  [pure_holder]
+  # 51  5HeWF2M4hHtsjeaKemfVUi427sM6caTGyqZo5XvCQLE8r7qc         6,277 TAO  [pure_holder]
+  # 53  5CxvgCcxnwEj4M8Vr18Ez9zjVpTJduNHb4Bo6ksucZF5qYBF         5,669 TAO  [pure_holder]
+  # 54  5HbUBhvvCVsYYA1ghsHrVzSzARxhkF5yLFMctVgcENXjJ329         5,604 TAO  [pure_holder]
+  # 55  5CoWc5Cj8kkb33iyzzR7qJAuUPGp9cZa1HKyvzjDafBU2ewH         5,518 TAO  [pure_holder]
+  # 57  5FVzjdr4guLaRHbWHUHH56p3YdEthf8cLYHfMmm89oRV1zfV         4,987 TAO  [pure_holder]
+  # 58  5Gm8qR8h5L52c3xVL57RKeLPnrs6RVrE2iUJcRFiMcCm2p5Z         4,847 TAO  [pure_holder]
+  # 59  5FnoHp1TEiTZ4JLZCN94okAws1cmxJMZCvFka5MCGKfX5Nnz         4,778 TAO  [pure_holder]
+  # 60  5Giw9LdLuk36TVsEcKZUwGUDZ9PkaoTkLXVZCcvJXEyNfXTW         4,567 TAO  [pure_holder]
+  # 61  5D1V8ZonkgNJFSDshEyaSk8Cg6MwcrUuWbfXehXnwS1A7x5H         4,496 TAO  [pure_holder]
+  # 62  5Dcqbt9Qf2mb8jGMXyZwFEw8yDvnjD5Je5gWLsFsTqtDsQZf         4,492 TAO  [pure_holder]
+  # 63  5CWimFLkP3NBb9kpgHeyTsQxLwqzmzpr8RSaSRac91bMjUVJ         4,003 TAO  [pure_holder]
+  # 64  5GGzm3QbHdyogxCbH29b8kSYnEHLjHSZXM3LVvFjtPdJPxeY         4,000 TAO  [pure_holder]
+  # 65  5DptUuTvQ9twCiLNbSwJAN4nr1bRownF9vFpncT38zHoiMZe         3,860 TAO  [pure_holder]
+  # 66  5GH2aUTMRUh1RprCgH4x3tRyCaKeUi5BfmYCfs1NARA8R54n         3,270 TAO  [pure_holder]
+  # 67  5FnjDPuzF4mGL64ipFUAVqB4BG8EcLpedLicxxLNAr8gxajP         3,033 TAO  [pure_holder]
+  # 68  5GHg6KMXajvZPAbLEK2eKDrWz8r15d7ymShTW8hMfZLiPHgs         2,952 TAO  [pure_holder]
+  # 69  5CerKrvptmdGG1ACaso4KJPSEJ32x4PJKKVg4qPP63z1sZ2x         2,942 TAO  [pure_holder]
+  # 70  5H3yvf9UJJDJE5qTxuZ3TATHYESTwNNabmvDHZui5jAY3xVN         2,900 TAO  [pure_holder]
+  # 71  5Cko9ctZ9zgVZd1gRR5DEpVuPyLspPxmLe3aM1Qk9BfCVySq         2,889 TAO  [pure_holder]
+  # 72  5F2jfGDhBKkHmyhruz6WUZroadbK8BLJrxMnopJhyuMG4YsM         2,830 TAO  [pure_holder]
+  # 73  5Eux5ZUTezZkdQmbMsw1bLFBQceqA8r9r2pVmoEnQT3VFTYk         2,632 TAO  [pure_holder]
+  # 74  5DS3BcDqhkBpn8gD1Es8BAMTTXSs76gTKuUQxDNNeBQ6WjGe         2,619 TAO  [pure_holder]
+  # 76  5F7mtzu3Huh278PCUgzLE7HjcfQ1YXouW7vM9ksGS99rSt3d         2,505 TAO  [pure_holder]
+  # 77  5HaBYGMd66PRBFFjFqnAKPJJFiTNGRciWMJ3C8GP3Wj1iLCn         2,487 TAO  [pure_holder]
+  # 78  5DPNNrgnBzt8VREkzBQq2cyJhAZin89UNHsRh8v1F9nZFFdP         2,435 TAO  [pure_holder]
+  # 79  5FJWqFJY4fJzNXhVuM82vGFhcDkoUCp7D7wqDXrpdUquAFDK         2,430 TAO  [pure_holder]
+  # 80  5CTnBvYufP1a52scGqEQywq2L12jevTohPfHGxQDyroiZfb8         2,323 TAO  [pure_holder]
+  # 81  5F3Wz17EUQqVpyrk7m1yktXxuWgAFPk5KEYGU9KtXxLiXQ2T         2,269 TAO  [pure_holder]
+  # 82  5FqCgGkkP5TtMDqYtVR1N3RkdQSvYzTtsV3yXyx72rvPHtg4         2,244 TAO  [pure_holder]
+  # 84  5FFQTAVQvnGtCrd6SXUe2gRhxFq8ycC523HdCHcjwDweFBkv         2,126 TAO  [pure_holder]
+  # 85  5E8fC8io1mpw87hMXTQ7H6ZysPvvbEsqohRV5ZatgLJ9Ekvm         2,025 TAO  [pure_holder]
+  # 86  5Hq4FSQW3LTmedoD7sJXc3FQFkaMaPQTFPvMmvKACj2SjS5p         2,014 TAO  [pure_holder]
+  # 87  5F2Mxs3nHP2SJrRPWd98HEJKz8cSwMEQGwdKf82p5pqQ8BBc         2,006 TAO  [pure_holder]
+  # 88  5Gi7CYCkrCkLKFKfpma7CoGYubcCddnDBbPBzQ2h9XC3YMxB         2,000 TAO  [pure_holder]
+  # 89  5Djnbh1kQY166SsokZTySFrv6YbHwLqZwRKQHXSY5J3Dn4Az         1,960 TAO  [pure_holder]
+  # 90  5DrzQjqQYqk7Ys3FYSoiAv6GBQUVUE8EcJCkzLwHcrWvTjTe         1,898 TAO  [pure_holder]
+  # 92  5Dz7MnHJnp9wjDzwLjiKjN7PHR2XcSQDEc78r4cKKxqGED1d         1,859 TAO  [pure_holder]
+  # 94  5DxcqzHjknv1gUReoRVYg1R6XjGgPMRD1ww4koTQND7ZLJsP         1,759 TAO  [pure_holder]
+  # 95  5GQtyAeT6qEZ7yHJsDTkjDtqfUs6FT6YdzUk8JhPWo8jK1DX         1,736 TAO  [pure_holder]
+  # 96  5ED88Xqf1uVhPUDh7FpnKx2btcgfJvHQGHJCBfEVuqKvN7Mj         1,735 TAO  [pure_holder]
+  # 97  5DKURWkFwUMFzG7pSoBps1jF3jmxbw8YWVzKhg5Krbg2ELAS         1,723 TAO  [pure_holder]
+  # 98  5Hj3ArWDPZJPXZsJidheNCapvyiZ3KV7rtPJyTwpDgqnYVz1         1,701 TAO  [pure_holder]
+  # 99  5CUY9ZSE3ybVou184kqqYG22LBGhyNxwMfpgwkCmUGysRfJp         1,695 TAO  [pure_holder]
+  #100  5DXrStxnnfUFCuKeovwuGbRu6ynJgTAqYB1iywgSaXsSPEbc         1,629 TAO  [pure_holder]
+

@@ -1,0 +1,85 @@
+========================================================================
+FULL INBOUND TRANSFER ANALYSIS — TOP 10 SHADOW WALLETS
+========================================================================
+
+Wallet: 5FEA1FfUPwT3K4zTsYbQx5X1G9R2ZjYLyFv12xBQxW9QgoCL
+  Transfers: 283
+     47,604.07 TAO  5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E
+     45,737.29 TAO  5FV99mBYw3tYrMTXXe52PDa69an1AE19aTrpnB4kzxW73yUj
+     41,142.84 TAO  5EiXej3AwjKqb9mjQAf29JG5HJf9Dwtt8CjvDqA8biprWTiN
+      4,717.88 TAO  (no transfer event)
+
+Wallet: 5ChHTBkaE1VgK5NX59uHuZoK8VQShojKBB1sGfXaZQpxVDCi
+  Transfers: 301
+     73,565.60 TAO  5EiXej3AwjKqb9mjQAf29JG5HJf9Dwtt8CjvDqA8biprWTiN
+     34,226.76 TAO  5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E
+     20,036.71 TAO  5FV99mBYw3tYrMTXXe52PDa69an1AE19aTrpnB4kzxW73yUj
+      1,670.26 TAO  (no transfer event)
+
+Wallet: 5Dhf6WgqrfhVyFCGqK4G5utro2jepscwryMhLHtpMfopxweC
+  Transfers: 237
+     46,073.05 TAO  5FV99mBYw3tYrMTXXe52PDa69an1AE19aTrpnB4kzxW73yUj
+     36,799.02 TAO  5EiXej3AwjKqb9mjQAf29JG5HJf9Dwtt8CjvDqA8biprWTiN
+     19,275.87 TAO  5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E
+     14,917.07 TAO  (no transfer event)
+
+Wallet: 5GUkyA37dHnc1rEijDtvBe5yYNCpaNjaHGqB7DY9Kb2KgSj3
+  Transfers: 198
+     49,537.73 TAO  5FV99mBYw3tYrMTXXe52PDa69an1AE19aTrpnB4kzxW73yUj
+     22,747.24 TAO  5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E
+     14,556.13 TAO  5EiXej3AwjKqb9mjQAf29JG5HJf9Dwtt8CjvDqA8biprWTiN
+     10,027.76 TAO  (no transfer event)
+
+Wallet: 5C9CxW9355u1sqy6Np85FfGssJAdyA8cAsjjV9YP8aaLvjEY
+  Transfers: 97
+     39,930.52 TAO  5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E
+     14,991.57 TAO  5FV99mBYw3tYrMTXXe52PDa69an1AE19aTrpnB4kzxW73yUj
+     11,512.23 TAO  (no transfer event)
+      5,042.70 TAO  5EiXej3AwjKqb9mjQAf29JG5HJf9Dwtt8CjvDqA8biprWTiN
+
+Wallet: 5Epz8SQ69FuZRLyjCAicn8i71SdyEYaWR5rZ5a1i1bgoxGaQ
+  Transfers: 79
+     59,403.88 TAO  5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E
+      3,559.83 TAO  5FV99mBYw3tYrMTXXe52PDa69an1AE19aTrpnB4kzxW73yUj
+      1,415.97 TAO  5EiXej3AwjKqb9mjQAf29JG5HJf9Dwtt8CjvDqA8biprWTiN
+        993.66 TAO  (no transfer event)
+
+Wallet: 5GVKorR78gqQCV6mrWMWX95hHG93ZaRAUShZVBNT768dvqv8
+  Transfers: 75
+     19,695.76 TAO  5FV99mBYw3tYrMTXXe52PDa69an1AE19aTrpnB4kzxW73yUj
+     18,497.24 TAO  5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E
+     11,049.49 TAO  (no transfer event)
+      7,099.49 TAO  5EiXej3AwjKqb9mjQAf29JG5HJf9Dwtt8CjvDqA8biprWTiN
+
+Wallet: 5HAe1pePzBuPqsF6BpTGN8vCngvKKJaRZ2HkHwFmJgWgAzcf
+  Transfers: 2
+     17,000.00 TAO  5FqqXKb9zonSNKbZhEuHYjCXnmPbX9tdzMCU2gx8gir8Z8a5
+        850.00 TAO  5GBnPzvPghS8AuCoo6bfnK7JUFHuyUhWSFD4woBNsKnPiEUi
+
+Wallet: 5DwksfKHHG5rURh9jpGaq87m5k3Jn8BJbY9geeX7zTGQD8Pr
+  Transfers: 27
+     11,098.73 TAO  5Gy8EKHrss4pW8DMCpubQc6dtyLsa9emdRpbEAN1hhUkPeyn
+      3,962.26 TAO  5DaH7esryhVaKThgrT2d4BhNdkqoomK2m5Gpkr52nUmYm72n
+         70.83 TAO  5FqqXKb9zonSNKbZhEuHYjCXnmPbX9tdzMCU2gx8gir8Z8a5
+
+Wallet: 5CXHJRRk5WAQ8hTkzRDEK89pbsZD2e4Lu7KBTFrHcUQ6GZvz
+  Transfers: 2
+      9,799.99 TAO  5FqBL928choLPmeFz5UVAvonBD5k7K2mZSXVC9RkFzLxoy2s
+
+========================================================================
+KNOWN ENTITIES THAT SENT TO SHADOW WALLETS
+========================================================================
+  NONE — no known entity (validator/SN owner/identity-registered)
+  appears as a sender to any of the top 10 shadow wallets
+  across their full transfer history.
+
+TOP SENDERS ACROSS ALL SHADOW WALLETS (by total TAO sent):
+  241,685.57 TAO  5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E
+  199,631.95 TAO  5FV99mBYw3tYrMTXXe52PDa69an1AE19aTrpnB4kzxW73yUj
+  179,621.75 TAO  5EiXej3AwjKqb9mjQAf29JG5HJf9Dwtt8CjvDqA8biprWTiN
+   54,888.36 TAO  (no transfer event)
+   17,070.83 TAO  5FqqXKb9zonSNKbZhEuHYjCXnmPbX9tdzMCU2gx8gir8Z8a5
+   11,098.73 TAO  5Gy8EKHrss4pW8DMCpubQc6dtyLsa9emdRpbEAN1hhUkPeyn
+    9,799.99 TAO  5FqBL928choLPmeFz5UVAvonBD5k7K2mZSXVC9RkFzLxoy2s
+    3,962.26 TAO  5DaH7esryhVaKThgrT2d4BhNdkqoomK2m5Gpkr52nUmYm72n
+      850.00 TAO  5GBnPzvPghS8AuCoo6bfnK7JUFHuyUhWSFD4woBNsKnPiEUi

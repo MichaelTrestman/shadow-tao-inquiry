@@ -1,0 +1,337 @@
+Loaded 2369 known entities from known_holders.json
+
+Starting upstream BFS from 9 known infrastructure addresses
+Minimum transfer amount: 10.0 TAO
+Known entities to check against: 2369
+========================================================================
+
+  [Funder-A] 5EiXej3AwjKqb9mj...
+  [API error: HTTPSConnectionPool(host='api.tao.app', port=443): Read timed out. (read timeout=30)]
+    ← 5EJMGn13311deMfe...     43,406.20 TAO  (25 txs, blocks 7,464,327–7,722,667)
+       [queued for hop 2]
+    ← 5HB2Q8H9Rvxr3ejZ...     43,203.27 TAO  (167 txs, blocks 7,458,410–7,760,936)
+       [already visited: HB2Q8 (hub)]
+    ← 5Gorfuxev7QmgDzB...     20,311.13 TAO  (311 txs, blocks 7,458,130–7,767,318)
+       [queued for hop 2]
+    ← 5HnhgYXb9pJcAWce...     12,610.94 TAO  (7 txs, blocks 7,618,314–7,755,233)
+       [queued for hop 2]
+    ← 5HUPxAsF52CX7RWA...      7,690.53 TAO  (38 txs, blocks 7,458,410–7,766,983)
+       [already visited: HUPxAs (dust-act)]
+    ← 5ESDyJBqh3SRcmbo...      7,498.26 TAO  (63 txs, blocks 7,538,392–7,753,203)
+       [already visited: ESDyJB (shared feed)]
+    ← 5EfXUFMjjc78YKgD...      7,338.48 TAO  (5 txs, blocks 7,722,677–7,757,828)
+       [queued for hop 2]
+    ← 5FJMfoeUXsDXQSAB...      7,273.99 TAO  (53 txs, blocks 7,458,410–7,758,414)
+       [queued for hop 2]
+    ← 5GYLRjVVUz3GzcXW...      6,608.68 TAO  (4 txs, blocks 7,502,662–7,508,660)
+       [queued for hop 2]
+    ← 5GAxxps5zgo9NJ1y...      5,127.00 TAO  (5 txs, blocks 7,476,425–7,722,106)
+       [queued for hop 2]
+    ← 5C77HBqjXfdMupDU...      4,100.00 TAO  (3 txs, blocks 7,606,241–7,663,583)
+       [queued for hop 2]
+    ← 5DEA37cMhnWbZMZQ...      2,886.52 TAO  (109 txs, blocks 7,458,880–7,554,688)
+       [queued for hop 2]
+    ← 5GhWyRSZfksynL1P...      2,700.90 TAO  (2 txs, blocks 7,586,357–7,666,462)
+       [queued for hop 2]
+    ← 5E7XeUY1FbJsoY6U...      2,510.82 TAO  (3 txs, blocks 7,628,913–7,707,399)
+       [queued for hop 2]
+    ← 5EfY9WzLjw7THTib...      2,415.43 TAO  (1 txs, blocks 7,722,852–7,722,852)
+       [queued for hop 2]
+    ← 5DC8Uq5wy1M4m9XR...      1,480.94 TAO  (50 txs, blocks 7,459,321–7,753,182)
+       [queued for hop 2]
+    ← 5HE13KfaS7wJ3yLT...      1,367.36 TAO  (2 txs, blocks 7,709,372–7,709,372)
+       [queued for hop 2]
+    ← 5DMAbJMNzSZ1WC9Y...      1,117.63 TAO  (14 txs, blocks 7,564,468–7,758,419)
+       [queued for hop 2]
+    ← 5HkJwxU4wizma3Jx...      1,105.00 TAO  (3 txs, blocks 7,636,327–7,643,835)
+       [queued for hop 2]
+    ← 5FJLh8jj2GKqmDvY...      1,021.96 TAO  (1 txs, blocks 7,614,349–7,614,349)
+       [queued for hop 2]
+    ← 5GZ6kt11ssNePX56...      1,001.01 TAO  (7 txs, blocks 7,541,573–7,737,455)
+       [queued for hop 2]
+    ← 5HH5CkdZH7i4MopM...        953.12 TAO  (2 txs, blocks 7,680,927–7,681,276)
+       [queued for hop 2]
+    ← 5Ec7Tx9MgwGEgiVL...        943.17 TAO  (1 txs, blocks 7,571,333–7,571,333)
+       [queued for hop 2]
+    ← 5HPDHFzRb1rM3p38...        857.39 TAO  (5 txs, blocks 7,578,536–7,680,329)
+       [queued for hop 2]
+    ← 5F7eGbiyaD797KhG...        769.00 TAO  (1 txs, blocks 7,642,454–7,642,454)
+       [queued for hop 2]
+    ← 5D6QVTiULJYacyoY...        671.18 TAO  (3 txs, blocks 7,475,546–7,745,423)
+       [queued for hop 2]
+    ← 5Ey9K1TeQMMrRueF...        649.80 TAO  (4 txs, blocks 7,509,728–7,746,263)
+       [queued for hop 2]
+    ← 5Cyu5RtLS1sVxC41...        607.93 TAO  (1 txs, blocks 7,685,916–7,685,916)
+       [queued for hop 2]
+    ← 5Co4AtFqXXXsXLPA...        505.22 TAO  (2 txs, blocks 7,469,867–7,469,954)
+       [queued for hop 2]
+    ← 5FAS1mMMF5FUFHSe...        385.94 TAO  (3 txs, blocks 7,510,653–7,628,421)
+       [queued for hop 2]
+    ← 5CuND2D4HP6GVhrk...        367.98 TAO  (2 txs, blocks 7,594,062–7,597,853)
+       [queued for hop 2]
+    ← 5CTdJMbBw1G6eM3b...        356.98 TAO  (1 txs, blocks 7,760,079–7,760,079)
+       [queued for hop 2]
+    ← 5DunDrFV6BPbzsgL...        326.05 TAO  (1 txs, blocks 7,722,723–7,722,723)
+       [already visited: Funder-B]
+    ← 5HZ5ZK5mtfy4v8YJ...        298.00 TAO  (1 txs, blocks 7,665,703–7,665,703)
+       [queued for hop 2]
+    ← 5Er5JQ8LbeFSApLy...        220.43 TAO  (1 txs, blocks 7,550,913–7,550,913)
+       [queued for hop 2]
+    ← 5FrhMkErXQf7WZ9t...        200.00 TAO  (1 txs, blocks 7,517,549–7,517,549)
+       [queued for hop 2]
+    ← 5FfycukamTbkR2cr...        198.90 TAO  (2 txs, blocks 7,464,948–7,465,041)
+       [queued for hop 2]
+    ← 5G6nqfePiDsRoM92...        180.00 TAO  (2 txs, blocks 7,604,595–7,604,686)
+       [queued for hop 2]
+    ← 5HAez7btcJhLeAkr...        161.00 TAO  (3 txs, blocks 7,492,077–7,735,049)
+       [queued for hop 2]
+    ← 5G8WxtnRrm2pjBxu...        152.39 TAO  (1 txs, blocks 7,532,566–7,532,566)
+       [queued for hop 2]
+    ← 5F5ECFC4n9jvE1Ny...        151.53 TAO  (1 txs, blocks 7,680,729–7,680,729)
+       [queued for hop 2]
+    ← 5GvvHVAMFHjkLcbK...        144.30 TAO  (2 txs, blocks 7,623,362–7,658,374)
+       [queued for hop 2]
+    ← 5DHsYNJDVdDydYpK...        141.17 TAO  (1 txs, blocks 7,626,142–7,626,142)
+       [queued for hop 2]
+    ← 5Ec5CBH54FinkeQq...        128.00 TAO  (1 txs, blocks 7,624,067–7,624,067)
+       [queued for hop 2]
+    ← 5HHMP8aJvGFKeecM...        125.72 TAO  (1 txs, blocks 7,471,634–7,471,634)
+       [queued for hop 2]
+    ← 5E1GEcbC6rZ1N4Qb...        120.01 TAO  (1 txs, blocks 7,738,399–7,738,399)
+       [queued for hop 2]
+    ← 5GpJyu2C9JmP5Wbw...        103.80 TAO  (1 txs, blocks 7,481,108–7,481,108)
+       [queued for hop 2]
+    ← 5D3xqGpJ21wMKySx...        103.66 TAO  (1 txs, blocks 7,688,078–7,688,078)
+       [queued for hop 2]
+    ← 5F6E1HeuNfgBwb3d...        102.16 TAO  (1 txs, blocks 7,743,882–7,743,882)
+       [queued for hop 2]
+    ← 5Hemq6crUt6kGECF...        101.73 TAO  (1 txs, blocks 7,580,290–7,580,290)
+       [queued for hop 2]
+    ← 5EuhZteuDQT6DczU...        101.73 TAO  (1 txs, blocks 7,580,366–7,580,366)
+       [queued for hop 2]
+    ← 5CyQ6YhD6zxqtkPk...        100.96 TAO  (1 txs, blocks 7,765,580–7,765,580)
+       [queued for hop 2]
+    ← 5G4vmvY76xfNm4Nf...        100.00 TAO  (1 txs, blocks 7,467,506–7,467,506)
+       [queued for hop 2]
+    ← 5C7ViFPytXaf3Va7...         99.24 TAO  (1 txs, blocks 7,757,738–7,757,738)
+       [queued for hop 2]
+    ← 5GrZtUuZEGhGZ3Sz...         91.01 TAO  (1 txs, blocks 7,510,896–7,510,896)
+       [queued for hop 2]
+    ← 5H8aTLchMkixa6Y4...         89.00 TAO  (1 txs, blocks 7,757,958–7,757,958)
+       [queued for hop 2]
+    ← 5G86k2NFDWiiaKuu...         87.00 TAO  (1 txs, blocks 7,530,904–7,530,904)
+       [queued for hop 2]
+    ← 5EvwTDfdzUu9RdS6...         85.07 TAO  (1 txs, blocks 7,654,978–7,654,978)
+       [queued for hop 2]
+    ← 5GbgNHhDrnh6agBZ...         82.92 TAO  (2 txs, blocks 7,736,709–7,751,824)
+       [queued for hop 2]
+    ← 5GojDDHmXBFa3ZFx...         82.18 TAO  (1 txs, blocks 7,764,955–7,764,955)
+       [queued for hop 2]
+    ← 5FZiWtz44qaytpZP...         81.30 TAO  (1 txs, blocks 7,765,781–7,765,781)
+       [queued for hop 2]
+    ← 5EHMot4ZRzYS6QM1...         75.53 TAO  (1 txs, blocks 7,750,678–7,750,678)
+       [queued for hop 2]
+    ← 5FuXEQCuex6AoqH8...         75.25 TAO  (1 txs, blocks 7,465,425–7,465,425)
+       [queued for hop 2]
+    ← 5CnTo2WT2N1dEaLd...         75.10 TAO  (1 txs, blocks 7,624,420–7,624,420)
+       [queued for hop 2]
+    ← 5Dou95DQmGTJVJvs...         74.80 TAO  (1 txs, blocks 7,500,067–7,500,067)
+       [queued for hop 2]
+    ← 5H3j7YGb5vbamVZ8...         70.00 TAO  (2 txs, blocks 7,750,930–7,750,930)
+       [queued for hop 2]
+    ← 5FxQcybbnvKwzm1g...         68.02 TAO  (1 txs, blocks 7,733,780–7,733,780)
+       [queued for hop 2]
+    ← 5CzmNbkJtaKtT5Cq...         66.70 TAO  (1 txs, blocks 7,645,026–7,645,026)
+       [queued for hop 2]
+    ← 5DyoPALFpX3VT64r...         65.12 TAO  (1 txs, blocks 7,473,967–7,473,967)
+       [queued for hop 2]
+    ← 5DAz1dNN1Hu3MxQy...         63.32 TAO  (2 txs, blocks 7,751,729–7,753,193)
+       [queued for hop 2]
+    ← 5EPayAKv6JyDivXh...         60.36 TAO  (4 txs, blocks 7,515,267–7,752,497)
+       [queued for hop 2]
+    ← 5DmfgeizM88gXipL...         59.00 TAO  (1 txs, blocks 7,760,336–7,760,336)
+       [queued for hop 2]
+    ← 5E1SkGrMuHyNcpmd...         58.39 TAO  (1 txs, blocks 7,712,618–7,712,618)
+       [queued for hop 2]
+    ← 5HHdCUUwzd28TLSv...         57.94 TAO  (1 txs, blocks 7,625,274–7,625,274)
+       [queued for hop 2]
+    ← 5FXXPqTbmGnT4qhS...         57.91 TAO  (2 txs, blocks 7,716,396–7,716,484)
+       [queued for hop 2]
+    ← 5FA8mx2XpUCcGoMr...         56.84 TAO  (1 txs, blocks 7,695,612–7,695,612)
+       [queued for hop 2]
+    ← 5DC1ES3Bq43v4Ewp...         55.02 TAO  (3 txs, blocks 7,469,121–7,750,857)
+       [queued for hop 2]
+    ← 5GqjLx4vezhnw42Y...         52.00 TAO  (1 txs, blocks 7,660,330–7,660,330)
+       [queued for hop 2]
+    ← 5FCji1qoRZoY6ghV...         50.93 TAO  (1 txs, blocks 7,652,965–7,652,965)
+       [queued for hop 2]
+    ← 5Cp7mLSYDig1Pcc5...         50.60 TAO  (1 txs, blocks 7,540,384–7,540,384)
+       [queued for hop 2]
+    ← 5HmMCbCCqZx1jngb...         50.00 TAO  (1 txs, blocks 7,529,592–7,529,592)
+       [queued for hop 2]
+    ← 5HfVguJstt6ZR7g1...         50.00 TAO  (1 txs, blocks 7,680,697–7,680,697)
+       [queued for hop 2]
+    ← 5EoZG2qX1G24E6pY...         49.95 TAO  (1 txs, blocks 7,680,482–7,680,482)
+       [queued for hop 2]
+    ← 5CdEc5izs3RoABGt...         49.84 TAO  (1 txs, blocks 7,651,375–7,651,375)
+       [queued for hop 2]
+    ← 5DjuZdcjQKPts7uL...         48.82 TAO  (4 txs, blocks 7,559,576–7,711,375)
+       [queued for hop 2]
+    ← 5FF4Z49wdAdvJjGu...         48.00 TAO  (1 txs, blocks 7,537,203–7,537,203)
+       [queued for hop 2]
+    ← 5G9CrwHDd48i4jvG...         46.33 TAO  (2 txs, blocks 7,659,265–7,666,084)
+       [queued for hop 2]
+    ← 5EFJJchVWY1THeje...         45.44 TAO  (1 txs, blocks 7,662,988–7,662,988)
+       [queued for hop 2]
+    ← 5DQtif9uihgSJFHD...         45.15 TAO  (1 txs, blocks 7,738,122–7,738,122)
+       [queued for hop 2]
+    ← 5ECtKbZ2DA1oohxr...         43.06 TAO  (1 txs, blocks 7,658,374–7,658,374)
+       [queued for hop 2]
+    ← 5GugN9RFcStMjyQd...         40.30 TAO  (2 txs, blocks 7,740,677–7,747,743)
+       [queued for hop 2]
+    ← 5EH94acSgVsABbt6...         40.12 TAO  (1 txs, blocks 7,594,282–7,594,282)
+       [queued for hop 2]
+    ← 5GpsjkaYpgz6x5aj...         39.41 TAO  (1 txs, blocks 7,498,136–7,498,136)
+       [queued for hop 2]
+    ← 5D2jWS3aMb3VqweG...         38.65 TAO  (1 txs, blocks 7,458,410–7,458,410)
+       [queued for hop 2]
+    ← 5GmtsAEiB6rMNJqW...         37.25 TAO  (1 txs, blocks 7,466,200–7,466,200)
+       [queued for hop 2]
+    ← 5CQddmDFvR1FW3ox...         36.65 TAO  (1 txs, blocks 7,688,078–7,688,078)
+       [queued for hop 2]
+    ← 5EgRMVSg9KgNyztE...         36.44 TAO  (2 txs, blocks 7,481,139–7,481,139)
+       [queued for hop 2]
+    ← 5Cs5TYYGPBSyJU6e...         34.99 TAO  (1 txs, blocks 7,738,630–7,738,630)
+       [queued for hop 2]
+    ← 5ChzJhF49FqZdTQy...         34.51 TAO  (1 txs, blocks 7,757,927–7,757,927)
+       [queued for hop 2]
+    ← 5CnndGRoz9Vhdro9...         33.40 TAO  (2 txs, blocks 7,507,342–7,507,342)
+       [queued for hop 2]
+    ← 5GsWm4kQLahE6fT2...         32.01 TAO  (1 txs, blocks 7,683,048–7,683,048)
+       [queued for hop 2]
+    ← 5Hp1ZYZabJZchfFS...         31.10 TAO  (1 txs, blocks 7,716,396–7,716,396)
+       [queued for hop 2]
+    ← 5GTtdbe6KBdwe8v7...         30.95 TAO  (1 txs, blocks 7,652,691–7,652,691)
+       [queued for hop 2]
+    ← 5FvHs1ENZc8y3HGZ...         30.32 TAO  (1 txs, blocks 7,578,912–7,578,912)
+       [queued for hop 2]
+    ← 5EiwTBe2DpiYtawA...         30.00 TAO  (1 txs, blocks 7,571,197–7,571,197)
+       [queued for hop 2]
+    ← 5GyaG2KJsrmbRWcW...         30.00 TAO  (2 txs, blocks 7,493,080–7,594,215)
+       [queued for hop 2]
+    ← 5C6QYo9XB5oHbYaA...         27.23 TAO  (1 txs, blocks 7,683,126–7,683,126)
+       [queued for hop 2]
+    ← 5Gdr6GZfJ7NgEvzd...         27.06 TAO  (1 txs, blocks 7,716,726–7,716,726)
+       [queued for hop 2]
+    ← 5EkdFATxue9Seneb...         27.04 TAO  (1 txs, blocks 7,641,801–7,641,801)
+       [queued for hop 2]
+    ← 5HhHAeKagE5wtsjC...         25.81 TAO  (1 txs, blocks 7,678,801–7,678,801)
+       [queued for hop 2]
+    ← 5EDUNT1pTWS18dyZ...         25.61 TAO  (1 txs, blocks 7,603,250–7,603,250)
+       [queued for hop 2]
+    ← 5EBb4bWkEY16dvtH...         25.00 TAO  (1 txs, blocks 7,480,979–7,480,979)
+       [queued for hop 2]
+    ← 5G1iG9s48irT2Jvu...         24.95 TAO  (1 txs, blocks 7,710,946–7,710,946)
+       [queued for hop 2]
+    ← 5DuUAtihYvjBZy46...         24.45 TAO  (1 txs, blocks 7,486,976–7,486,976)
+       [queued for hop 2]
+    ← 5D7dhKrKYTDnVUws...         24.35 TAO  (1 txs, blocks 7,478,671–7,478,671)
+       [queued for hop 2]
+    ← 5Fob6YBH9sjJmccD...         24.22 TAO  (1 txs, blocks 7,745,577–7,745,577)
+       [queued for hop 2]
+    ← 5EreALo9L2dXLkDA...         23.88 TAO  (1 txs, blocks 7,506,327–7,506,327)
+       [queued for hop 2]
+    ← 5CqYPdEzDT17Gsfy...         22.00 TAO  (1 txs, blocks 7,644,139–7,644,139)
+       [queued for hop 2]
+    ← 5FWoK39SHLj1kb55...         21.01 TAO  (1 txs, blocks 7,556,888–7,556,888)
+       [queued for hop 2]
+    ← 5FzDsTZEDYGkLYK5...         21.00 TAO  (1 txs, blocks 7,506,599–7,506,599)
+       [queued for hop 2]
+    ← 5EJKCGMh8xEawec1...         20.90 TAO  (1 txs, blocks 7,757,881–7,757,881)
+       [queued for hop 2]
+    ← 5HT8ASiJ1V4Vkh2V...         20.50 TAO  (1 txs, blocks 7,516,226–7,516,226)
+       [queued for hop 2]
+    ← 5E3W2CGjkosy7tQ8...         20.17 TAO  (1 txs, blocks 7,760,732–7,760,732)
+       [queued for hop 2]
+    ← 5GbWV7Yks1VW8CxL...         20.05 TAO  (1 txs, blocks 7,489,206–7,489,206)
+       [queued for hop 2]
+    ← 5FJJV7XBgS4g7dz7...         19.79 TAO  (1 txs, blocks 7,710,275–7,710,275)
+       [queued for hop 2]
+    ← 5FaayXosRanZRdoj...         19.01 TAO  (1 txs, blocks 7,713,524–7,713,524)
+       [queued for hop 2]
+    ← 5CShcTowpyPb1JWF...         18.90 TAO  (1 txs, blocks 7,594,154–7,594,154)
+       [queued for hop 2]
+    ← 5FG8Npbz61TUDUnm...         18.64 TAO  (1 txs, blocks 7,581,618–7,581,618)
+       [queued for hop 2]
+    ← 5E2zwLWdG9nvtBJB...         17.99 TAO  (1 txs, blocks 7,694,160–7,694,160)
+       [queued for hop 2]
+    ← 5GDMrsK7ZcaWRrML...         17.69 TAO  (1 txs, blocks 7,681,683–7,681,683)
+       [queued for hop 2]
+    ← 5DrgDw7vwBbJd6v2...         17.29 TAO  (1 txs, blocks 7,766,239–7,766,239)
+       [queued for hop 2]
+    ← 5EG4TAYStmTJKAJ4...         16.90 TAO  (1 txs, blocks 7,458,946–7,458,946)
+       [queued for hop 2]
+    ← 5EvbPG496dKpnPbV...         16.86 TAO  (1 txs, blocks 7,516,364–7,516,364)
+       [queued for hop 2]
+    ← 5C8BDGZBQ8nScki9...         16.72 TAO  (1 txs, blocks 7,743,206–7,743,206)
+       [queued for hop 2]
+    ← 5HFPEoUqQwcZja5E...         16.59 TAO  (1 txs, blocks 7,555,354–7,555,354)
+       [queued for hop 2]
+    ← 5E3N2ZdkGKT1pZfj...         16.14 TAO  (1 txs, blocks 7,702,584–7,702,584)
+       [queued for hop 2]
+    ← 5GdFURk2N7itbdRy...         15.46 TAO  (1 txs, blocks 7,494,772–7,494,772)
+       [queued for hop 2]
+    ← 5CrUybA6oGeVHU7s...         15.21 TAO  (1 txs, blocks 7,575,497–7,575,497)
+       [queued for hop 2]
+    ← 5Chfy7tothMKcFC5...         15.05 TAO  (1 txs, blocks 7,521,942–7,521,942)
+       [queued for hop 2]
+    ← 5F1PT4tM6XHc9iqM...         15.01 TAO  (1 txs, blocks 7,670,633–7,670,633)
+       [queued for hop 2]
+    ← 5Eb9DSfgFCNmJ5h3...         14.70 TAO  (1 txs, blocks 7,740,022–7,740,022)
+       [queued for hop 2]
+    ← 5CGokXyiMJFbrkxy...         14.50 TAO  (1 txs, blocks 7,568,224–7,568,224)
+       [queued for hop 2]
+    ← 5Dc52ynGXgeUzBhQ...         14.09 TAO  (1 txs, blocks 7,480,979–7,480,979)
+       [queued for hop 2]
+    ← 5GKNg3iwABW8xejS...         13.87 TAO  (1 txs, blocks 7,540,780–7,540,780)
+       [queued for hop 2]
+    ← 5E8TxX3swGt4UTwb...         13.26 TAO  (1 txs, blocks 7,579,149–7,579,149)
+       [queued for hop 2]
+    ← 5EuAiKRnFQr7Th8q...         13.16 TAO  (1 txs, blocks 7,481,010–7,481,010)
+       [queued for hop 2]
+    ← 5FcqLnjDbB6Zts7Q...         13.15 TAO  (1 txs, blocks 7,641,240–7,641,240)
+       [queued for hop 2]
+    ← 5F2dzZWDWhZT6YSy...         12.30 TAO  (1 txs, blocks 7,745,515–7,745,515)
+       [queued for hop 2]
+    ← 5ChhCh4oczbTw6y7...         11.50 TAO  (1 txs, blocks 7,509,084–7,509,084)
+       [queued for hop 2]
+    ← 5CDMw1vvLrr8FNxq...         11.05 TAO  (1 txs, blocks 7,696,030–7,696,030)
+       [queued for hop 2]
+    ← 5DFsj37cDQTLcrGX...         11.00 TAO  (1 txs, blocks 7,556,858–7,556,858)
+       [queued for hop 2]
+    ← 5GozPUT989JAA543...         11.00 TAO  (1 txs, blocks 7,662,988–7,662,988)
+       [queued for hop 2]
+    ← 5DRiX6zakfbKvcTz...         10.89 TAO  (1 txs, blocks 7,708,772–7,708,772)
+       [queued for hop 2]
+    ← 5EXARGWoVhmGPKV9...         10.61 TAO  (1 txs, blocks 7,510,426–7,510,426)
+       [queued for hop 2]
+    ← 5H2vhCnZv5YXA4Kv...         10.53 TAO  (1 txs, blocks 7,611,780–7,611,780)
+       [queued for hop 2]
+    ← 5GX975Viqvd82iqH...         10.50 TAO  (1 txs, blocks 7,712,055–7,712,055)
+       [queued for hop 2]
+    ← 5FQFwohPnQSeeCuj...         10.48 TAO  (1 txs, blocks 7,516,761–7,516,761)
+       [queued for hop 2]
+    ← 5ELjFPHoPd66CcE2...         10.46 TAO  (1 txs, blocks 7,495,741–7,495,741)
+       [queued for hop 2]
+    ← 5FUCuTgEUVsBhJQx...         10.25 TAO  (1 txs, blocks 7,530,827–7,530,827)
+       [queued for hop 2]
+    ← 5DWqjD5seaJFKH2P...         10.17 TAO  (1 txs, blocks 7,627,885–7,627,885)
+       [queued for hop 2]
+    ← 5H6V4juuYpariNvt...         10.14 TAO  (1 txs, blocks 7,689,470–7,689,470)
+       [queued for hop 2]
+    ← 5GJSS5sv2ETvbTnH...         10.10 TAO  (1 txs, blocks 7,622,933–7,622,933)
+       [queued for hop 2]
+    ← 5FgmaP6MNgH35owp...         10.02 TAO  (1 txs, blocks 7,481,041–7,481,041)
+       [queued for hop 2]
+
+  [Funder-B] 5DunDrFV6BPbzsgL...

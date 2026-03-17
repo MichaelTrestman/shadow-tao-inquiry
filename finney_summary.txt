@@ -1,0 +1,32 @@
+============================================================
+FINNEY WALLET SUMMARY
+============================================================
+Block:                      7,738,261
+Total issuance:             3,401,428.01 TAO
+Total free balances (sum):  3,400,473.40 TAO
+Total staked (chain total): 7,337,639.83 TAO
+Accounted for:              10,738,113.23 TAO
+
+Total accounts:                  446,835
+  With stake:                     47,255
+  No stake:                      399,580
+
+  Ever sent a tx (nonce>0):      406,424
+  Never sent a tx:                40,411
+
+Shadow wallets (>1 TAO, nonce=0, no stake):
+  Count:                          14,032
+  TAO held:                 1,075,902.89 TAO
+  % of free supply:                31.6%
+
+Large shadow (>1000 TAO, nonce=0, no stake):
+  Count:                              50
+  TAO held:                   850,237.96 TAO
+
+Free balance distribution (non-zero wallets):
+  Count:    291,769
+  Top 10 hold:   1,850,731.67 TAO  (54.4%)
+  Top 100 hold:  2,809,115.54 TAO  (82.6%)
+  Top 1000 hold: 3,113,175.18 TAO  (91.6%)
+  Median:        0.0010 TAO
+============================================================

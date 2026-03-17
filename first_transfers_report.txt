@@ -1,0 +1,82 @@
+======================================================================
+FIRST TRANSFER ANALYSIS — TOP 10 SHADOW WALLETS
+======================================================================
+
+Wallet: 5FEA1FfUPwT3K4zTsYbQx5X1G9R2ZjYLyFv12xBQxW9QgoCL
+  First funded at block: 5,946,516
+  Initial deposit:       1,615.8570 TAO
+  Sender:  5EiXej3AwjKqb9mjQAf29JG5HJf9Dwtt8CjvDqA8biprWTiN
+  Amount:  923.4418 TAO
+  Sender:  5EiXej3AwjKqb9mjQAf29JG5HJf9Dwtt8CjvDqA8biprWTiN
+  Amount:  692.4152 TAO
+
+Wallet: 5ChHTBkaE1VgK5NX59uHuZoK8VQShojKBB1sGfXaZQpxVDCi
+  First funded at block: 6,084,503
+  Initial deposit:       196.3578 TAO
+  Sender:  5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E
+  Amount:  196.3578 TAO
+
+Wallet: 5Dhf6WgqrfhVyFCGqK4G5utro2jepscwryMhLHtpMfopxweC
+  First funded at block: 6,581,276
+  Initial deposit:       256.5047 TAO
+  Sender:  5EiXej3AwjKqb9mjQAf29JG5HJf9Dwtt8CjvDqA8biprWTiN
+  Amount:  256.5047 TAO
+
+Wallet: 5GUkyA37dHnc1rEijDtvBe5yYNCpaNjaHGqB7DY9Kb2KgSj3
+  First funded at block: 6,659,270
+  Initial deposit:       247.8207 TAO
+  Sender:  5FV99mBYw3tYrMTXXe52PDa69an1AE19aTrpnB4kzxW73yUj
+  Amount:  247.8207 TAO
+
+Wallet: 5C9CxW9355u1sqy6Np85FfGssJAdyA8cAsjjV9YP8aaLvjEY
+  First funded at block: 6,784,524
+  Initial deposit:       632.9372 TAO
+  Sender:  5EiXej3AwjKqb9mjQAf29JG5HJf9Dwtt8CjvDqA8biprWTiN
+  Amount:  632.9372 TAO
+
+Wallet: 5Epz8SQ69FuZRLyjCAicn8i71SdyEYaWR5rZ5a1i1bgoxGaQ
+  First funded at block: 7,061,941
+  Initial deposit:       1,026.4809 TAO
+  Sender:  5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E
+  Amount:  1,026.4809 TAO
+
+Wallet: 5GVKorR78gqQCV6mrWMWX95hHG93ZaRAUShZVBNT768dvqv8
+  First funded at block: 7,066,018
+  Initial deposit:       8,968.6531 TAO
+  Sender:  5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E
+  Amount:  996.5170 TAO
+  Sender:  5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E
+  Amount:  996.5170 TAO
+  Sender:  5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E
+  Amount:  996.5170 TAO
+  Sender:  5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E
+  Amount:  996.5170 TAO
+  Sender:  5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E
+  Amount:  996.5170 TAO
+  Sender:  5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E
+  Amount:  996.5170 TAO
+  Sender:  5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E
+  Amount:  996.5170 TAO
+  Sender:  5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E
+  Amount:  996.5170 TAO
+  Sender:  5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E
+  Amount:  996.5170 TAO
+
+Wallet: 5HAe1pePzBuPqsF6BpTGN8vCngvKKJaRZ2HkHwFmJgWgAzcf
+  First funded at block: 7,563,740
+  Initial deposit:       849.9997 TAO
+  Sender:  5GBnPzvPghS8AuCoo6bfnK7JUFHuyUhWSFD4woBNsKnPiEUi
+  Amount:  849.9997 TAO
+
+Wallet: 5DwksfKHHG5rURh9jpGaq87m5k3Jn8BJbY9geeX7zTGQD8Pr
+  First funded at block: 5,217,006
+  Initial deposit:       0.2200 TAO
+  Sender:  5DaH7esryhVaKThgrT2d4BhNdkqoomK2m5Gpkr52nUmYm72n
+  Amount:  0.2200 TAO
+
+Wallet: 5CXHJRRk5WAQ8hTkzRDEK89pbsZD2e4Lu7KBTFrHcUQ6GZvz
+  First funded at block: 3,766,862
+  Initial deposit:       0.0250 TAO
+  Sender:  5FqBL928choLPmeFz5UVAvonBD5k7K2mZSXVC9RkFzLxoy2s
+  Amount:  0.0250 TAO
+

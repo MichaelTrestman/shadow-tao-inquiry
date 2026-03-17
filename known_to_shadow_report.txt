@@ -1,0 +1,72 @@
+========================================================================
+KNOWN-ENTITY → SHADOW WALLET TRANSFER SCAN
+========================================================================
+
+Methodology: checks all Balances.Transfer events at each shadow wallet's
+first-funded block. If the sender appears in known_holders.json
+(validators, subnet owners, or identity-registered coldkeys), it is flagged.
+
+Wallet: 5FEA1FfUPwT3K4zTsYbQx5X1G9R2ZjYLyFv12xBQxW9QgoCL
+  First-funded block: 5,946,516
+  All senders at that block: 2
+    FROM 5EiXej3AwjKqb9mjQAf29JG5HJf9Dwtt8CjvDqA8biprWTiN  923.4418 TAO
+    FROM 5EiXej3AwjKqb9mjQAf29JG5HJf9Dwtt8CjvDqA8biprWTiN  692.4152 TAO
+
+Wallet: 5ChHTBkaE1VgK5NX59uHuZoK8VQShojKBB1sGfXaZQpxVDCi
+  First-funded block: 6,084,503
+  All senders at that block: 1
+    FROM 5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E  196.3578 TAO
+
+Wallet: 5Dhf6WgqrfhVyFCGqK4G5utro2jepscwryMhLHtpMfopxweC
+  First-funded block: 6,581,276
+  All senders at that block: 1
+    FROM 5EiXej3AwjKqb9mjQAf29JG5HJf9Dwtt8CjvDqA8biprWTiN  256.5047 TAO
+
+Wallet: 5GUkyA37dHnc1rEijDtvBe5yYNCpaNjaHGqB7DY9Kb2KgSj3
+  First-funded block: 6,659,270
+  All senders at that block: 1
+    FROM 5FV99mBYw3tYrMTXXe52PDa69an1AE19aTrpnB4kzxW73yUj  247.8207 TAO
+
+Wallet: 5C9CxW9355u1sqy6Np85FfGssJAdyA8cAsjjV9YP8aaLvjEY
+  First-funded block: 6,784,524
+  All senders at that block: 1
+    FROM 5EiXej3AwjKqb9mjQAf29JG5HJf9Dwtt8CjvDqA8biprWTiN  632.9372 TAO
+
+Wallet: 5Epz8SQ69FuZRLyjCAicn8i71SdyEYaWR5rZ5a1i1bgoxGaQ
+  First-funded block: 7,061,941
+  All senders at that block: 1
+    FROM 5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E  1,026.4809 TAO
+
+Wallet: 5GVKorR78gqQCV6mrWMWX95hHG93ZaRAUShZVBNT768dvqv8
+  First-funded block: 7,066,018
+  All senders at that block: 9
+    FROM 5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E  996.5170 TAO
+    FROM 5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E  996.5170 TAO
+    FROM 5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E  996.5170 TAO
+    FROM 5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E  996.5170 TAO
+    FROM 5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E  996.5170 TAO
+    FROM 5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E  996.5170 TAO
+    FROM 5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E  996.5170 TAO
+    FROM 5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E  996.5170 TAO
+    FROM 5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E  996.5170 TAO
+
+Wallet: 5HAe1pePzBuPqsF6BpTGN8vCngvKKJaRZ2HkHwFmJgWgAzcf
+  First-funded block: 7,563,740
+  All senders at that block: 1
+    FROM 5GBnPzvPghS8AuCoo6bfnK7JUFHuyUhWSFD4woBNsKnPiEUi  849.9997 TAO
+
+Wallet: 5DwksfKHHG5rURh9jpGaq87m5k3Jn8BJbY9geeX7zTGQD8Pr
+  First-funded block: 5,217,006
+  All senders at that block: 1
+    FROM 5DaH7esryhVaKThgrT2d4BhNdkqoomK2m5Gpkr52nUmYm72n  0.2200 TAO
+
+Wallet: 5CXHJRRk5WAQ8hTkzRDEK89pbsZD2e4Lu7KBTFrHcUQ6GZvz
+  First-funded block: 3,766,862
+  All senders at that block: 1
+    FROM 5FqBL928choLPmeFz5UVAvonBD5k7K2mZSXVC9RkFzLxoy2s  0.0250 TAO
+
+RESULT: No known entity (validator/SN owner/identity-registered) appears
+as a first-deposit sender for any of the top 10 shadow wallets.
+
+Note: this checks only the first-funded block per wallet. Known entities
+may appear in subsequent inbound transfers, which requires a full block scan.

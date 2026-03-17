@@ -1,0 +1,302 @@
+========================================================================
+SUPPLY CHAIN ATTACK — COLDKEY INVESTIGATION
+========================================================================
+Target:  5H9brHhMA1km3Dp3YCx75oaimgxEYScxCfxbzQRZ3gHk9x3L
+Run at:  2026-03-17 19:38 UTC
+
+────────────────────────────────────────────────────────────────────────
+1. ON-CHAIN STATE (current Finney)
+────────────────────────────────────────────────────────────────────────
+Current block: 7,767,315  (2025-12-16)
+Nonce:         111  (number of signed transactions)
+Free balance:  98,895.052 TAO
+Identity:      [none registered in IdentitiesV2]
+Subnet owner:  [none]
+Validator:     [none]
+
+────────────────────────────────────────────────────────────────────────
+2. BALANCE HISTORY (archive node, 14 sample blocks)
+────────────────────────────────────────────────────────────────────────
+Connected to archive node.
+       Block   Approx Date          Free TAO
+----------------------------------------------
+           1    2023-01-03             0.000
+         100    2023-01-03             0.000
+       1,000    2023-01-03             0.000
+      10,000    2023-01-04             0.000
+     100,000    2023-01-16             0.000
+     500,000    2023-03-13             0.000
+   1,000,000    2023-05-21             0.000
+   2,000,000    2023-10-07             0.000
+   3,000,000    2024-02-23             0.000
+   4,000,000    2024-07-11             0.000
+   5,000,000    2024-11-27        40,829.267
+   6,000,000    2025-04-15       134,324.923
+   7,000,000    2025-09-01       111,190.320
+   7,767,315    2025-12-16        98,895.052
+
+────────────────────────────────────────────────────────────────────────
+3. FULL EVENT HISTORY (tao.app API)
+────────────────────────────────────────────────────────────────────────
+Fetching all events for 5H9brHhMA1km3Dp3YCx75oaimgxEYScxCfxbzQRZ3gHk9x3L...
+Total events fetched: 816
+
+Transaction breakdown:
+  TransactionFeePaid               113 events
+  Transfer                         703 events
+
+Inbound transfers:     590  total    507,244.272 TAO
+Outbound transfers:    113  total    412,159.213 TAO
+Net flow:                      +95,085.059 TAO
+
+Inbound activity: 2024-10-10 09:03 UTC → 2026-03-16 23:32 UTC
+Outbound activity: 2024-10-18 08:23 UTC → 2026-03-15 17:48 UTC
+
+────────────────────────────────────────────────────────────────────────
+4. INBOUND SENDER ANALYSIS
+────────────────────────────────────────────────────────────────────────
+Unique senders: 5
+
+Sender                                                         TAO      #   First blk  Label
+----------------------------------------------------------------------------------------------------
+  5FZiuxCBt8p6PFDisJ9ZEbBaKNVKy6TeemVJd1Z6jscsdjib   498,026.586    363   4,392,813  
+  5DxcqzHjknv1gUReoRVYg1R6XjGgPMRD1ww4koTQND7ZLJsP     9,217.483     11   4,011,523  
+  5CrmVKApX6sJybZaL1geHfzvHWeCpbavqrrXgYLCQmhehX2q         0.203      1   7,051,854  
+  5Ff8xfvJpZFv1gkj3UUz2PVS3pb5fzVQtoha7sfQWBn6djib         0.000    211   6,124,312  
+  5DJ6DF9ywrVPpdemxGTP1mNBegdexD3UnUy2SAMvdw84LJsP         0.000      4   6,510,403  
+
+────────────────────────────────────────────────────────────────────────
+5. OUTBOUND RECIPIENT ANALYSIS
+────────────────────────────────────────────────────────────────────────
+Unique recipients: 1
+
+Recipient                                                      TAO      #   First blk  Label
+----------------------------------------------------------------------------------------------------
+  5FZiuxCBt8p6PFDisJ9ZEbBaKNVKy6TeemVJd1Z6jscsdjib   412,159.213    113   4,068,816  
+
+────────────────────────────────────────────────────────────────────────
+6. SHADOW WHALE CLUSTER OVERLAP
+────────────────────────────────────────────────────────────────────────
+  No direct transfers to/from any shadow whale or known infrastructure address.
+
+────────────────────────────────────────────────────────────────────────
+7. TEMPORAL PATTERNS
+────────────────────────────────────────────────────────────────────────
+First event: block 4,011,523  (2024-10-10 09:03 UTC)
+Last event:  block 7,761,287  (2026-03-16 23:32 UTC)
+
+  Block window   Approx date          In TAO         Out TAO  Events
+----------------------------------------------------------------------
+     4,000,000    2024-07-11            0.05            0.01       3
+     4,300,000    2024-08-22        4,892.56            0.00       2
+     4,400,000    2024-09-05        5,885.08            0.00      12
+     4,500,000    2024-09-19        7,955.01            0.00      14
+     4,600,000    2024-10-02        9,796.57            0.00      10
+     4,700,000    2024-10-16        4,300.00            0.00       4
+     4,800,000    2024-10-30        8,000.00            0.00       3
+     5,100,000    2024-12-11       36,462.83            1.00      16
+     5,200,000    2024-12-25       80,270.01       18,255.00      13
+     5,300,000    2025-01-08        9,570.60        2,608.00       6
+     5,400,000    2025-01-22       17,412.32       22,079.00      21
+     5,500,000    2025-02-04       23,336.06       22,886.00      20
+     5,600,000    2025-02-18       16,400.34       16,511.00      24
+     5,700,000    2025-03-04       25,888.11       26,863.00      26
+     5,800,000    2025-03-18       24,468.06       21,246.00      22
+     5,900,000    2025-04-01       15,151.34       25,015.00      27
+     6,000,000    2025-04-15       12,490.97       24,346.00      17
+     6,100,000    2025-04-29       16,172.75       20,852.00      42
+     6,200,000    2025-05-13       11,648.27       17,254.00      37
+     6,300,000    2025-05-27        3,288.44        5,174.00      24
+     6,400,000    2025-06-09       11,314.29       11,152.00      35
+     6,500,000    2025-06-23        6,763.77        6,000.00      33
+     6,600,000    2025-07-07       12,752.84       17,943.00      41
+     6,700,000    2025-07-21       19,347.27        8,596.00      45
+     6,800,000    2025-08-04       10,328.22       14,901.00      23
+     6,900,000    2025-08-18       15,802.77       16,826.20      43
+     7,000,000    2025-09-01       13,204.39       13,614.00      44
+     7,100,000    2025-09-15       20,520.79       24,295.00      53
+     7,200,000    2025-09-29       19,143.26       20,265.00      38
+     7,300,000    2025-10-12        6,427.86        8,018.00      26
+     7,400,000    2025-10-26       12,188.40       16,971.00      45
+     7,500,000    2025-11-09       10,240.32       12,743.00      24
+     7,600,000    2025-11-23        8,820.71        7,792.00      13
+     7,700,000    2025-12-07        7,000.00        9,953.00      10
+
+Largest inbound transfers:
+    65,000.000 TAO  block  5,271,417  (2025-04-03 15:57 UTC)  from 5FZiuxCBt8p6PFDisJ9Z...
+    31,000.000 TAO  block  5,105,382  (2025-03-11 14:30 UTC)  from 5FZiuxCBt8p6PFDisJ9Z...
+     8,283.315 TAO  block  5,349,157  (2025-04-14 11:05 UTC)  from 5FZiuxCBt8p6PFDisJ9Z...
+     6,821.907 TAO  block  5,764,334  (2025-06-12 11:03 UTC)  from 5FZiuxCBt8p6PFDisJ9Z...
+     6,000.000 TAO  block  5,682,060  (2025-06-01 00:47 UTC)  from 5FZiuxCBt8p6PFDisJ9Z...
+     5,946.138 TAO  block  5,747,221  (2025-06-10 02:01 UTC)  from 5FZiuxCBt8p6PFDisJ9Z...
+     5,937.931 TAO  block  5,533,637  (2025-05-10 02:01 UTC)  from 5FZiuxCBt8p6PFDisJ9Z...
+     5,862.771 TAO  block  5,231,257  (2025-03-29 02:05 UTC)  from 5FZiuxCBt8p6PFDisJ9Z...
+     5,830.718 TAO  block  5,471,540  (2025-05-01 11:01 UTC)  from 5FZiuxCBt8p6PFDisJ9Z...
+     5,622.911 TAO  block  5,790,419  (2025-06-16 02:01 UTC)  from 5FZiuxCBt8p6PFDisJ9Z...
+
+Largest outbound transfers:
+    15,000.000 TAO  block  5,469,768  (2025-05-01 05:07 UTC)  to   5FZiuxCBt8p6PFDisJ9Z...
+    12,000.000 TAO  block  6,805,877  (2025-11-04 03:04 UTC)  to   5FZiuxCBt8p6PFDisJ9Z...
+    10,000.000 TAO  block  6,003,639  (2025-07-15 16:48 UTC)  to   5FZiuxCBt8p6PFDisJ9Z...
+     8,976.000 TAO  block  5,227,203  (2025-03-28 12:34 UTC)  to   5FZiuxCBt8p6PFDisJ9Z...
+     7,724.000 TAO  block  6,037,761  (2025-07-20 10:33 UTC)  to   5FZiuxCBt8p6PFDisJ9Z...
+     7,617.000 TAO  block  5,679,503  (2025-05-31 16:15 UTC)  to   5FZiuxCBt8p6PFDisJ9Z...
+     7,394.000 TAO  block  5,679,503  (2025-05-31 16:15 UTC)  to   5FZiuxCBt8p6PFDisJ9Z...
+     7,388.000 TAO  block  5,548,287  (2025-05-12 02:51 UTC)  to   5FZiuxCBt8p6PFDisJ9Z...
+     7,128.000 TAO  block  5,507,836  (2025-05-06 12:00 UTC)  to   5FZiuxCBt8p6PFDisJ9Z...
+     7,000.000 TAO  block  5,999,464  (2025-07-15 02:52 UTC)  to   5FZiuxCBt8p6PFDisJ9Z...
+
+────────────────────────────────────────────────────────────────────────
+8. NON-TRANSFER EVENTS (staking, subnet operations, alpha)
+────────────────────────────────────────────────────────────────────────
+  block  4,068,816  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  5,102,822  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  5,210,117  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  5,220,895  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  5,227,203  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  5,397,122  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  5,422,688  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  5,429,643  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  5,469,768  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  5,486,207  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  5,507,836  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  5,531,170  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  5,548,287  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  5,566,669  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  5,644,019  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  5,679,503  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  5,679,503  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  5,722,654  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  5,744,141  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  5,744,426  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  5,762,806  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  5,787,334  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  5,799,715  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  5,805,163  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  5,837,371  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  5,852,376  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  5,893,108  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  5,942,554  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  5,967,362  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  5,978,347  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  5,992,499  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  5,996,301  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  5,999,464  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,003,639  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,014,553  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,032,101  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,037,761  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,101,088  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,140,711  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,144,731  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,152,314  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,154,048  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,161,101  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,174,371  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,247,812  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,254,484  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,263,044  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,288,504  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,294,209  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,313,673  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,375,551  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,399,344  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,428,709  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,446,019  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,448,931  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,464,483  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,490,466  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,519,062  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,590,900  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,641,355  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,643,445  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,650,285  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,658,703  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,676,929  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,698,113  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,759,789  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,781,697  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,785,924  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,805,877  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,820,733  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,842,497  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,929,775  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,943,583  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,951,793  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,965,196  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,974,257  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  6,997,316  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  7,011,933  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  7,017,789  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  7,030,073  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  7,054,810  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  7,081,376  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  7,103,356  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  7,132,232  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  7,134,001  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  7,155,142  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  7,172,980  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  7,198,217  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  7,208,744  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  7,230,501  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  7,234,824  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  7,249,169  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  7,270,857  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  7,311,533  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  7,327,764  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  7,341,522  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  7,375,099  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  7,414,582  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  7,447,859  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  7,468,567  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  7,474,687  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  7,477,716  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  7,477,716  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  7,477,716  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  7,477,716  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  7,526,155  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  7,547,249  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  7,558,078  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  7,611,343  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  7,622,807  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  7,702,016  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  7,735,326  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+  block  7,752,372  TransactionFeePaid              amount        0.000 TAO  netuid None → None
+
+────────────────────────────────────────────────────────────────────────
+9. COUNTERPARTY NONCE SPOT-CHECK
+────────────────────────────────────────────────────────────────────────
+Checking nonce and balance for top 5 inbound senders + top 5 outbound recipients...
+(High nonce = automated/hot wallet; nonce=0 = shadow/cold storage)
+
+  Address                                               Role           Nonce        Free TAO  Note
+  ----------------------------------------------------------------------------------------------------
+  5FZiuxCBt8p6PFDisJ9ZEbBaKNVKy6TeemVJd1Z6jscsdjib  sender        41,189       3,961.286  ← HOT / automated
+  5DxcqzHjknv1gUReoRVYg1R6XjGgPMRD1ww4koTQND7ZLJsP  sender           670       2,751.837  
+  5CrmVKApX6sJybZaL1geHfzvHWeCpbavqrrXgYLCQmhehX2q  sender        26,362           0.798  ← HOT / automated
+  5Ff8xfvJpZFv1gkj3UUz2PVS3pb5fzVQtoha7sfQWBn6djib  sender         2,696           0.322  ← highly active
+  5DJ6DF9ywrVPpdemxGTP1mNBegdexD3UnUy2SAMvdw84LJsP  sender           180           0.021  
+  5FZiuxCBt8p6PFDisJ9ZEbBaKNVKy6TeemVJd1Z6jscsdjib  recipient     41,189       3,961.286  ← HOT / automated
+
+========================================================================
+10. SUMMARY OF FINDINGS
+========================================================================
+
+TARGET: 5H9brHhMA1km3Dp3YCx75oaimgxEYScxCfxbzQRZ3gHk9x3L
+
+  Nonce:        111  (this wallet has signed 111 transactions)
+  Balance:      98,895.05 TAO (free; no registered stake)
+  Identity:     none
+  Roles:        none; not a delegate
+
+  Transfer history:
+    Total inbound     507,244.272 TAO over 590 transfers from 5 senders
+    Total outbound    412,159.213 TAO over 113 transfers to 1 recipients
+    Net accumulation: +95,085.06 TAO
+
+  Shadow whale cluster connections:
+    INBOUND from shadow wallets:  none
+    OUTBOUND to shadow wallets:   none
+    INBOUND from known infra:     none
+    OUTBOUND to known infra:      none
+

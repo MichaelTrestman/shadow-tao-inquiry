@@ -1,0 +1,231 @@
+========================================================================
+TAO.APP INVESTIGATION REPORT
+========================================================================
+
+CROSS-REFERENCE: TRANSFERS TO SHADOW WALLETS
+------------------------------------------------------------
+
+Funder-A (5EiXej3AwjKqb9mj...):
+  → SW1: 12 txs, 7,529.07 TAO total, first at block 7,141,733
+  → SW2: 49 txs, 25,865.08 TAO total, first at block 7,219,916
+  → SW3: 25 txs, 12,554.67 TAO total, first at block 7,249,842
+  → SW4: 6 txs, 2,598.36 TAO total, first at block 7,259,971
+  → SW5: 7 txs, 2,836.72 TAO total, first at block 7,263,000
+  → SW6: 1 txs, 142.47 TAO total, first at block 7,269,248
+  → SW7: 15 txs, 7,724.79 TAO total, first at block 7,266,126
+
+Funder-B (5DunDrFV6BPbzsgL...):
+  → SW1: 9 txs, 4,593.11 TAO total, first at block 7,581,065
+  → SW2: 22 txs, 14,494.34 TAO total, first at block 7,559,311
+  → SW3: 6 txs, 2,200.79 TAO total, first at block 7,711,561
+  → SW4: 14 txs, 8,713.96 TAO total, first at block 7,734,360
+  → SW5: 9 txs, 5,443.22 TAO total, first at block 7,737,225
+  → SW7: 18 txs, 7,513.36 TAO total, first at block 7,751,664
+
+HB2Q8 (upstream hub): no direct sends to shadow wallets
+
+FV99mB (SW#4 funder): no direct sends to shadow wallets
+
+GBnPzv (SW#8 funder / HB2Q8 feeder): no direct sends to shadow wallets
+
+HUPxAs (dust activator of both funders): no direct sends to shadow wallets
+
+DfKewdx (dominant upstream of Funder-B): no direct sends to shadow wallets
+
+Const_pub: no direct sends to shadow wallets
+
+Const_SN120: no direct sends to shadow wallets
+
+taobot_seed_funder: no direct sends to shadow wallets
+
+taobot_recent_funder: no direct sends to shadow wallets
+
+taobot_coldkey: no direct sends to shadow wallets
+
+========================================================================
+CONST ATTRIBUTION CHECK (via API)
+------------------------------------------------------------
+DIRECT TRANSFERS BETWEEN CONST KEYS: NONE FOUND
+
+CONST KEYS vs SHADOW INFRASTRUCTURE:
+  Const_pub: No overlap with shadow infrastructure found
+  Const_SN120: No overlap with shadow infrastructure found
+  Const_pub: No direct sends to shadow wallets
+  Const_SN120: No direct sends to shadow wallets
+
+========================================================================
+TAOBOT CONNECTION CHECK
+------------------------------------------------------------
+
+taobot_seed_funder: NO overlap with shadow infrastructure or shadow wallets
+
+taobot_recent_funder: NO overlap with shadow infrastructure or shadow wallets
+
+taobot_coldkey: NO overlap with shadow infrastructure or shadow wallets
+
+SHADOW INFRA NODES → taobot addresses (reverse check):
+  None found.
+
+========================================================================
+PER-ADDRESS SUMMARIES
+========================================================================
+
+────────────────────────────────────────────────────────────
+Funder-A
+  Address: 5EiXej3AwjKqb9mjQAf29JG5HJf9Dwtt8CjvDqA8biprWTiN
+  Inbound:  5,012 txs, 282,914.94 TAO total
+  Outbound: 7,493 txs, 283,055.25 TAO total
+  First inbound block:  7139440
+  First outbound block: 7139445
+  Top senders:
+    5HB2Q8H9Rvxr3ejZ1o58FfXk3S3jMij6mB7Vu7b7SPqUdhTQ  69,328.17 TAO
+    5EJMGn13311deMfe9pwZYd5bPkyMGs1ZmkmNtbpbv7wPcG9C  55,671.60 TAO
+    5Gorfuxev7QmgDzBK92YrVW2K5PEvfZRW49SQrKm3VXcAGi1  21,942.00 TAO
+    5HnhgYXb9pJcAWceju1a5aZttSPpeMqYDNqUbxntGyUNqGxR  14,127.03 TAO
+    5GYLRjVVUz3GzcXWjrgYRp4FLaVBb2y5McUfkQNAKqT9d82a  10,958.07 TAO
+    5FJMfoeUXsDXQSABaai8CUQvMyAK1a7jXqJvkBMnabfuJCjv  10,548.42 TAO
+    5HUPxAsF52CX7RWAe3vDA7Wu7fiKT78dG3XpxRisfnwKYsn4  9,920.30 TAO
+    5DEA37cMhnWbZMZQozcwtNSvtg4VPKRhkKob6HymZjTyqh1o  9,151.79 TAO
+    5ESDyJBqh3SRcmboQpHc3761pZqV5C9vrFPFy8qxtAzerktB  8,786.28 TAO
+    5EfXUFMjjc78YKgDrEta3SQFDvwvV7PtPnV2MKBd35SqvhQJ  7,338.48 TAO
+  Top receivers:
+    5EJMGn13311deMfe9pwZYd5bPkyMGs1ZmkmNtbpbv7wPcG9C  42,597.86 TAO
+    5ChHTBkaE1VgK5NX59uHuZoK8VQShojKBB1sGfXaZQpxVDCi  25,865.08 TAO
+    5GsQmSa5UVAps63JinL6wriKnQkspKjqspqdvZLkuDqHhCbf  17,640.13 TAO
+    5GgfJE3J9BsF2uohB3kCqciuctoJoRf4MtLA8gQDHUYsdpp3  13,270.20 TAO
+    5Dhf6WgqrfhVyFCGqK4G5utro2jepscwryMhLHtpMfopxweC  12,554.67 TAO
+    5EfXUFMjjc78YKgDrEta3SQFDvwvV7PtPnV2MKBd35SqvhQJ  9,384.23 TAO
+    5FxQcybbnvKwzm1gc9jTYMQ3SmsY9yJKWNLJKgZAmjxTW3rb  9,268.02 TAO
+    5GVKorR78gqQCV6mrWMWX95hHG93ZaRAUShZVBNT768dvqv8  7,724.79 TAO
+    5FEA1FfUPwT3K4zTsYbQx5X1G9R2ZjYLyFv12xBQxW9QgoCL  7,529.07 TAO
+    5GYLRjVVUz3GzcXWjrgYRp4FLaVBb2y5McUfkQNAKqT9d82a  7,275.68 TAO
+
+────────────────────────────────────────────────────────────
+Funder-B
+  Address: 5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E
+  Inbound:  1,557 txs, 83,046.46 TAO total
+  Outbound: 2,922 txs, 86,445.40 TAO total
+  First inbound block:  7554562
+  First outbound block: 7554520
+  Top senders:
+    5Gorfuxev7QmgDzBK92YrVW2K5PEvfZRW49SQrKm3VXcAGi1  17,046.65 TAO
+    5HB2Q8H9Rvxr3ejZ1o58FfXk3S3jMij6mB7Vu7b7SPqUdhTQ  14,754.27 TAO
+    5FJMfoeUXsDXQSABaai8CUQvMyAK1a7jXqJvkBMnabfuJCjv  8,577.79 TAO
+    5HUPxAsF52CX7RWAe3vDA7Wu7fiKT78dG3XpxRisfnwKYsn4  8,437.01 TAO
+    5EJMGn13311deMfe9pwZYd5bPkyMGs1ZmkmNtbpbv7wPcG9C  7,529.54 TAO
+    5C77HBqjXfdMupDUyABuMof2SrnQ4RTAipd1wV6v1jUdUhFJ  6,000.00 TAO
+    5ESDyJBqh3SRcmboQpHc3761pZqV5C9vrFPFy8qxtAzerktB  2,059.88 TAO
+    5GJhM8dm5Pb26cTd6js396WM75g5AnGChab1QpxXDae8eR7t  1,950.00 TAO
+    5FpanpirsLJC1ZeMGLpsWLc9c7joa9HZCTSxW4PnQoAgLJxk  1,543.31 TAO
+    5DMAbJMNzSZ1WC9YXSmMTs3gAagA4oddmRsLv9QQ8Zv1h5xY  1,516.13 TAO
+  Top receivers:
+    5ChHTBkaE1VgK5NX59uHuZoK8VQShojKBB1sGfXaZQpxVDCi  14,494.34 TAO
+    5GUkyA37dHnc1rEijDtvBe5yYNCpaNjaHGqB7DY9Kb2KgSj3  8,713.96 TAO
+    5GVKorR78gqQCV6mrWMWX95hHG93ZaRAUShZVBNT768dvqv8  7,513.36 TAO
+    5C9CxW9355u1sqy6Np85FfGssJAdyA8cAsjjV9YP8aaLvjEY  5,443.22 TAO
+    5FEA1FfUPwT3K4zTsYbQx5X1G9R2ZjYLyFv12xBQxW9QgoCL  4,593.11 TAO
+    5GgfJE3J9BsF2uohB3kCqciuctoJoRf4MtLA8gQDHUYsdpp3  4,187.70 TAO
+    5DiC57wQvSHyJACiNfMbaLte6Uy6H7yP837NjtYHizFGiysp  3,567.56 TAO
+    5Dhf6WgqrfhVyFCGqK4G5utro2jepscwryMhLHtpMfopxweC  2,200.79 TAO
+    5EJMGn13311deMfe9pwZYd5bPkyMGs1ZmkmNtbpbv7wPcG9C  2,095.88 TAO
+    5CAuWdpdwbhyuGkiqpGR1B4t7yRL5AF43Ndt2Xx64jzhANWA  1,736.91 TAO
+
+────────────────────────────────────────────────────────────
+HB2Q8 (upstream hub)
+  Address: 5HB2Q8H9Rvxr3ejZ1o58FfXk3S3jMij6mB7Vu7b7SPqUdhTQ
+  Inbound:  0 txs, 0.00 TAO total
+  Outbound: 0 txs, 0.00 TAO total
+  First inbound block:  None
+  First outbound block: None
+  Top senders:
+  Top receivers:
+
+────────────────────────────────────────────────────────────
+FV99mB (SW#4 funder)
+  Address: 5FV99mBYw3tYrMTXXe52PDa69an1AE19aTrpnB4kzxW73yUj
+  Inbound:  0 txs, 0.00 TAO total
+  Outbound: 0 txs, 0.00 TAO total
+  First inbound block:  None
+  First outbound block: None
+  Top senders:
+  Top receivers:
+
+────────────────────────────────────────────────────────────
+GBnPzv (SW#8 funder / HB2Q8 feeder)
+  Address: 5GBnPzvPghS8AuCoo6bfnK7JUFHuyUhWSFD4woBNsKnPiEUi
+  Inbound:  0 txs, 0.00 TAO total
+  Outbound: 0 txs, 0.00 TAO total
+  First inbound block:  None
+  First outbound block: None
+  Top senders:
+  Top receivers:
+
+────────────────────────────────────────────────────────────
+HUPxAs (dust activator of both funders)
+  Address: 5HUPxAsF52CX7RWAe3vDA7Wu7fiKT78dG3XpxRisfnwKYsn4
+  Inbound:  0 txs, 0.00 TAO total
+  Outbound: 0 txs, 0.00 TAO total
+  First inbound block:  None
+  First outbound block: None
+  Top senders:
+  Top receivers:
+
+────────────────────────────────────────────────────────────
+DfKewdx (dominant upstream of Funder-B)
+  Address: 5DfKewdxchFx7umvw6qcHKXKgvVxEtMFXFXVaXShjf7anzet
+  Inbound:  0 txs, 0.00 TAO total
+  Outbound: 0 txs, 0.00 TAO total
+  First inbound block:  None
+  First outbound block: None
+  Top senders:
+  Top receivers:
+
+────────────────────────────────────────────────────────────
+Const_pub
+  Address: 5GH2aUTMRUh1RprCgH4x3tRyCaKeUi5BfmYCfs1NARA8R54n
+  Inbound:  0 txs, 0.00 TAO total
+  Outbound: 0 txs, 0.00 TAO total
+  First inbound block:  None
+  First outbound block: None
+  Top senders:
+  Top receivers:
+
+────────────────────────────────────────────────────────────
+Const_SN120
+  Address: 5Fc3ZZQAYB3SPXKcFnd1WJeyQvArSZZeB6LU1rb7zvQ6XvDh
+  Inbound:  0 txs, 0.00 TAO total
+  Outbound: 0 txs, 0.00 TAO total
+  First inbound block:  None
+  First outbound block: None
+  Top senders:
+  Top receivers:
+
+────────────────────────────────────────────────────────────
+taobot_seed_funder
+  Address: 5E2b2DcMd5W8MBhzTCFt63t2ZEN8RsRgL7oDd7BFYL9aMQux
+  Inbound:  0 txs, 0.00 TAO total
+  Outbound: 0 txs, 0.00 TAO total
+  First inbound block:  None
+  First outbound block: None
+  Top senders:
+  Top receivers:
+
+────────────────────────────────────────────────────────────
+taobot_recent_funder
+  Address: 5FqqXKb9zonSNKbZhEuHYjCXnmPbX9tdzMCU2gx8gir8Z8a5
+  Inbound:  0 txs, 0.00 TAO total
+  Outbound: 0 txs, 0.00 TAO total
+  First inbound block:  None
+  First outbound block: None
+  Top senders:
+  Top receivers:
+
+────────────────────────────────────────────────────────────
+taobot_coldkey
+  Address: 5GsbTgfvgCH4xdqSkiPb7EaBBFLHjWH5vfEALhJaewSFpZX9
+  Inbound:  0 txs, 0.00 TAO total
+  Outbound: 0 txs, 0.00 TAO total
+  First inbound block:  None
+  First outbound block: None
+  Top senders:
+  Top receivers:

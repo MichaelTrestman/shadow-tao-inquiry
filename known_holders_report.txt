@@ -1,0 +1,111 @@
+========================================================================
+KNOWN HOLDER ANALYSIS — Bittensor Finney chain
+Addresses with on-chain identity or network role: 2369
+========================================================================
+
+--- TOP NAMED HOLDERS BY FREE BALANCE (n=569) ---
+Name                               Free TAO    Stake TAO Role                 SS58
+------------------------------------------------------------------------------------------
+  Owner51                             1,941            0  validator,sn_owner([51]) 5FqACMtcegZxxopgu1g7TgyrnyD8skurr9QDPLPhxNQzsThe
+  Sportstensor                        1,403            0  validator,sn_owner([41]) 5FCSevLkofmKZRixMawp6jyyjBty1AeSCLa7N5Fv892DYkXX
+  FlameWire | SN97                      600            0  validator            5EXSiTySWQiuzowhogXzfCr4Xn45CW3oMELWGTxFEfQCTy86
+  Tao Bridge                            540            0  validator            5HiveMEoWPmQmBAb8v63bKPcFhgTGCmST1TVZNvPHSTKFLCv
+  Crucible Labs                         486            0  validator            5Eq8b9p6zJMjEXyH9sX4DRMYspnUyorEKq3Zmha1WN6AC4sf
+  CliqueAI                              273            0  validator,sn_owner([83]) 5DqEjRLyNN8k3WbEXhA36tyGG4YpWyPEcVSTa47XxspNHhc3
+  Owner3                                206            0  sn_owner([3])        5G26HqQg8M6hfw9q84gM3udYHHymThmswRKgSGtwdcduBSos
+  CheckerChain Validator                135            0  validator            5CyQ1biALG1mhghqZrnRE7hMzpGmRHCEXTxPXXKz1f1rbmNG
+  RunPod                                130            0  validator            5FP4Z2xh9wF1pWayA5hzyiAKvsZjn2RQiPW4G5hVqQZRP6o3
+  Nepher Robotics                       111            0  validator,sn_owner([49]) 5FL781vfkLNnYBUi58JnhZ3r2waHDMiehxRhzcMaMWvKDfXf
+  Owner30                               100            0  validator,sn_owner([30]) 5DJCJS5Fa6Xn6FL8e4EhcvAWHY89gQxtTSwLctgEdqZfq1Bx
+  const                                  91            0  validator,sn_owner([120]) 5Fc3ZZQAYB3SPXKcFnd1WJeyQvArSZZeB6LU1rb7zvQ6XvDh
+  Owner38                                82            0  validator            5EFJ7mEVyjxT3iXqxuHyMMuGgJKFt85tb5s4vEvnCTpSoP3w
+  zelytria                               77            0  validator            5Dt2EeuvAmtMZ2tWJfmHEnRAx2mbDftSoQGBLSs3QPyGD1BC
+  basilica                               76            0  validator,sn_owner([39]) 5Fq9HB8RiFug83r44Focqt9Wk2UZJC76wXKqSuTVV9kXYePh
+  grail                                  69            0  validator,sn_owner([81]) 5Ckv5w2PLg9yeWA62cS6XYNUtorKQAeJLmaUgZ1sKMttEadb
+  1T1B.AI                                55            0  validator            5Ek8i6wDRakJfJPM9wpJLYDE9G9uaqHLdARoewtTiLtbt33f
+  HODL.Validators                        50            0  validator            5F721c2K7zMmY72cqiyUv7pKME6MKsg4dX2ZyPac8kpujJXm
+  Owner56                                50            0  validator,sn_owner([56]) 5EJ1zbdwhumTRYFx3VCGnR6SW7CJWP28tEJCo2gw1dFbVL5g
+  General Tensor (RoundTable21           44            0  validator            5DywxdtESjskgPZrDXL86qV44SpPgJuqs9X6noyJJwX9PaSD
+  Owner60                                40            0  validator,sn_owner([60]) 5CXLwkK1Scd1uiMUrXYjJUTTPxqqyH2FTJQNLp9uXQhA9rhR
+  A52                                    36            0  identity_only        5G947jwuAFdafDjVYA3ykki3SPZdyvSEbRQhZ79BwCPKUc3G
+  ReadyAI                                24            0  validator,sn_owner([33]) 5HinUfk5SqBUAbkMtgdNoum3VJvwrLgdvwW5sbXA1UPYZ8uB
+  Openτensor Foundaτion                  23            0  validator            5HBtpwxuGNL1gwzwomwR7sjwUt8WXYSuWcLYN6f9KpTZkP4k
+  NKQ                                    22            0  identity_only        5HYDVAkLEgSPi44H918TY4dMhuc8oX9eoVDUEsi7NDQP44fS
+  Tenexium.io                            15            0  validator            5D2knCMRNdMaag6DLcP3e1bBA27FiSoYh8CpndsuEWohhRos
+  TensorPulse                            15            0  validator            5HKFkov27f6gPu8h5qfU1sjQoXgbzeHAJWqjvVkZNXVJEenA
+  Neuralteq.com                          12            0  validator            5HHS55o12rsvH5cKdAYzFW1bsPiQPPctcC8pcJLBHZbZnpHV
+  Uncle Tao                              11            0  validator            5FyLZvWgtaAk1AdcB7EqNNmUBwJ4S1V8fAhPPsBfBP5Vmw9A
+  Ary van der Touw                       11            0  validator            5EsutAGoekFjUm8DHAXSpLBGMKDUGALsLCbEb5JCwK6yiwTH
+  Owner10                                10            0  validator,sn_owner([10]) 5GbcimKjp17QPUoS568DBSMNqV2pmDetBf3xyC15vh4bTFE1
+  Yuma, a DCG Company                    10            0  validator            5E9fVY1jexCNVMjd2rdBsAxeamFGEMfzHcyTn2fHgdHeYc5p
+  Dale Cooper                            10            0  validator            5Cwo4hQqrsTA4dysrSNmM83hkTWaHZB2ExJUp7UVy3wXt1Jz
+  Kraken                                 10            0  validator            5FHxxe8ZKYaNmGcSLdG5ekxXeZDhQnk9cbpHdsJW8RunGpSs
+  sundae_bar                              9            0  validator,sn_owner([121]) 5CXGaDJsffVeBK4CDhBNMVK6MH7fHbL7AbnjzZ8XP6QzFLWm
+  OpenCompuτe                             8            0  validator            5HKGtKNW2mhvDrcM4TGLbbWCW68pwPrTxMNdvBYkzP7mfjAD
+  TAO.com                                 8            0  validator            5Cu7NFMULPDkaQkr3nciUVMADvCfqtnjeuYrZpuoMXo6H8MY
+  Owner2                                  8            0  validator,sn_owner([2]) 5EcYQ3W77ndrmMWdvVQusoFqY8doxfP3U2zrh7xZQiaz7avY
+  Distributed Training                    8            0  validator            5CDpJRaLm5ZQpw9caM38axFVS34UxXZ9QdszKJ33p8x5WaBc
+  Rizzo (Insured)                         7            0  validator,sn_owner([20]) 5FuzgvtfbZWdKSRxyYVPAPYNaNnf9cMnpT7phL3s2T3Kkrzo
+  NorthTensor                             7            0  validator            5FTxn37JFkQn2c9jAY1SkdtqUHKACsV9ZjmCBnBaYcUktaBo
+  Macrocosmos                             7            0  validator            5FRXwb2qsEhqDQQKcm5m2MF26xTWwW65MHTEtKFFydypuqjG
+  Polychain                               7            0  validator            5GP8N57T2oja6qR9y3FQDYjrEFxnhmx3ZuiadE64yw6h5For
+  tao5                                    6            0  validator            5EJAqczgzCMvWcmXhKMZH4vMS5gPy8BjeuHjz5o5yN6RYzX2
+  Owner4                                  6            0  validator,sn_owner([4]) 5CXGPMnq9RCCLUEvp9G2iUuabw69TSFM155UVS1S4Zmusaxv
+  88                                      6            0  validator,sn_owner([88]) 5FhMsGJS7WYdwBzcgsTWxEtY7UCYLZdmBVLcNPmCxr3ppiKS
+  Owner32                                 6            0  validator,sn_owner([32]) 5DWgkCSvq4brWSNLDU9FBgTk1ZpAQ2y6t3ky97CvEVuS9Qad
+  Astrid                                  6            0  validator            5EJQWShhBbbHPUSgQ5hN5zJbn4uWtDuvr1gy4xpJLhPhyuYL
+  vote NO dTAO 🤡                          5            0  validator            5GWN4JDXz6Vjit91PBvTBhhK9HziUSe7RJCvT2E5shHeaPKE
+  K8STAKE.AI                              5            0  validator            5EAWZVGaFc844nmX4CZ5XEMY2bhSAG6RuBPUpjMbJvHSHqNL
+
+--- VALIDATORS vs SUBNET OWNERS COMPARISON ---
+Group                 Count   Total Free TAO  Total Stake TAO     Avg Free
+----------------------------------------------------------------------------
+  Validators           1966           14,426                0            7
+  SN Owners             129            7,309                0           57
+  Both (overlap)        124            7,087                0           57
+
+Note: stake figures from TotalColdkeyStake — may undercount dTAO alpha pool stake.
+
+--- TOP VALIDATORS BY COLDKEY FREE BALANCE ---
+       1,941 TAO free  Owner51                      5FqACMtcegZxxopgu1g7TgyrnyD8skurr9QDPLPhxNQzsThe
+       1,403 TAO free  Sportstensor                 5FCSevLkofmKZRixMawp6jyyjBty1AeSCLa7N5Fv892DYkXX
+       1,341 TAO free  (no identity)                5G9ZvMXQEecYs8eA4xQ6Mrb9BHPQWs2g7u2RR6UXxrWQceZW
+       1,126 TAO free  (no identity)                5DTzv2rL6YGQjCDNiWQJz2nE23fK1mDccH9eQimgiieyL3C4
+         803 TAO free  (no identity)                5F7CfwdYoSgaK16kGqLFdEpT94SS3Psgmz34ig5jhZBbdNj6
+         600 TAO free  FlameWire | SN97             5EXSiTySWQiuzowhogXzfCr4Xn45CW3oMELWGTxFEfQCTy86
+         553 TAO free  (no identity)                5FyGT3PetK5odMMNRWpdtoANHpV9ChUwqq5B5wiBdC3Z9rfb
+         540 TAO free  Tao Bridge                   5HiveMEoWPmQmBAb8v63bKPcFhgTGCmST1TVZNvPHSTKFLCv
+         498 TAO free  (no identity)                5D7bAeb7ybS72vpxsH9Wrutein45ZDp7a5Vi4uogsZ5BZnzJ
+         486 TAO free  Crucible Labs                5Eq8b9p6zJMjEXyH9sX4DRMYspnUyorEKq3Zmha1WN6AC4sf
+         387 TAO free  (no identity)                5Fe9FcAm4M7EeyfrZREsMn22BKSaiF2SdEkUhBCfwLyUNjMo
+         313 TAO free  (no identity)                5HNUwTcJ7afQi3PehQw49yFKww82xzy2ekGwp1jS6coBdpyv
+         273 TAO free  CliqueAI                     5DqEjRLyNN8k3WbEXhA36tyGG4YpWyPEcVSTa47XxspNHhc3
+         189 TAO free  (no identity)                5Hmm6kvhaaZRLsjsLowFbn5ZkEekF4XXsc4UoujfaCns8f5J
+         147 TAO free  (no identity)                5H8dNvi1jZRe1dcYN2FdknWKxfGx6u1o9pYm5zRMCZyy2Ex3
+         135 TAO free  CheckerChain Validator       5CyQ1biALG1mhghqZrnRE7hMzpGmRHCEXTxPXXKz1f1rbmNG
+         130 TAO free  RunPod                       5FP4Z2xh9wF1pWayA5hzyiAKvsZjn2RQiPW4G5hVqQZRP6o3
+         121 TAO free  (no identity)                5HYpLiuD2Hdrsh8jwQRa912NxqTPSDn5jprHEVYnizei3GvC
+         113 TAO free  (no identity)                5FoLraTEksK4fYywd7cLMEsHE4u9T951tEerpj5Bm6a4HKmg
+         111 TAO free  Nepher Robotics              5FL781vfkLNnYBUi58JnhZ3r2waHDMiehxRhzcMaMWvKDfXf
+
+--- TOP SUBNET OWNERS BY COLDKEY FREE BALANCE ---
+       1,941 TAO free  SNs=[51]  Owner51                      5FqACMtcegZxxopgu1g7TgyrnyD8skurr9QDPLPhxNQzsThe
+       1,403 TAO free  SNs=[41]  Sportstensor                 5FCSevLkofmKZRixMawp6jyyjBty1AeSCLa7N5Fv892DYkXX
+       1,341 TAO free  SNs=[97]  (no identity)                5G9ZvMXQEecYs8eA4xQ6Mrb9BHPQWs2g7u2RR6UXxrWQceZW
+       1,126 TAO free  SNs=[125]  (no identity)                5DTzv2rL6YGQjCDNiWQJz2nE23fK1mDccH9eQimgiieyL3C4
+         273 TAO free  SNs=[83]  CliqueAI                     5DqEjRLyNN8k3WbEXhA36tyGG4YpWyPEcVSTa47XxspNHhc3
+         206 TAO free  SNs=[3]  Owner3                       5G26HqQg8M6hfw9q84gM3udYHHymThmswRKgSGtwdcduBSos
+         147 TAO free  SNs=[101]  (no identity)                5H8dNvi1jZRe1dcYN2FdknWKxfGx6u1o9pYm5zRMCZyy2Ex3
+         111 TAO free  SNs=[49]  Nepher Robotics              5FL781vfkLNnYBUi58JnhZ3r2waHDMiehxRhzcMaMWvKDfXf
+         100 TAO free  SNs=[30]  Owner30                      5DJCJS5Fa6Xn6FL8e4EhcvAWHY89gQxtTSwLctgEdqZfq1Bx
+          98 TAO free  SNs=[100]  (no identity)                5FX6kmhYwTYRFaZjxEo7k9DaG8qRmqrJtLTMGRgnfjRcXiWU
+          91 TAO free  SNs=[120]  const                        5Fc3ZZQAYB3SPXKcFnd1WJeyQvArSZZeB6LU1rb7zvQ6XvDh
+          76 TAO free  SNs=[39]  basilica                     5Fq9HB8RiFug83r44Focqt9Wk2UZJC76wXKqSuTVV9kXYePh
+          69 TAO free  SNs=[81]  grail                        5Ckv5w2PLg9yeWA62cS6XYNUtorKQAeJLmaUgZ1sKMttEadb
+          56 TAO free  SNs=[77]  (no identity)                5GxxsUeYRyJSJKCuPeG1jZZiCummHJttmTNsfgDRSfxVnhGi
+          50 TAO free  SNs=[56]  Owner56                      5EJ1zbdwhumTRYFx3VCGnR6SW7CJWP28tEJCo2gw1dFbVL5g
+          40 TAO free  SNs=[60]  Owner60                      5CXLwkK1Scd1uiMUrXYjJUTTPxqqyH2FTJQNLp9uXQhA9rhR
+          24 TAO free  SNs=[33]  ReadyAI                      5HinUfk5SqBUAbkMtgdNoum3VJvwrLgdvwW5sbXA1UPYZ8uB
+          16 TAO free  SNs=[127]  (no identity)                5FU4uxAdrZsaWaezWwXEK93MwPX5gw2566BQK2WwrGUudfSH
+          13 TAO free  SNs=[67]  (no identity)                5HEAv3TU1yNei4GwiTsxfmDCDW9pMCKLeDVky9iaVJfYiVeY
+          10 TAO free  SNs=[10]  Owner10                      5GbcimKjp17QPUoS568DBSMNqV2pmDetBf3xyC15vh4bTFE1

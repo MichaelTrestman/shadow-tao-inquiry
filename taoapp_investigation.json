@@ -1,0 +1,310 @@
+{
+  "Funder-A": {
+    "label": "Funder-A",
+    "address": "5EiXej3AwjKqb9mjQAf29JG5HJf9Dwtt8CjvDqA8biprWTiN",
+    "total_inbound_tao": 282914.935663654,
+    "total_outbound_tao": 283055.254252374,
+    "inbound_tx_count": 5012,
+    "outbound_tx_count": 7493,
+    "first_inbound_block": 7139440,
+    "first_outbound_block": 7139445,
+    "top_senders": [
+      [
+        "5HB2Q8H9Rvxr3ejZ1o58FfXk3S3jMij6mB7Vu7b7SPqUdhTQ",
+        69328.17364901998
+      ],
+      [
+        "5EJMGn13311deMfe9pwZYd5bPkyMGs1ZmkmNtbpbv7wPcG9C",
+        55671.601257539005
+      ],
+      [
+        "5Gorfuxev7QmgDzBK92YrVW2K5PEvfZRW49SQrKm3VXcAGi1",
+        21942.004055061
+      ],
+      [
+        "5HnhgYXb9pJcAWceju1a5aZttSPpeMqYDNqUbxntGyUNqGxR",
+        14127.032352423
+      ],
+      [
+        "5GYLRjVVUz3GzcXWjrgYRp4FLaVBb2y5McUfkQNAKqT9d82a",
+        10958.074217222
+      ],
+      [
+        "5FJMfoeUXsDXQSABaai8CUQvMyAK1a7jXqJvkBMnabfuJCjv",
+        10548.421698265998
+      ],
+      [
+        "5HUPxAsF52CX7RWAe3vDA7Wu7fiKT78dG3XpxRisfnwKYsn4",
+        9920.295145705999
+      ],
+      [
+        "5DEA37cMhnWbZMZQozcwtNSvtg4VPKRhkKob6HymZjTyqh1o",
+        9151.793063102994
+      ],
+      [
+        "5ESDyJBqh3SRcmboQpHc3761pZqV5C9vrFPFy8qxtAzerktB",
+        8786.277314945002
+      ],
+      [
+        "5EfXUFMjjc78YKgDrEta3SQFDvwvV7PtPnV2MKBd35SqvhQJ",
+        7338.483575439999
+      ]
+    ],
+    "top_receivers": [
+      [
+        "5EJMGn13311deMfe9pwZYd5bPkyMGs1ZmkmNtbpbv7wPcG9C",
+        42597.863394302985
+      ],
+      [
+        "5ChHTBkaE1VgK5NX59uHuZoK8VQShojKBB1sGfXaZQpxVDCi",
+        25865.078830139995
+      ],
+      [
+        "5GsQmSa5UVAps63JinL6wriKnQkspKjqspqdvZLkuDqHhCbf",
+        17640.12975874
+      ],
+      [
+        "5GgfJE3J9BsF2uohB3kCqciuctoJoRf4MtLA8gQDHUYsdpp3",
+        13270.198472250004
+      ],
+      [
+        "5Dhf6WgqrfhVyFCGqK4G5utro2jepscwryMhLHtpMfopxweC",
+        12554.672506210001
+      ],
+      [
+        "5EfXUFMjjc78YKgDrEta3SQFDvwvV7PtPnV2MKBd35SqvhQJ",
+        9384.226489639
+      ],
+      [
+        "5FxQcybbnvKwzm1gc9jTYMQ3SmsY9yJKWNLJKgZAmjxTW3rb",
+        9268.024869657
+      ],
+      [
+        "5GVKorR78gqQCV6mrWMWX95hHG93ZaRAUShZVBNT768dvqv8",
+        7724.789880704
+      ],
+      [
+        "5FEA1FfUPwT3K4zTsYbQx5X1G9R2ZjYLyFv12xBQxW9QgoCL",
+        7529.073392543
+      ],
+      [
+        "5GYLRjVVUz3GzcXWjrgYRp4FLaVBb2y5McUfkQNAKqT9d82a",
+        7275.676131258
+      ]
+    ]
+  },
+  "Funder-B": {
+    "label": "Funder-B",
+    "address": "5DunDrFV6BPbzsgLZUtMQtCq7w9fcUEbM59BUwx5E7N9Bn5E",
+    "total_inbound_tao": 83046.46095448,
+    "total_outbound_tao": 86445.40046723,
+    "inbound_tx_count": 1557,
+    "outbound_tx_count": 2922,
+    "first_inbound_block": 7554562,
+    "first_outbound_block": 7554520,
+    "top_senders": [
+      [
+        "5Gorfuxev7QmgDzBK92YrVW2K5PEvfZRW49SQrKm3VXcAGi1",
+        17046.652810141004
+      ],
+      [
+        "5HB2Q8H9Rvxr3ejZ1o58FfXk3S3jMij6mB7Vu7b7SPqUdhTQ",
+        14754.270258804014
+      ],
+      [
+        "5FJMfoeUXsDXQSABaai8CUQvMyAK1a7jXqJvkBMnabfuJCjv",
+        8577.793057107001
+      ],
+      [
+        "5HUPxAsF52CX7RWAe3vDA7Wu7fiKT78dG3XpxRisfnwKYsn4",
+        8437.010294939999
+      ],
+      [
+        "5EJMGn13311deMfe9pwZYd5bPkyMGs1ZmkmNtbpbv7wPcG9C",
+        7529.540936321
+      ],
+      [
+        "5C77HBqjXfdMupDUyABuMof2SrnQ4RTAipd1wV6v1jUdUhFJ",
+        5999.998744965
+      ],
+      [
+        "5ESDyJBqh3SRcmboQpHc3761pZqV5C9vrFPFy8qxtAzerktB",
+        2059.8840490229995
+      ],
+      [
+        "5GJhM8dm5Pb26cTd6js396WM75g5AnGChab1QpxXDae8eR7t",
+        1949.998811045
+      ],
+      [
+        "5FpanpirsLJC1ZeMGLpsWLc9c7joa9HZCTSxW4PnQoAgLJxk",
+        1543.308474
+      ],
+      [
+        "5DMAbJMNzSZ1WC9YXSmMTs3gAagA4oddmRsLv9QQ8Zv1h5xY",
+        1516.133790579
+      ]
+    ],
+    "top_receivers": [
+      [
+        "5ChHTBkaE1VgK5NX59uHuZoK8VQShojKBB1sGfXaZQpxVDCi",
+        14494.339731465003
+      ],
+      [
+        "5GUkyA37dHnc1rEijDtvBe5yYNCpaNjaHGqB7DY9Kb2KgSj3",
+        8713.961090759001
+      ],
+      [
+        "5GVKorR78gqQCV6mrWMWX95hHG93ZaRAUShZVBNT768dvqv8",
+        7513.357561174999
+      ],
+      [
+        "5C9CxW9355u1sqy6Np85FfGssJAdyA8cAsjjV9YP8aaLvjEY",
+        5443.218503161001
+      ],
+      [
+        "5FEA1FfUPwT3K4zTsYbQx5X1G9R2ZjYLyFv12xBQxW9QgoCL",
+        4593.107855189
+      ],
+      [
+        "5GgfJE3J9BsF2uohB3kCqciuctoJoRf4MtLA8gQDHUYsdpp3",
+        4187.699270499998
+      ],
+      [
+        "5DiC57wQvSHyJACiNfMbaLte6Uy6H7yP837NjtYHizFGiysp",
+        3567.5593934399994
+      ],
+      [
+        "5Dhf6WgqrfhVyFCGqK4G5utro2jepscwryMhLHtpMfopxweC",
+        2200.78624231
+      ],
+      [
+        "5EJMGn13311deMfe9pwZYd5bPkyMGs1ZmkmNtbpbv7wPcG9C",
+        2095.8810626609998
+      ],
+      [
+        "5CAuWdpdwbhyuGkiqpGR1B4t7yRL5AF43Ndt2Xx64jzhANWA",
+        1736.9097318099998
+      ]
+    ]
+  },
+  "HB2Q8 (upstream hub)": {
+    "label": "HB2Q8 (upstream hub)",
+    "address": "5HB2Q8H9Rvxr3ejZ1o58FfXk3S3jMij6mB7Vu7b7SPqUdhTQ",
+    "total_inbound_tao": 0,
+    "total_outbound_tao": 0,
+    "inbound_tx_count": 0,
+    "outbound_tx_count": 0,
+    "first_inbound_block": null,
+    "first_outbound_block": null,
+    "top_senders": [],
+    "top_receivers": []
+  },
+  "FV99mB (SW#4 funder)": {
+    "label": "FV99mB (SW#4 funder)",
+    "address": "5FV99mBYw3tYrMTXXe52PDa69an1AE19aTrpnB4kzxW73yUj",
+    "total_inbound_tao": 0,
+    "total_outbound_tao": 0,
+    "inbound_tx_count": 0,
+    "outbound_tx_count": 0,
+    "first_inbound_block": null,
+    "first_outbound_block": null,
+    "top_senders": [],
+    "top_receivers": []
+  },
+  "GBnPzv (SW#8 funder / HB2Q8 feeder)": {
+    "label": "GBnPzv (SW#8 funder / HB2Q8 feeder)",
+    "address": "5GBnPzvPghS8AuCoo6bfnK7JUFHuyUhWSFD4woBNsKnPiEUi",
+    "total_inbound_tao": 0,
+    "total_outbound_tao": 0,
+    "inbound_tx_count": 0,
+    "outbound_tx_count": 0,
+    "first_inbound_block": null,
+    "first_outbound_block": null,
+    "top_senders": [],
+    "top_receivers": []
+  },
+  "HUPxAs (dust activator of both funders)": {
+    "label": "HUPxAs (dust activator of both funders)",
+    "address": "5HUPxAsF52CX7RWAe3vDA7Wu7fiKT78dG3XpxRisfnwKYsn4",
+    "total_inbound_tao": 0,
+    "total_outbound_tao": 0,
+    "inbound_tx_count": 0,
+    "outbound_tx_count": 0,
+    "first_inbound_block": null,
+    "first_outbound_block": null,
+    "top_senders": [],
+    "top_receivers": []
+  },
+  "DfKewdx (dominant upstream of Funder-B)": {
+    "label": "DfKewdx (dominant upstream of Funder-B)",
+    "address": "5DfKewdxchFx7umvw6qcHKXKgvVxEtMFXFXVaXShjf7anzet",
+    "total_inbound_tao": 0,
+    "total_outbound_tao": 0,
+    "inbound_tx_count": 0,
+    "outbound_tx_count": 0,
+    "first_inbound_block": null,
+    "first_outbound_block": null,
+    "top_senders": [],
+    "top_receivers": []
+  },
+  "Const_pub": {
+    "label": "Const_pub",
+    "address": "5GH2aUTMRUh1RprCgH4x3tRyCaKeUi5BfmYCfs1NARA8R54n",
+    "total_inbound_tao": 0,
+    "total_outbound_tao": 0,
+    "inbound_tx_count": 0,
+    "outbound_tx_count": 0,
+    "first_inbound_block": null,
+    "first_outbound_block": null,
+    "top_senders": [],
+    "top_receivers": []
+  },
+  "Const_SN120": {
+    "label": "Const_SN120",
+    "address": "5Fc3ZZQAYB3SPXKcFnd1WJeyQvArSZZeB6LU1rb7zvQ6XvDh",
+    "total_inbound_tao": 0,
+    "total_outbound_tao": 0,
+    "inbound_tx_count": 0,
+    "outbound_tx_count": 0,
+    "first_inbound_block": null,
+    "first_outbound_block": null,
+    "top_senders": [],
+    "top_receivers": []
+  },
+  "taobot_seed_funder": {
+    "label": "taobot_seed_funder",
+    "address": "5E2b2DcMd5W8MBhzTCFt63t2ZEN8RsRgL7oDd7BFYL9aMQux",
+    "total_inbound_tao": 0,
+    "total_outbound_tao": 0,
+    "inbound_tx_count": 0,
+    "outbound_tx_count": 0,
+    "first_inbound_block": null,
+    "first_outbound_block": null,
+    "top_senders": [],
+    "top_receivers": []
+  },
+  "taobot_recent_funder": {
+    "label": "taobot_recent_funder",
+    "address": "5FqqXKb9zonSNKbZhEuHYjCXnmPbX9tdzMCU2gx8gir8Z8a5",
+    "total_inbound_tao": 0,
+    "total_outbound_tao": 0,
+    "inbound_tx_count": 0,
+    "outbound_tx_count": 0,
+    "first_inbound_block": null,
+    "first_outbound_block": null,
+    "top_senders": [],
+    "top_receivers": []
+  },
+  "taobot_coldkey": {
+    "label": "taobot_coldkey",
+    "address": "5GsbTgfvgCH4xdqSkiPb7EaBBFLHjWH5vfEALhJaewSFpZX9",
+    "total_inbound_tao": 0,
+    "total_outbound_tao": 0,
+    "inbound_tx_count": 0,
+    "outbound_tx_count": 0,
+    "first_inbound_block": null,
+    "first_outbound_block": null,
+    "top_senders": [],
+    "top_receivers": []
+  }
+}
