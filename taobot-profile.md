@@ -49,7 +49,7 @@ This creates a question: **who are the stakers?**
 - If the 855k TAO is held by external delegators (other people who staked to tao.bot because it offers 0% take), those delegators capture the emissions, not tao.bot's operators.
 - If tao.bot's operators *own* the staked TAO — i.e., they staked their own TAO to their own hotkey — they receive all emissions as stakers, which is economically equivalent to a high-take validator except more attractive to external delegators.
 
-The 0% take is a **competitive delegation acquisition strategy**: offer better effective returns than other validators (who typically take 9–18%), attract the most delegated stake, and become the largest validator by stake-weight. The child hotkey structure is a separate on-chain mechanism — tao.bot assigns portions of its weight to other operators' hotkeys across individual subnets, and those operators run the actual validation work. How this arrangement works commercially, if at all, is not public information.
+The 0% take is a **competitive delegation acquisition strategy**: offer better effective returns than other validators (who typically take 9–18%), attract the most delegated stake, and become the largest validator by stake-weight. The child hotkey structure is a separate on-chain mechanism — tao.bot assigns portions of its weight to other operators' hotkeys across individual subnets, and those operators run the actual validation work.
 
 ---
 
