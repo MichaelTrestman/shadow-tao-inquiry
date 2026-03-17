@@ -34,9 +34,6 @@ Netuid  2: 1 child hotkey  — 5CAiEA3... gets 100%
 Netuid 18: 5 child hotkeys — split 36.8% / 24.1% / 20.5% / 15.1% / 3.5%
 Netuid 64: 3 child hotkeys — 5Dt7HZ7... gets 78.9%
 ```
-
-The child hotkeys are operated by subnet teams (miners, validators, SN owners) who have arrangements with tao.bot to receive its delegated weight. tao.bot sets the proportions; the child hotkey operators run the actual validation work on each subnet.
-
 ---
 
 ## How does it make money?
