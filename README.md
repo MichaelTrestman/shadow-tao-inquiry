@@ -46,7 +46,7 @@ Role and identity analysis of the top 100 free-balance holders. Examines whether
 ---
 
 ### [Supply Chain Attack Wallet: Tokenomic Investigation](./supply-chain-attack-investigation.md)
-Forensic analysis of coldkey `5H9brHhMA1km3Dp3YCx75oaimgxEYScxCfxbzQRZ3gHk9x3L`, publicly implicated in an off-chain supply chain attack (code injection to leak plaintext private keys). Uses the tao.app API and archive node to reconstruct 17 months of transfer history and examine the wallet's relationship to the shadow whale cluster.
+Forensic analysis of coldkey `5H9brHhMA1km3Dp3YCx75oaimgxEYScxCfxbzQRZ3gHk9x3L`, linked in community reports to an off-chain supply chain attack (code injection to leak plaintext private keys). Uses the tao.app API and archive node to reconstruct 17 months of transfer history and examine the wallet's relationship to the shadow whale cluster.
 
 **Key findings:**
 - Wallet holds ~99k TAO (top-10 by free balance) with zero subnet, staking, or network activity — a large ecosystem-invisible position consistent in posture with the shadow whale cluster, despite being structurally distinct (nonce 111, actively bidirectional)

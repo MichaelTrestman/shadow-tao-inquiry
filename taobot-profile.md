@@ -49,9 +49,7 @@ This creates a question: **who are the stakers?**
 - If the 855k TAO is held by external delegators (other people who staked to tao.bot because it offers 0% take), those delegators capture the emissions, not tao.bot's operators.
 - If tao.bot's operators *own* the staked TAO — i.e., they staked their own TAO to their own hotkey — they receive all emissions as stakers, which is economically equivalent to a high-take validator except more attractive to external delegators.
 
-The 0% take is almost certainly a **competitive delegation acquisition strategy**: offer better effective returns than other validators (who typically take 9–18%), attract the most delegated stake, become the #1 validator by stake-weight, and monetize that weight through child hotkey arrangements.
-
-**Child hotkey placement is where the real revenue likely is.** Subnet teams that receive tao.bot's weight gain an advantage in their subnet's Yuma Consensus — higher weight means larger share of subnet emissions. Whether tao.bot charges for this off-chain (a fee paid by subnet operators) or captures value through on-chain emissions flowing to child hotkey parent accounts is not public information. What is clear is that having 855k TAO of weight to delegate across 68 subnets is a substantial resource, and operating it at 0% take to stakers suggests revenue is coming from elsewhere.
+The 0% take is a **competitive delegation acquisition strategy**: offer better effective returns than other validators (who typically take 9–18%), attract the most delegated stake, and become the largest validator by stake-weight. The child hotkey structure is a separate on-chain mechanism — tao.bot assigns portions of its weight to other operators' hotkeys across individual subnets, and those operators run the actual validation work. How this arrangement works commercially, if at all, is not public information.
 
 ---
 
@@ -70,13 +68,13 @@ This is not inherently problematic — delegating weight to subnet operators is 
 
 A validator with 855k TAO running actual validation infrastructure on subnets has operational skin in the game. tao.bot has none — it can child-key its weight to different operators at any time with no cost.
 
-**tao.bot is not part of the validator community.** Unlike every other major validator — Kraken, Taostats, Yuma/DCG, Crucible Labs, Polychain, OTF — tao.bot has no known team and does not appear in validator community discussions. It is not personally known to other validators. This matters beyond the usual concern about anonymous wallets: the validator class is the most invested and most engaged part of the Bittensor ecosystem. Validators interact with each other, with subnet owners, and with OTF. They are the community most likely to raise governance concerns, and they are the community with the most direct exposure to tao.bot's child-hotkey decisions. That tao.bot sits at the apex of this community's consensus hierarchy while being entirely absent from it is not normal. Every other top-10 validator is, at minimum, identifiable.
+**tao.bot does not appear in validator community discussions.** Unlike every other major validator — Kraken, Taostats, Yuma/DCG, Crucible Labs, Polychain, OTF — tao.bot has no known team and is not personally known to other validators. The validator class is the most invested and engaged part of the Bittensor ecosystem — validators interact with each other, with subnet owners, and with OTF. That tao.bot sits at the apex of the consensus hierarchy without a public presence or contact point is notable. Every other top-10 validator is, at minimum, identifiable.
 
 ### 2. The 0% take strategy and the "governance capture" risk
 
 The 0% take rate, if sustained, is an indefinitely effective mechanism to accumulate the largest possible stake weight. As external delegators chase yield, they rational-agent their way to tao.bot. The more stake tao.bot accumulates, the more child-hotkey weight it has to sell/allocate, the more revenue it earns off-chain, the more it can sustain the 0% take.
 
-This is a positive feedback loop: 0% take → more delegators → more stake-weight → more child-hotkey market power → more off-chain revenue → sustain 0% take → more delegators. If left unchecked, this dynamic concentrates an ever-larger share of network consensus weight in a single anonymous entity that operates entirely through intermediaries.
+This is a positive feedback loop: 0% take → more delegators → more stake-weight → more child-hotkey market power → sustain 0% take → more delegators. If left unchecked, this dynamic concentrates an ever-larger share of network consensus weight in a single anonymous entity that operates entirely through intermediaries.
 
 ### Comparison to the shadow whale phenomenon
 
@@ -110,26 +108,16 @@ Those 1,025 TAO were then dispatched via the coldkey's 617 outbound transactions
 
 The full outbound history — what exactly those 617 transactions did — requires the tao.app API.
 
-## Shared upstream with shadow whale infrastructure
+## On-chain proximity to shadow whale infrastructure
 
-`profile_new_feeders.py` (March 17, 2026) reveals a notable proximity between tao.bot's funders and the shadow whale distribution infrastructure.
+`profile_new_feeders.py` (March 17, 2026) found that the two addresses that funded tao.bot's coldkey also appear as senders to `5FJMfoeUXsDXQSABaai8CUQvMyAK1a7jXqJvkBMnabfuJCjv` — an address that also sent funds to shadow whale infrastructure (Funder-A, Funder-B, and FV99mB). The critical evaluation below concludes this is insufficient to establish any connection between tao.bot and the shadow whale operation.
 
-The two addresses that funded tao.bot's coldkey both appear as senders to `5FJMfoeUXsDXQSABaai8CUQvMyAK1a7jXqJvkBMnabfuJCjv` — a confirmed feeder of Funder-A, Funder-B, and FV99mB in the shadow whale infrastructure:
-
-| Address | Funded tao.bot | Sent to shadow infra (FJMfoeUX) |
+| Address | Funded tao.bot | Also sent to FJMfoeUX |
 |---|---|---|
 | `5E2b2DcMd5W8MBhzTCFt63t2ZEN8RsRgL7oDd7BFYL9aMQux` | 1,025 TAO (block 4,849,932–4,850,203) | 6,036 TAO |
 | `5FqqXKb9zonSNKbZhEuHYjCXnmPbX9tdzMCU2gx8gir8Z8a5` | 9.998 TAO (block 7,632,272) | 2,363 TAO |
 
-There is no direct transfer between any tao.bot address and any shadow wallet. tao.bot's funders connected to shadow infrastructure through FJMfoeUX as an intermediary — not directly to Funder-A/B or the shadow wallets themselves.
-
-The on-chain pattern, taken at face value:
-
-| | Shadow whales | tao.bot |
-|---|---|---|
-| Domain | Liquid TAO supply (~738k TAO) | Consensus weight (~856k TAO stake) |
-| Common upstream | Same funders appear at both | Same funders appear at both |
-| Public accountability | None | On-chain identity only |
+There is no direct transfer between any tao.bot address and any shadow wallet. The connection is always two hops removed, through FJMfoeUX as an intermediary.
 
 ---
 
