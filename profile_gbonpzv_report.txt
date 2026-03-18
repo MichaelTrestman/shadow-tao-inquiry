@@ -1,0 +1,154 @@
+========================================================================
+GBONPZV UPSTREAM INVESTIGATION REPORT
+========================================================================
+
+────────────────────────────────────────────────────────────────────────
+GBnPzv (dominant upstream)
+  Address: 5GBnPzvPghS8AuCoo6bfnK7JUFHuyUhWSFD4woBNsKnPiEUi
+  Inbound:  12,208 txs, 1,241,405.05 TAO  (first block 7455070)
+  Outbound: 18,890 txs, 1,198,521.95 TAO  (first block 7455042)
+
+  TOP SENDERS (upstream sources):
+    5Hd2ze5ug8n1bo3UCAcQsf66VNjKqGos8u6apNfzcU86pg4N    500,000.00 TAO
+    5GgfJE3J9BsF2uohB3kCqciuctoJoRf4MtLA8gQDHUYsdpp3     83,173.04 TAO
+    5CsRaRJSc1Y5XAdhF3wzjtjzc1kZCGqW64D38JXMp8NNV36n     37,171.63 TAO
+    5DoGFEHDzZfaLbZx8CyBmuR3RcBTpMLxYeqdz5Dg4QwtGqcv     37,099.83 TAO
+    5DiC57wQvSHyJACiNfMbaLte6Uy6H7yP837NjtYHizFGiysp     36,286.26 TAO
+    5HG9MhHqybY4jpDH3gAHs1v9c9jqd9yMqpEEMbb61tPUUY1p     33,999.10 TAO
+    5GsQmSa5UVAps63JinL6wriKnQkspKjqspqdvZLkuDqHhCbf     33,510.61 TAO
+    5CHKBJRraYTyNWNd4H26WUsnUfhmESVeFN8NqDxWhvRdyESR     26,425.20 TAO
+    5EkcShLwVJSLBGqKoKGhnYqqagkXZskKuwTW6jLC5RKVxrJi     18,939.21 TAO
+    5GSJpsK91Tvht3sdS2tjCxAvyQyFq3mkCNjrGrL1ULo6uiFJ     18,253.21 TAO
+    5E5R6uFg7c3X8KP44rTTxfXXgKiXMs1hbzCrv34yYFQVCTWs     15,887.51 TAO
+    5EKwxFD3zDsWjWELZ9L4A5or2ZuYbCKMehbhga8UYYcNN5Gh     15,537.37 TAO
+    5CAuWdpdwbhyuGkiqpGR1B4t7yRL5AF43Ndt2Xx64jzhANWA     15,109.42 TAO
+    5DhD8TKfeVcgE8EwBNRmY8AiZGBj84Y3DVmEwUczrnXHjukU     14,838.90 TAO
+    5EEXvU5LHTHenRiyMQwNTjVc19fPnFGAA62iv2yyoWRfzM8Q     14,714.75 TAO
+    5Dv2KpTLJ6d74J5VDoG9mv1emkpoyY8uNo3vcfZxuFE5R2uL     14,083.24 TAO
+    5DrMi6PB4NPE4VeF7ZMYc94Mzok4fvfyJCuwtzTUV1jER2LE     10,995.12 TAO
+    5CQQWfjxEpBw1GRqC4YYHTyxYU2VyaBtgMheehQ37AxNhrMX      7,028.29 TAO
+    5G7Hfcz8ndiC9xkLE5D9BmaXwTaVpDXzafECKUwkzuPFiPcT      6,860.73 TAO
+    5Em8pM44g16XsSUgZFohjJA5L7RTU7b1VFTb5MWPFRw1LNyD      6,165.17 TAO
+
+  TOP RECEIVERS (downstream destinations):
+    5Hd2ze5ug8n1bo3UCAcQsf66VNjKqGos8u6apNfzcU86pg4N    407,268.96 TAO
+    5HB2Q8H9Rvxr3ejZ1o58FfXk3S3jMij6mB7Vu7b7SPqUdhTQ     49,550.30 TAO  [infra: HB2Q8-hub]
+    5Gorfuxev7QmgDzBK92YrVW2K5PEvfZRW49SQrKm3VXcAGi1     40,935.73 TAO  [infra: Gorfuxev7]
+    5DCWcf9nXRrNB4djAr4ZmEEpoGn8kANGUwobvoCGSxEAFAA5     28,276.90 TAO
+    5FiaRiQBEFtcSZUgm8uhT4Y79ywYddZQS3D8VSPQCyEnBsBc     22,794.31 TAO
+    5HUPxAsF52CX7RWAe3vDA7Wu7fiKT78dG3XpxRisfnwKYsn4     19,763.30 TAO  [infra: HUPxAs]
+    5FJMfoeUXsDXQSABaai8CUQvMyAK1a7jXqJvkBMnabfuJCjv     18,285.00 TAO  [infra: FJMfoeUX]
+    5EtvRauPXAtFwJ4KGBaPuvtxn1UHd8nSGVJKxM9KDFX3v9KM     16,805.55 TAO
+    5FZTUqPdB3uyUGF3hZFUUMTGMFPnmH1w5gVYWigD8mSibT4c     16,575.91 TAO
+    5ExqruPPZVrX2AzWsGsDv2YY5bvvt5mC1K63hogqKZEndnzW     13,249.99 TAO
+    5FfyHUDPJLUpSfhsRGwHMpSkpcKgd55NnbrUNcNYBNWarTDJ     13,099.96 TAO
+    5CoPeR1neia16MAQWydwuPU2RiPYZMSUmfNYasxm3MjU3aX1     12,585.99 TAO
+    5DdfV4KJgkrwyNKPCML87KceNj3in9py2HGiwiGF7KSiJNP9     11,818.11 TAO
+    5CrVZiaD3au1wz6odkwApHgbJ3TGTkcPQ5Tsa16pxVCuidtt     11,270.75 TAO
+    5H3djR2ZRPLopdsUGA4gUUfpu9c2C25KzWKe25tzGhsJWouE     10,989.95 TAO
+    5C77HBqjXfdMupDUyABuMof2SrnQ4RTAipd1wV6v1jUdUhFJ     10,530.00 TAO
+    5DEA37cMhnWbZMZQozcwtNSvtg4VPKRhkKob6HymZjTyqh1o      9,933.62 TAO
+    5EqUG3oUuzT5siNv5bSE9PKzqp8t2ehYEX7SeEjTjymuJS9W      9,511.88 TAO
+    5FHxv6j4Eb2c9DcGmmG8ne2f6SvMZfhkBVFUdfw31mXtYFdM      8,732.05 TAO
+    5Fy8bFc5SsUfLJBR6ByJa4Z3xTbzR6cenTpPM7hiw3Ctm3dP      8,649.95 TAO
+
+────────────────────────────────────────────────────────────────────────
+CNChyk2 (FJMfoeUX sender)
+  Address: 5CNChyk2fnVgVSZDLAVVFb4QBTMGm6WfuQvseBG6hj8xWzKP
+  Inbound:  13,574 txs, 1,346,974.22 TAO  (first block 4354380)
+  Outbound: 18,210 txs, 1,347,322.92 TAO  (first block 4349181)
+
+  TOP SENDERS (upstream sources):
+    5FsWP1GxpzT11xyFBojKpE75pzp54ESDA6BYbRMPJ2nsCZE5    334,512.86 TAO
+    5DvjnLD79DuUFnmRNakrJYfN5suEKfSgqyBkvs7pddDpoYk9    128,344.96 TAO
+    5FmKVJKPQxTYGH1vXEYVHEbvCJvEX56F9387u9S3dL1ZzEUr    108,421.70 TAO
+    5CAjSJ7Vvuyi8VKVc9PiEM6PN2wK9DL6b1iUj5qkEBuD3Rd4    108,136.58 TAO
+    5CdFwEG1AK7AxemmtfnFeGJ4SmNvFSmPk3K8jxCj8fGKEXTM     92,689.69 TAO
+    5DVsLTvGmUDT6hEp3P9RsLL95BgknJm3natm3EFijfkhrzkw     76,064.70 TAO
+    5E7gYCFcpctg34aYnZNwVvNiqciHyDDkWKpokNUjRG86brSB     49,681.08 TAO
+    5DjrXsfZU8LULTEp8mFUhukM499gUS26DS4EBc4gc5BRmHy4     46,553.71 TAO
+    5FYH5oMfBtYHGEM5KAfQtxiHtZNMaT3t2yaoL8XGuLFT9Pun     36,214.51 TAO
+    5EUeYrY8exBVgDuDagzMRGQEUro3M4EQkaYt6WP48U62LLuo     31,764.10 TAO
+    5Fr6v3yXLxksHgH9NNGzCDCZ762q6Zt4JLHx4266D1uQWCVa     29,636.10 TAO
+    5CmvaYJeDLgiVnKMk4jbNnFLkwFBgDC1YxHnK8TLeSiZCMfT     17,712.47 TAO
+    5FByFoPK1iKL6seuDt7RUpnsjd6NrXkAzyraZAZJn7Tu5KVb     16,887.85 TAO
+    5CtFfVQXhCu4fG4KZXcwxnpvL6w7ZyG8bvJSwL39NkapdMJs     13,662.41 TAO
+    5E4rEccyq1ebQUe58Xvo7Qdt8zUYmJ6q3RN8t8i4gYDxZgrb     11,001.26 TAO
+    5DKURWkFwUMFzG7pSoBps1jF3jmxbw8YWVzKhg5Krbg2ELAS      9,238.30 TAO
+    5HW2Z85FzL5v7SMK55kgwywnF9RNpXRDUPosKfVBuQHk8itc      8,382.44 TAO
+    5EMNp1rKeGj2qbRYkvCSPNF3uzDQaSWMQRJ8BiJdhh6PYWJK      7,740.97 TAO
+    5FkqLE63zZZik7kUbzvBAX9CoLuo72YHKKaWREq2voKW3JjM      6,529.26 TAO
+    5HReneYGzen6VHkwuHnEL7g8KnxrAjbMZijzEcGet9T3MHjr      6,511.39 TAO
+
+  TOP RECEIVERS (downstream destinations):
+    5FsWP1GxpzT11xyFBojKpE75pzp54ESDA6BYbRMPJ2nsCZE5    301,118.37 TAO
+    5CsRaRJSc1Y5XAdhF3wzjtjzc1kZCGqW64D38JXMp8NNV36n    129,887.37 TAO
+    5FfXoaPAYCZrxdhAaaz6UdppNsyAYnkwomUZmdtCbxsrHfpP     85,685.12 TAO
+    5DCWcf9nXRrNB4djAr4ZmEEpoGn8kANGUwobvoCGSxEAFAA5     70,480.70 TAO
+    5DSmnsDtwvBUzfiAUemaVF1D1mpVzNF4fBfZAdtehtKnKFG6     37,892.75 TAO
+    5GgfJE3J9BsF2uohB3kCqciuctoJoRf4MtLA8gQDHUYsdpp3     32,758.35 TAO
+    5HB2Q8H9Rvxr3ejZ1o58FfXk3S3jMij6mB7Vu7b7SPqUdhTQ     29,596.90 TAO  [infra: HB2Q8-hub]
+    5EgPAkbxJfELKKfkEWSA2i1eHL22r4qvZ1jP9hBBpoWwLefD     29,318.00 TAO
+    5CHKBJRraYTyNWNd4H26WUsnUfhmESVeFN8NqDxWhvRdyESR     25,422.71 TAO
+    5CXkUEWB3uctQTxrpRZE5oouKFYvNK5sC7uTZUusw78MKSP9     15,728.87 TAO
+    5HUPxAsF52CX7RWAe3vDA7Wu7fiKT78dG3XpxRisfnwKYsn4     14,744.37 TAO  [infra: HUPxAs]
+    5DdfV4KJgkrwyNKPCML87KceNj3in9py2HGiwiGF7KSiJNP9     14,672.32 TAO
+    5ESDyJBqh3SRcmboQpHc3761pZqV5C9vrFPFy8qxtAzerktB     14,302.14 TAO
+    5DqAsYypFpHd6QqDRQTX2J8yaHTS7ksUrQLJQM5fGKu5Q7c8     13,851.56 TAO
+    5HnF6xcexzjsEjibkr7fq2NPWfUa82eEyJSMASux97nJrzbM     13,022.40 TAO
+    5FJMfoeUXsDXQSABaai8CUQvMyAK1a7jXqJvkBMnabfuJCjv     13,022.10 TAO  [infra: FJMfoeUX]
+    5DDaF8A1W6PuKREz4m9iVbfgFPYMH9hekCQ8ZS9MaJvbmErL     12,656.64 TAO
+    5Hqv5hdFUrs7vQpZ6xKkhAMyNfreLCEKBDFMsS3uyLjJmmd6     12,467.16 TAO
+    5E4owuNhqHH5tBXgKkGTjo2PAAutGDMPckZo9f1nKyz5QHRe     12,053.32 TAO
+    5GsQmSa5UVAps63JinL6wriKnQkspKjqspqdvZLkuDqHhCbf     11,965.98 TAO
+
+────────────────────────────────────────────────────────────────────────
+HbDZ6UL (dual feeder)
+  Address: 5HbDZ6ULuwZegAMSPaS2kaUfBLMDaht5t48RcDrQATSgGCAR
+  Inbound:  6,528 txs,   303,944.12 TAO  (first block 6946542)
+  Outbound: 11,137 txs,   420,454.61 TAO  (first block 6946544)
+
+  TOP SENDERS (upstream sources):
+    5ELWnR5A7DUmmqHsYPA3iZMFu1BX3gceruEqFPtsmTkCqR7J    106,900.01 TAO
+    5GZ3U6VtVRSSo6RGgEBRFmrtbrJDBBLfic4aTBGR9ZjM1V9v     39,915.21 TAO
+    5Ge6FAzDMemjCGTdp1Kc3AA889cWej9iwED74TkWbnhFtPnA     14,646.55 TAO
+    5DDaF8A1W6PuKREz4m9iVbfgFPYMH9hekCQ8ZS9MaJvbmErL     11,246.54 TAO
+    5DkUdsmMeEBdPjPkxnWmqyReZLYuwdaXdMPqyj4bxnukTCUW     10,405.90 TAO
+    5G72NnaE7GLKdQ8jziM6SFW3fugXGuEz4rsd895H6ZnwnG41      9,323.67 TAO
+    5FBq6icddsU1ZsxeAsVbB7of6iU1xzwntxdtX3ewXnTrLJjF      7,046.05 TAO
+    5Ge8B9GczK6mcoSgb7nwdWdJSw2nRPbmfkQ3pSErqKxXdxHW      5,937.26 TAO
+    5FJ7nR1MoLxeBnDxUEvDbX2q81YBkiSFdf49RPutxwL3xBrS      5,754.54 TAO
+    5CB4jm9HMi3EWMQqHbusn9putpjw6c76LQFiHsn46kzNP2mV      5,426.03 TAO
+    5C5z7RcnBprwg2eHDPcWcqeCVRQUc2tQeCPwtGvSB9v6HHZ8      4,604.65 TAO
+    5HVsChHUEH8WfcotibLpNLnARALNY8tJkSZiXcwLhQzoz28o      3,373.99 TAO
+    5Fdwhgy49KZ8kdRCYLagvdu1x7nxvdZFrVq4gMMQxpAcMyno      3,083.56 TAO
+    5FxXypZrEVoA3jUC3CAj4idSfY38rcCXLoyJr4VBNXpEHt1C      3,027.20 TAO
+    5FLBeeBe7mBJiTRFQaQxzbAF5FyK3FH6a9BGn2p9iVqgLidi      2,512.34 TAO
+    5E1ffrVK6ijJCKe35yUxvzx4D9NdpSLRdxaBgwkxsMu6QJM8      2,111.07 TAO
+    5DUsTRKicUozYLWZQQZTTxptng8RvW6qveZLs9jbom4W2dXP      1,703.00 TAO
+    5H9NrjNEvzQgpHetfmCEAHLzDb9n83VxdgAAD8wvGnBqi1f3      1,696.90 TAO
+    5CSjJAdHJaQvU7r3bUTvQ5rkFfdjaNNFXWhzvZzfdD9Y5xsW      1,640.00 TAO
+    5DqAsYypFpHd6QqDRQTX2J8yaHTS7ksUrQLJQM5fGKu5Q7c8      1,281.91 TAO
+
+  TOP RECEIVERS (downstream destinations):
+    5ELWnR5A7DUmmqHsYPA3iZMFu1BX3gceruEqFPtsmTkCqR7J    180,319.56 TAO
+    5GZ3U6VtVRSSo6RGgEBRFmrtbrJDBBLfic4aTBGR9ZjM1V9v     25,001.00 TAO
+    5Gorfuxev7QmgDzBK92YrVW2K5PEvfZRW49SQrKm3VXcAGi1     24,520.60 TAO  [infra: Gorfuxev7]
+    5FZTUqPdB3uyUGF3hZFUUMTGMFPnmH1w5gVYWigD8mSibT4c     10,658.03 TAO
+    5CQQWfjxEpBw1GRqC4YYHTyxYU2VyaBtgMheehQ37AxNhrMX     10,565.28 TAO
+    5DiC57wQvSHyJACiNfMbaLte6Uy6H7yP837NjtYHizFGiysp     10,190.12 TAO
+    5CHKBJRraYTyNWNd4H26WUsnUfhmESVeFN8NqDxWhvRdyESR      7,000.00 TAO
+    5CoWc5Cj8kkb33iyzzR7qJAuUPGp9cZa1HKyvzjDafBU2ewH      5,517.64 TAO
+    5DZcN6PjhuF9sQfwrULQ5pD43ZneMp3Ad4LSgLq1XfujRbJS      5,410.00 TAO
+    5EEXvU5LHTHenRiyMQwNTjVc19fPnFGAA62iv2yyoWRfzM8Q      4,802.91 TAO
+    5Cc4ygj296P8gyu9Qv7hSoxbKRJMrYUnVvwWX4H3JKNahLuh      4,156.92 TAO
+    5FYR2AfyD7SXR1rLwHbsQrXkgGZ3E7foTs6saQaB1UBxx2wf      3,811.10 TAO
+    5CfoLutMr8jA9UvwNbZ3oieV1ANngrkwRs5pW91Muevd1Sqp      3,792.42 TAO
+    5DC8Uq5wy1M4m9XRJaEFFt2PtV8zdKUUVQemEe5whZ2bguq6      3,758.71 TAO
+    5CHMk3sCTDvXHqciKetuR4EWb958esMD4KattdhnBVT5NZ6R      3,562.97 TAO
+    5FpvyaEDYX2oMNqn4tpnVwiEkYsrPSF1i4Wwj1ujGyz1d431      3,413.41 TAO
+    5HUPxAsF52CX7RWAe3vDA7Wu7fiKT78dG3XpxRisfnwKYsn4      3,381.78 TAO  [infra: HUPxAs]
+    5DK4hzdycbZppV6eZrzWfDn9u8qEEjsQTh8qY6ayZVxmX54L      3,270.00 TAO
+    5FJMfoeUXsDXQSABaai8CUQvMyAK1a7jXqJvkBMnabfuJCjv      3,156.05 TAO  [infra: FJMfoeUX]
+    5DV97qjKxKbh7Ru8GF1pe4aaDhAA2wCPaMKSQuPgnrh8kvzc      3,017.47 TAO
+
